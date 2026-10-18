@@ -1,290 +1,198 @@
-#!/usr/bin/env python3
-
-#!/usr/bin/env python3
 """
 poda.py
 
-Implementa la poda: genera las clases canónicas de n capas
-extendiendo únicamente los representantes canónicos de n-1 capas,
-en lugar de generar todos los candidatos crudos y filtrar.
+Verifica que la poda produce las mismas clases canónicas que el
+método completo, para cualquier opción de JAM.
 
-Compara el resultado con el método actual (generación completa +
-canonicalización) para verificar que producen las mismas clases.
+Método completo: genera todos los candidatos y filtra con jam-canonical.
+Método de poda: genera solo las extensiones de los representantes
+canónicos de n-1 capas, y filtra con jam-canonical.
 
-También mide el tiempo de ambos métodos para cuantificar el speedup.
+Uso:
+    python3 poda.py --options 1 5 7 --levels 2 3 4 5
+    python3 poda.py --options 1 --levels 2 3 4 5 6 7 8
 """
 
+import argparse
 import numpy as np
 import sys
 import os
-import csv
 from itertools import permutations
 from time import perf_counter
 
-# ─────────────────────────────────────────────
-# Paths
-# ─────────────────────────────────────────────
-
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-_CANONJAM_DIR = os.path.dirname(_SCRIPT_DIR)
-_XJAM2_DIR = os.path.join(os.path.dirname(_CANONJAM_DIR), 'xjam2')
-_PRUEBAS_DIR = os.path.join(_XJAM2_DIR, 'pruebas')
+sys.path.insert(0, _SCRIPT_DIR)
 
-sys.path.insert(0, _XJAM2_DIR)
-sys.path.insert(0, _PRUEBAS_DIR)
-
-from xjam.libjamstd import nparray2chain, chain2nparray
-from prueba_grupo import (
-    canonical_key_std,
-    disc_equivalents_canonical_std,
-)
+from jam_canonical import canonical_key, filter_duplicates
 
 
-# ─────────────────────────────────────────────
-# Configuración
-# ─────────────────────────────────────────────
-
-OPTIONX = 1
-N_MAX = 9
+DEFAULT_OPTIONS = [1, 5, 7]
+DEFAULT_LEVELS = [2, 3, 4, 5]
 
 
-# ─────────────────────────────────────────────
-# Monocapas y generación
-# ─────────────────────────────────────────────
+def rows_for_option(option):
+    """Return the possible single layers for the given JAM option."""
+    if option == 1:
+        tokens = ['+0', '+j', '+j']
+    elif option == 2:
+        tokens = ['+0', '+j', '+k']
+    elif option == 3:
+        tokens = ['+0', '+j', '-j']
+    elif option == 4:
+        a = ['+0', '+j', '-k']
+        b = ['+0', '-j', '+k']
+        rows = list(set(permutations(a, 3))) + list(set(permutations(b, 3)))
+        return [list(r) for r in rows]
+    elif option == 5:
+        tokens = ['+0', '*j', '(+k-k)']
+    elif option == 6:
+        tokens = ['*j', '+k', '-k']
+    elif option == 7:
+        a = ['+0', '*j', '(+k-l)']
+        b = ['+0', '*j', '(-k+l)']
+        rows = list(set(permutations(a, 3))) + list(set(permutations(b, 3)))
+        return [list(r) for r in rows]
+    elif option == 8:
+        a = ['*j', '+k', '-l']
+        b = ['*j', '-k', '+l']
+        rows = list(set(permutations(a, 3))) + list(set(permutations(b, 3)))
+        return [list(r) for r in rows]
+    else:
+        raise ValueError(f"Invalid option: {option}")
+    return [list(r) for r in set(permutations(tokens, 3))]
 
-def filas_opcion_1():
-    opt = ['+0', '+j', '+j']
-    filas = list(set(permutations(opt, 3)))
-    return [np.array(i) for i in filas]
+
+def chain_to_array(chain):
+    """Convert a JAM string to an array of tokens."""
+    blocks = chain.split('/')
+    columns = []
+    for block in blocks:
+        tokens = []
+        i = 0
+        while i < len(block):
+            if block[i] == '(':
+                tokens.append(block[i:i+6])
+                i += 6
+            else:
+                tokens.append(block[i:i+2])
+                i += 2
+        columns.append(tokens)
+    return np.array(columns).T
 
 
-def generar_cadenas_crudas(n):
-    """Genera TODOS los candidatos de n capas, sin filtrar."""
-    filas = filas_opcion_1()
-    candidatos = [np.array(f).reshape(1, -1) for f in filas]
-
+def generate_full(n, option):
+    """Full method: generate all candidates and filter."""
+    single = [np.array(r).reshape(1, -1) for r in rows_for_option(option)]
+    candidates = single
     for _ in range(2, n + 1):
-        nuevos = []
-        for c in candidatos:
-            for f in filas:
-                nuevos.append(np.vstack([c, f]))
-        candidatos = nuevos
-
-    return [nparray2chain(c) for c in candidatos]
-
-
-# ─────────────────────────────────────────────
-# Método actual: generar todo y filtrar
-# ─────────────────────────────────────────────
-
-def generar_canonicas_actual(n, optionx=OPTIONX):
-    """Método actual: genera todos los candidatos y filtra."""
-    cadenas = generar_cadenas_crudas(n)
-    matrices = [chain2nparray(c) for c in cadenas]
-    unicas = disc_equivalents_canonical_std(matrices, optionx)
-    claves = sorted(set(canonical_key_std(u, optionx) for u in unicas))
-    return claves
+        new = []
+        for c in candidates:
+            for s in single:
+                new.append(np.vstack([c, s]))
+        candidates = new
+    uniques = filter_duplicates(candidates, option)
+    return len(candidates), sorted(set(canonical_key(u, option) for u in uniques))
 
 
-# ─────────────────────────────────────────────
-# Método de poda: solo extiende los canónicos
-# ─────────────────────────────────────────────
-
-def generar_extensiones(clave, optionx=OPTIONX):
-    """Genera las 6 extensiones de una estructura."""
-    matriz = chain2nparray(clave)
-    filas = filas_opcion_1()
-    extensiones = []
-    for f in filas:
-        extensiones.append(np.vstack([f, matriz]))
-        extensiones.append(np.vstack([matriz, f]))
-    return extensiones
-
-
-def generar_canonicas_poda(n_max, optionx=OPTIONX):
+def generate_poda(n_max, option):
     """
-    Método de poda: genera las clases de n capas extendiendo
-    únicamente los representantes canónicos de n-1 capas.
-
-    Devuelve un diccionario {n: [claves_canonicas]}.
+    Poda method: generate only the extensions of the canonical
+    representatives of n-1 layers.
     """
-    clases = {}
-    clases[1] = sorted(set(
-        canonical_key_std(np.array(f).reshape(1, -1), optionx)
-        for f in filas_opcion_1()
-    ))
+    single = [np.array(r).reshape(1, -1) for r in rows_for_option(option)]
+    classes = {1: sorted(set(canonical_key(s, option) for s in single))}
 
     for n in range(2, n_max + 1):
-        hijos = set()
-        for padre in clases[n-1]:
-            for ext in generar_extensiones(padre, optionx):
-                hijo = canonical_key_std(ext, optionx)
-                hijos.add(hijo)
-        clases[n] = sorted(hijos)
+        children = set()
+        for parent_key in classes[n - 1]:
+            parent = chain_to_array(parent_key)
+            for s in single:
+                    # Append: parent · s
+                    ext_append = np.vstack([parent, s])
+                    children.add(canonical_key(ext_append, option))
+                    # Prepend: s · parent
+                    ext_prepend = np.vstack([s, parent])
+                    children.add(canonical_key(ext_prepend, option))
+        classes[n] = sorted(children)
 
-    return clases
-
-
-# ─────────────────────────────────────────────
-# Verificación
-# ─────────────────────────────────────────────
-
-def comparar_poda_vs_actual(n_max, optionx=OPTIONX):
-    """Compara las clases generadas por poda vs el método actual."""
-    print(f"\n{'='*80}")
-    print(f"VERIFICACIÓN: poda vs método actual (opción {optionx})")
-    print(f"{'='*80}\n")
-
-    # Generar con poda (tiempo)
-    t0 = perf_counter()
-    clases_poda = generar_canonicas_poda(n_max, optionx)
-    t_poda_total = perf_counter() - t0
-
-    print(f"Poda generada en {t_poda_total:.3f}s\n")
-
-    # Comparar nivel por nivel
-    print(f"{'n':>3}  {'Poda':>8}  {'Actual':>8}  {'¿Iguales?':>10}  {'t_actual':>10}")
-    print(f"{'-'*3}  {'-'*8}  {'-'*8}  {'-'*10}  {'-'*10}")
-
-    todos_ok = True
-    for n in range(1, n_max + 1):
-        t0 = perf_counter()
-        clases_actual = generar_canonicas_actual(n, optionx)
-        t_actual = perf_counter() - t0
-
-        set_poda = set(clases_poda[n])
-        set_actual = set(clases_actual)
-
-        iguales = set_poda == set_actual
-        marca = "✓" if iguales else "✗"
-
-        print(f"{n:>3}  {len(set_poda):>8}  {len(set_actual):>8}  "
-              f"{marca:>10}  {t_actual:>10.3f}")
-
-        if not iguales:
-            todos_ok = False
-            solo_poda = set_poda - set_actual
-            solo_actual = set_actual - set_poda
-            if solo_poda:
-                print(f"    Solo en poda: {len(solo_poda)}")
-                for c in list(solo_poda)[:3]:
-                    print(f"      {c}")
-            if solo_actual:
-                print(f"    Solo en actual: {len(solo_actual)}")
-                for c in list(solo_actual)[:3]:
-                    print(f"      {c}")
-
-    print()
-    if todos_ok:
-        print("✓ La poda produce exactamente las mismas clases "
-              "que el método actual.")
-    else:
-        print("✗ La poda NO produce las mismas clases. "
-              "Revisar los niveles marcados.")
-
-    return todos_ok, clases_poda
+    return classes
 
 
-# ─────────────────────────────────────────────
-# Speedup
-# ─────────────────────────────────────────────
+def verify_option(option, levels):
+    """Verify that poda and full method produce the same classes."""
+    print(f"\n{'=' * 70}")
+    print(f"Option {option}")
+    print(f"{'=' * 70}\n")
+    print(f"{'n':>3} {'Candidates':>12} {'Full classes':>14} "
+          f"{'Poda classes':>14} {'Match':>8}")
+    print("-" * 60)
 
-def medir_speedup(n_max, optionx=OPTIONX):
-    """
-    Mide el tiempo de cada método para cada n, y calcula el speedup.
-    """
-    print(f"\n{'='*80}")
-    print(f"SPEEDUP: poda vs método actual (opción {optionx})")
-    print(f"{'='*80}\n")
+    # Full method (all levels)
+    t0_full = perf_counter()
+    full_results = {}
+    for n in levels:
+        n_cand, keys = generate_full(n, option)
+        full_results[n] = (n_cand, keys)
+    t_full = perf_counter() - t0_full
 
-    print(f"{'n':>3}  {'t_actual':>12}  {'t_poda':>12}  "
-          f"{'Speedup':>10}  {'Cand. actual':>14}  {'Cand. poda':>12}")
-    print(f"{'-'*3}  {'-'*12}  {'-'*12}  {'-'*10}  {'-'*14}  {'-'*12}")
+    # Poda method (up to max level, reuses classes at each step)
+    t0_poda = perf_counter()
+    poda_classes = generate_poda(max(levels), option)
+    t_poda = perf_counter() - t0_poda
 
-    resultados = []
-    for n in range(1, n_max + 1):
-        # Tiempo actual
-        t0 = perf_counter()
-        clases_actual = generar_canonicas_actual(n, optionx)
-        t_actual = perf_counter() - t0
+    all_match = True
+    for n in levels:
+        n_cand, full_keys = full_results[n]
+        poda_keys = poda_classes[n]
+        match = set(full_keys) == set(poda_keys)
+        mark = "YES" if match else "NO"
+        if not match:
+            all_match = False
+        print(f"{n:>3} {n_cand:>12} {len(full_keys):>14} "
+              f"{len(poda_keys):>14} {mark:>8}")
 
-        # Tiempo poda (acumulado hasta n)
-        t0 = perf_counter()
-        clases_poda = generar_canonicas_poda(n, optionx)
-        t_poda = perf_counter() - t0
+    print(f"\nFull method total time: {t_full:.3f}s")
+    print(f"Poda total time:        {t_poda:.3f}s")
+    speedup = t_full / t_poda if t_poda > 0 else float("inf")
+    print(f"Speedup:                {speedup:.2f}x")
+    print(f"Result: {'ALL MATCH' if all_match else 'MISMATCH'}")
 
-        # Número de candidatos
-        cand_actual = 3 ** n
-        cand_poda = len(clases_poda[n-1]) * 6 if n > 1 else 3
-
-        speedup = t_actual / t_poda if t_poda > 0 else float('inf')
-
-        print(f"{n:>3}  {t_actual:>12.4f}  {t_poda:>12.4f}  "
-              f"{speedup:>9.2f}x  {cand_actual:>14}  {cand_poda:>12}")
-
-        resultados.append({
-            'n': n,
-            't_actual': t_actual,
-            't_poda': t_poda,
-            'speedup': speedup,
-            'cand_actual': cand_actual,
-            'cand_poda': cand_poda,
-        })
-
-    print()
-    return resultados
+    return all_match
 
 
-# ─────────────────────────────────────────────
-# Guardar resultados
-# ─────────────────────────────────────────────
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Verify that poda produces the same classes as full method."
+    )
+    parser.add_argument(
+        "--options", type=int, nargs="+", default=DEFAULT_OPTIONS,
+        help="JAM options to verify (default: 1 5 7)",
+    )
+    parser.add_argument(
+        "--levels", type=int, nargs="+", default=DEFAULT_LEVELS,
+        help="Layer counts to verify (default: 2 3 4 5)",
+    )
+    return parser.parse_args()
 
-def guardar_verificacion(archivo, todos_ok, clases_poda):
-    with open(archivo, 'w') as f:
-        f.write("VERIFICACIÓN DE LA PODA\n")
-        f.write("=" * 60 + "\n\n")
-        f.write(f"Opción: {OPTIONX}\n")
-        f.write(f"Resultado: {'ÉXITO' if todos_ok else 'FALLO'}\n\n")
-        f.write("Clases por nivel:\n\n")
-        for n in sorted(clases_poda.keys()):
-            f.write(f"n={n}: {len(clases_poda[n])} clases\n")
-
-
-def guardar_speedup(archivo, resultados):
-    with open(archivo, 'w', newline='') as f:
-        writer = csv.writer(f, delimiter='\t')
-        writer.writerow(['n', 't_actual', 't_poda', 'speedup',
-                         'cand_actual', 'cand_poda'])
-        for r in resultados:
-            writer.writerow([
-                r['n'],
-                f"{r['t_actual']:.4f}",
-                f"{r['t_poda']:.4f}",
-                f"{r['speedup']:.2f}",
-                r['cand_actual'],
-                r['cand_poda'],
-            ])
-
-
-# ─────────────────────────────────────────────
-# Main
-# ─────────────────────────────────────────────
 
 if __name__ == "__main__":
-    base = os.path.join(_CANONJAM_DIR, 'datos', 'poda')
-    os.makedirs(base, exist_ok=True)
+    args = parse_args()
 
-    # 1. Verificación
-    todos_ok, clases_poda = comparar_poda_vs_actual(N_MAX)
-    guardar_verificacion(os.path.join(base, 'verificacion.txt'),
-                         todos_ok, clases_poda)
+    print("=" * 70)
+    print("Poda verification: full method vs poda")
+    print("=" * 70)
+    print(f"Options: {args.options}")
+    print(f"Levels: {args.levels}")
 
-    # 2. Speedup (solo si la verificación pasó)
-    if todos_ok:
-        resultados = medir_speedup(N_MAX)
-        guardar_speedup(os.path.join(base, 'speedup.tsv'), resultados)
-        print(f"Resultados guardados en {base}/")
+    all_pass = True
+    for option in args.options:
+        if not verify_option(option, args.levels):
+            all_pass = False
+
+    print("\n" + "=" * 70)
+    if all_pass:
+        print("Result: ALL OPTIONS MATCH")
+        sys.exit(0)
     else:
-        print("Verificación falló. No se mide speedup.")
-
-    print("\nListo.")
+        print("Result: SOME OPTIONS MISMATCH")
+        sys.exit(1)
