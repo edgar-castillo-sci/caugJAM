@@ -1,4 +1,6 @@
-# canonjam
+# CanonJAM
+
+*[Read in English](README.md)*
 
 Aumentación canónica (poda) para la generación de cadenas JAM.
 
@@ -70,6 +72,12 @@ pytest tests/ -v
 python3 scripts/poda.py --options 1 5 7 --levels 2 3 4
 python3 scripts/fibracion.py
 ```
+
+## Paquetes relacionados
+
+- [`jam-canonical`](https://github.com/edgar-castillo-sci/jam-canonical):
+  filtrado canónico (este paquete depende de él).
+- [`CanonJAM`](https://github.com/edgar-castillo-sci/CanonJAM): este repo.
 
 ## Licencia
 

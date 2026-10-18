@@ -1,7 +1,8 @@
-# canonjam
+# CanonJAM
+
+*[Leer en español](README.es.md)*
 
 Canonical augmentation (pruning) for JAM string generation.
-
 ## Author
 
 Edgar R. H. Castillo (Universidad Juárez Autónoma de Tabasco)
@@ -70,6 +71,12 @@ pytest tests/ -v
 python3 scripts/poda.py --options 1 5 7 --levels 2 3 4
 python3 scripts/fibracion.py
 ```
+
+## Related packages
+
+- [`jam-canonical`](https://github.com/edgar-castillo-sci/jam-canonical):
+  canonical filtering (this package depends on it).
+- [`CanonJAM`](https://github.com/edgar-castillo-sci/CanonJAM): this repo.
 
 ## License
 
