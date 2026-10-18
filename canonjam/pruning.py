@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 """
 Pruning (canonical augmentation) for JAM string generation.
 
@@ -31,15 +29,24 @@ def generate_full(n, option):
     return len(candidates), sorted(set(canonical_key(u, option) for u in uniques))
 
 
-def generate_poda(n_max, option):
+def generate_poda_timed(n_max, option):
     """
     Poda method: generate only the extensions of the canonical
-    representatives of n-1 layers.
+    representatives of n-1 layers, and return per-level incremental times.
+
+    Returns:
+        (classes, times)
+        - classes: dict {n: sorted list of keys}
+        - times: dict {n: time to compute level n from level n-1, in seconds}
     """
     single = [np.array(r).reshape(1, -1) for r in rows_for_option(option)]
+
+    t0 = perf_counter()
     classes = {1: sorted(set(canonical_key(s, option) for s in single))}
+    times = {1: perf_counter() - t0}
 
     for n in range(2, n_max + 1):
+        t0 = perf_counter()
         children = set()
         for parent_key in classes[n - 1]:
             parent = chain_to_array(parent_key)
@@ -51,7 +58,14 @@ def generate_poda(n_max, option):
                 ext_prepend = np.vstack([s, parent])
                 children.add(canonical_key(ext_prepend, option))
         classes[n] = sorted(children)
+        times[n] = perf_counter() - t0
 
+    return classes, times
+
+
+def generate_poda(n_max, option):
+    """Same as generate_poda_timed, but only returns classes."""
+    classes, _ = generate_poda_timed(n_max, option)
     return classes
 
 
@@ -59,27 +73,32 @@ def verify_option(option, levels):
     """
     Verify that poda and full method produce the same classes.
 
-    Returns a dict with:
-      - 'option': the option number
-      - 'levels': list of levels checked
-      - 'full_classes': dict {n: count} for the full method
-      - 'poda_classes': dict {n: count} for the poda method
-      - 'match': bool, True if all levels match
-      - 't_full': total time of full method (s)
-      - 't_poda': total time of poda method (s)
-      - 'speedup': t_full / t_poda
+    Returns a dict with per-level timing:
+      - t_full[n]: time to compute level n from scratch (full method)
+      - t_poda_inc[n]: time to compute level n from level n-1 (poda)
+      - t_poda_cum[n]: cumulative time to reach level n (poda)
+      - speedup[n]: t_full[n] / t_poda_cum[n]
     """
-    t0_full = perf_counter()
+    # Full method: time per level (from scratch each time)
     full_results = {}
+    t_full = {}
     for n in levels:
+        t0 = perf_counter()
         n_cand, keys = generate_full(n, option)
+        t_full[n] = perf_counter() - t0
         full_results[n] = (n_cand, keys)
-    t_full = perf_counter() - t0_full
 
-    t0_poda = perf_counter()
-    poda_classes = generate_poda(max(levels), option)
-    t_poda = perf_counter() - t0_poda
+    # Poda method: incremental times
+    poda_classes, t_poda_inc = generate_poda_timed(max(levels), option)
 
+    # Cumulative poda time
+    t_poda_cum = {}
+    cumul = 0.0
+    for n in sorted(t_poda_inc):
+        cumul += t_poda_inc[n]
+        t_poda_cum[n] = cumul
+
+    # Match check
     all_match = True
     for n in levels:
         n_cand, full_keys = full_results[n]
@@ -94,6 +113,10 @@ def verify_option(option, levels):
         "poda_classes": {n: len(poda_classes[n]) for n in levels},
         "match": all_match,
         "t_full": t_full,
-        "t_poda": t_poda,
-        "speedup": t_full / t_poda if t_poda > 0 else float("inf"),
+        "t_poda_inc": t_poda_inc,
+        "t_poda_cum": t_poda_cum,
+        "speedup": {
+            n: (t_full[n] / t_poda_cum[n] if t_poda_cum[n] > 0 else float("inf"))
+            for n in levels
+        },
     }

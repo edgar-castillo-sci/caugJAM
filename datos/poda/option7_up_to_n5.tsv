@@ -1,0 +1,5 @@
+option	n	full_classes	poda_classes	match	t_full	t_poda	speedup
+7	2	16	16	YES	84.6948	13.4408	6.30
+7	3	144	144	YES	84.6948	13.4408	6.30
+7	4	1776	1776	YES	84.6948	13.4408	6.30
+7	5	20736	20736	YES	84.6948	13.4408	6.30
