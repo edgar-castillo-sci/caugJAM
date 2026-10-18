@@ -1,42 +1,17 @@
 ================================================================================
-FIBRACIÓN DE n=1 A n=2
+FIBRATION FROM n=1 TO n=2
 ================================================================================
 
-¿Qué muestra esta tabla?
-  Cada estructura de 2 capas se forma añadiendo una
-  monocapa a una estructura de 1 capas. Esta tabla lista,
-  para cada estructura de 1 capas (el 'padre'), todas las
-  estructuras de 2 capas (los 'hijos') que se pueden formar
-  a partir de ella.
-
-  La 'fibra' de un padre es el conjunto de sus hijos.
-  Si un padre tiene fibra grande, sus extensiones producen
-  muchas clases distintas. Si tiene fibra pequeña, muchas
-  extensiones producen la misma clase (hay convergencia).
+Parents (n=1):          1
+Unique children (n=2): 2
+Total connections:         2
+Average fiber size:        2.00
+Max fiber size:            2
 
 --------------------------------------------------------------------------------
-Estadísticas de esta transición
---------------------------------------------------------------------------------
-
-  Padres (clases de n=1):           1
-  Hijos únicos (clases de n=2):   2
-  Conexiones padre-hijo:               2
-  Tamaño promedio de fibra:            2.00
-  Tamaño máximo de fibra:              2
-  Distribución de tamaños de fibra:    2→1
-
---------------------------------------------------------------------------------
-PADRE 1 [fibra de tamaño 2]
-  Clave: +0/+j/+j
-  Hijos:
+PARENT 1 [fiber size 2]
+  Key: +0/+j/+j
+  Children:
     [1] +0+0/+j+j/+j+j
     [2] +0+j/+j+0/+j+j
 
---------------------------------------------------------------------------------
-CONVERGENCIAS
---------------------------------------------------------------------------------
-
-  Ninguna en esta transición.
-  (Cada hijo aparece en exactamente un padre.)
-
-================================================================================

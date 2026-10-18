@@ -1,1594 +1,725 @@
 ================================================================================
-FIBRACIÓN DE n=6 A n=7
+FIBRATION FROM n=6 TO n=7
 ================================================================================
 
-¿Qué muestra esta tabla?
-  Cada estructura de 7 capas se forma añadiendo una
-  monocapa a una estructura de 6 capas. Esta tabla lista,
-  para cada estructura de 6 capas (el 'padre'), todas las
-  estructuras de 7 capas (los 'hijos') que se pueden formar
-  a partir de ella.
-
-  La 'fibra' de un padre es el conjunto de sus hijos.
-  Si un padre tiene fibra grande, sus extensiones producen
-  muchas clases distintas. Si tiene fibra pequeña, muchas
-  extensiones producen la misma clase (hay convergencia).
+Parents (n=6):          70
+Unique children (n=7): 196
+Total connections:         365
+Average fiber size:        5.21
+Max fiber size:            6
 
 --------------------------------------------------------------------------------
-Estadísticas de esta transición
---------------------------------------------------------------------------------
-
-  Padres (clases de n=6):           70
-  Hijos únicos (clases de n=7):   196
-  Conexiones padre-hijo:               365
-  Tamaño promedio de fibra:            5.21
-  Tamaño máximo de fibra:              6
-  Distribución de tamaños de fibra:    2→1, 3→17, 6→52
-
---------------------------------------------------------------------------------
-PADRE 1 [fibra de tamaño 2]
-  Clave: +0+0+0+0+0+0/+j+j+j+j+j+j/+j+j+j+j+j+j
-  Hijos:
+PARENT 1 [fiber size 2]
+  Key: +0+0+0+0+0+0/+j+j+j+j+j+j/+j+j+j+j+j+j
+  Children:
     [1] +0+0+0+0+0+0+0/+j+j+j+j+j+j+j/+j+j+j+j+j+j+j
-    [2] +0+0+0+0+0+0+j/+j+j+j+j+j+j+0/+j+j+j+j+j+j+j ←
+    [2] +0+0+0+0+0+0+j/+j+j+j+j+j+j+0/+j+j+j+j+j+j+j
 
 --------------------------------------------------------------------------------
-PADRE 2 [fibra de tamaño 6]
-  Clave: +0+0+0+0+0+j/+j+j+j+j+j+0/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+0+0+0+j/+j+j+j+j+j+j+0/+j+j+j+j+j+j+j ←
-    [2] +0+0+0+0+0+j+0/+j+j+j+j+j+0+j/+j+j+j+j+j+j+j ←
-    [3] +0+0+0+0+0+j+j/+j+j+j+j+j+0+0/+j+j+j+j+j+j+j ←
-    [4] +0+0+0+0+0+j+j/+j+j+j+j+j+0+j/+j+j+j+j+j+j+0 ←
+PARENT 2 [fiber size 6]
+  Key: +0+0+0+0+0+j/+j+j+j+j+j+0/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+0+0+0+j/+j+j+j+j+j+j+0/+j+j+j+j+j+j+j
+    [2] +0+0+0+0+0+j+0/+j+j+j+j+j+0+j/+j+j+j+j+j+j+j
+    [3] +0+0+0+0+0+j+j/+j+j+j+j+j+0+0/+j+j+j+j+j+j+j
+    [4] +0+0+0+0+0+j+j/+j+j+j+j+j+0+j/+j+j+j+j+j+j+0
     [5] +0+j+j+j+j+j+0/+j+0+0+0+0+0+j/+j+j+j+j+j+j+j
     [6] +0+j+j+j+j+j+j/+j+0+0+0+0+0+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 3 [fibra de tamaño 6]
-  Clave: +0+0+0+0+j+0/+j+j+j+j+0+j/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+0+0+j+0/+j+j+j+j+j+0+j/+j+j+j+j+j+j+j ←
-    [2] +0+0+0+0+j+0+0/+j+j+j+j+0+j+j/+j+j+j+j+j+j+j ←
-    [3] +0+0+0+0+j+0+j/+j+j+j+j+0+j+0/+j+j+j+j+j+j+j ←
-    [4] +0+0+0+0+j+0+j/+j+j+j+j+0+j+j/+j+j+j+j+j+j+0 ←
-    [5] +0+j+0+0+0+0+j/+j+0+j+j+j+j+0/+j+j+j+j+j+j+j ←
-    [6] +0+j+0+0+0+0+j/+j+0+j+j+j+j+j/+j+j+j+j+j+j+0 ←
+PARENT 3 [fiber size 6]
+  Key: +0+0+0+0+j+0/+j+j+j+j+0+j/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+0+0+j+0/+j+j+j+j+j+0+j/+j+j+j+j+j+j+j
+    [2] +0+0+0+0+j+0+0/+j+j+j+j+0+j+j/+j+j+j+j+j+j+j
+    [3] +0+0+0+0+j+0+j/+j+j+j+j+0+j+0/+j+j+j+j+j+j+j
+    [4] +0+0+0+0+j+0+j/+j+j+j+j+0+j+j/+j+j+j+j+j+j+0
+    [5] +0+j+0+0+0+0+j/+j+0+j+j+j+j+0/+j+j+j+j+j+j+j
+    [6] +0+j+0+0+0+0+j/+j+0+j+j+j+j+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 4 [fibra de tamaño 6]
-  Clave: +0+0+0+0+j+j/+j+j+j+j+0+0/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+0+0+j+j/+j+j+j+j+j+0+0/+j+j+j+j+j+j+j ←
-    [2] +0+0+0+0+j+j+0/+j+j+j+j+0+0+j/+j+j+j+j+j+j+j ←
-    [3] +0+0+0+0+j+j+j/+j+j+j+j+0+0+0/+j+j+j+j+j+j+j ←
-    [4] +0+0+0+0+j+j+j/+j+j+j+j+0+0+j/+j+j+j+j+j+j+0 ←
-    [5] +0+0+j+j+j+j+0/+j+j+0+0+0+0+j/+j+j+j+j+j+j+j ←
-    [6] +0+0+j+j+j+j+j/+j+j+0+0+0+0+j/+j+j+j+j+j+j+0 ←
+PARENT 4 [fiber size 6]
+  Key: +0+0+0+0+j+j/+j+j+j+j+0+0/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+0+0+j+j/+j+j+j+j+j+0+0/+j+j+j+j+j+j+j
+    [2] +0+0+0+0+j+j+0/+j+j+j+j+0+0+j/+j+j+j+j+j+j+j
+    [3] +0+0+0+0+j+j+j/+j+j+j+j+0+0+0/+j+j+j+j+j+j+j
+    [4] +0+0+0+0+j+j+j/+j+j+j+j+0+0+j/+j+j+j+j+j+j+0
+    [5] +0+0+j+j+j+j+0/+j+j+0+0+0+0+j/+j+j+j+j+j+j+j
+    [6] +0+0+j+j+j+j+j/+j+j+0+0+0+0+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 5 [fibra de tamaño 6]
-  Clave: +0+0+0+0+j+j/+j+j+j+j+0+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+0+0+0+j+j/+j+j+j+j+j+0+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+0+0+j+j+0/+j+j+j+j+0+j+j/+j+j+j+j+j+0+j ←
-    [3] +0+0+0+0+j+j+j/+j+j+j+j+0+j+0/+j+j+j+j+j+0+j ←
-    [4] +0+0+0+0+j+j+j/+j+j+j+j+0+j+j/+j+j+j+j+j+0+0 ←
-    [5] +0+j+j+j+j+0+j/+j+0+0+0+0+j+j/+j+j+j+j+j+j+0 ←
-    [6] +0+j+j+j+j+j+0/+j+0+0+0+0+j+j/+j+j+j+j+j+0+j ←
+PARENT 5 [fiber size 6]
+  Key: +0+0+0+0+j+j/+j+j+j+j+0+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+0+0+0+j+j/+j+j+j+j+j+0+j/+j+j+j+j+j+j+0
+    [2] +0+0+0+0+j+j+0/+j+j+j+j+0+j+j/+j+j+j+j+j+0+j
+    [3] +0+0+0+0+j+j+j/+j+j+j+j+0+j+0/+j+j+j+j+j+0+j
+    [4] +0+0+0+0+j+j+j/+j+j+j+j+0+j+j/+j+j+j+j+j+0+0
+    [5] +0+j+j+j+j+0+j/+j+0+0+0+0+j+j/+j+j+j+j+j+j+0
+    [6] +0+j+j+j+j+j+0/+j+0+0+0+0+j+j/+j+j+j+j+j+0+j
 
 --------------------------------------------------------------------------------
-PADRE 6 [fibra de tamaño 6]
-  Clave: +0+0+0+j+0+0/+j+j+j+0+j+j/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+0+j+0+0/+j+j+j+j+0+j+j/+j+j+j+j+j+j+j ←
+PARENT 6 [fiber size 6]
+  Key: +0+0+0+j+0+0/+j+j+j+0+j+j/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+0+j+0+0/+j+j+j+j+0+j+j/+j+j+j+j+j+j+j
     [2] +0+0+0+j+0+0+0/+j+j+j+0+j+j+j/+j+j+j+j+j+j+j
-    [3] +0+0+0+j+0+0+j/+j+j+j+0+j+j+0/+j+j+j+j+j+j+j ←
-    [4] +0+0+0+j+0+0+j/+j+j+j+0+j+j+j/+j+j+j+j+j+j+0 ←
-    [5] +0+0+j+0+0+0+j/+j+j+0+j+j+j+0/+j+j+j+j+j+j+j ←
-    [6] +0+0+j+0+0+0+j/+j+j+0+j+j+j+j/+j+j+j+j+j+j+0 ←
+    [3] +0+0+0+j+0+0+j/+j+j+j+0+j+j+0/+j+j+j+j+j+j+j
+    [4] +0+0+0+j+0+0+j/+j+j+j+0+j+j+j/+j+j+j+j+j+j+0
+    [5] +0+0+j+0+0+0+j/+j+j+0+j+j+j+0/+j+j+j+j+j+j+j
+    [6] +0+0+j+0+0+0+j/+j+j+0+j+j+j+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 7 [fibra de tamaño 6]
-  Clave: +0+0+0+j+0+j/+j+j+j+0+j+0/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+0+j+0+j/+j+j+j+j+0+j+0/+j+j+j+j+j+j+j ←
-    [2] +0+0+0+j+0+j+0/+j+j+j+0+j+0+j/+j+j+j+j+j+j+j ←
-    [3] +0+0+0+j+0+j+j/+j+j+j+0+j+0+0/+j+j+j+j+j+j+j ←
-    [4] +0+0+0+j+0+j+j/+j+j+j+0+j+0+j/+j+j+j+j+j+j+0 ←
-    [5] +0+j+0+j+j+j+0/+j+0+j+0+0+0+j/+j+j+j+j+j+j+j ←
-    [6] +0+j+0+j+j+j+j/+j+0+j+0+0+0+j/+j+j+j+j+j+j+0 ←
+PARENT 7 [fiber size 6]
+  Key: +0+0+0+j+0+j/+j+j+j+0+j+0/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+0+j+0+j/+j+j+j+j+0+j+0/+j+j+j+j+j+j+j
+    [2] +0+0+0+j+0+j+0/+j+j+j+0+j+0+j/+j+j+j+j+j+j+j
+    [3] +0+0+0+j+0+j+j/+j+j+j+0+j+0+0/+j+j+j+j+j+j+j
+    [4] +0+0+0+j+0+j+j/+j+j+j+0+j+0+j/+j+j+j+j+j+j+0
+    [5] +0+j+0+j+j+j+0/+j+0+j+0+0+0+j/+j+j+j+j+j+j+j
+    [6] +0+j+0+j+j+j+j/+j+0+j+0+0+0+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 8 [fibra de tamaño 6]
-  Clave: +0+0+0+j+0+j/+j+j+j+0+j+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+0+0+j+0+j/+j+j+j+j+0+j+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+0+j+0+j+0/+j+j+j+0+j+j+j/+j+j+j+j+j+0+j ←
-    [3] +0+0+0+j+0+j+j/+j+j+j+0+j+j+0/+j+j+j+j+j+0+j ←
-    [4] +0+0+0+j+0+j+j/+j+j+j+0+j+j+j/+j+j+j+j+j+0+0 ←
-    [5] +0+j+j+j+0+j+j/+j+0+0+0+j+0+j/+j+j+j+j+j+j+0 ←
-    [6] +0+j+j+j+j+j+0/+j+0+0+0+j+0+j/+j+j+j+j+0+j+j ←
+PARENT 8 [fiber size 6]
+  Key: +0+0+0+j+0+j/+j+j+j+0+j+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+0+0+j+0+j/+j+j+j+j+0+j+j/+j+j+j+j+j+j+0
+    [2] +0+0+0+j+0+j+0/+j+j+j+0+j+j+j/+j+j+j+j+j+0+j
+    [3] +0+0+0+j+0+j+j/+j+j+j+0+j+j+0/+j+j+j+j+j+0+j
+    [4] +0+0+0+j+0+j+j/+j+j+j+0+j+j+j/+j+j+j+j+j+0+0
+    [5] +0+j+j+j+0+j+j/+j+0+0+0+j+0+j/+j+j+j+j+j+j+0
+    [6] +0+j+j+j+j+j+0/+j+0+0+0+j+0+j/+j+j+j+j+0+j+j
 
 --------------------------------------------------------------------------------
-PADRE 9 [fibra de tamaño 6]
-  Clave: +0+0+0+j+j+0/+j+j+j+0+0+j/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+0+j+j+0/+j+j+j+j+0+0+j/+j+j+j+j+j+j+j ←
-    [2] +0+0+0+j+j+0+0/+j+j+j+0+0+j+j/+j+j+j+j+j+j+j ←
-    [3] +0+0+0+j+j+0+j/+j+j+j+0+0+j+0/+j+j+j+j+j+j+j ←
-    [4] +0+0+0+j+j+0+j/+j+j+j+0+0+j+j/+j+j+j+j+j+j+0 ←
-    [5] +0+j+j+0+0+0+j/+j+0+0+j+j+j+0/+j+j+j+j+j+j+j ←
-    [6] +0+j+j+0+0+0+j/+j+0+0+j+j+j+j/+j+j+j+j+j+j+0 ←
+PARENT 9 [fiber size 6]
+  Key: +0+0+0+j+j+0/+j+j+j+0+0+j/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+0+j+j+0/+j+j+j+j+0+0+j/+j+j+j+j+j+j+j
+    [2] +0+0+0+j+j+0+0/+j+j+j+0+0+j+j/+j+j+j+j+j+j+j
+    [3] +0+0+0+j+j+0+j/+j+j+j+0+0+j+0/+j+j+j+j+j+j+j
+    [4] +0+0+0+j+j+0+j/+j+j+j+0+0+j+j/+j+j+j+j+j+j+0
+    [5] +0+j+j+0+0+0+j/+j+0+0+j+j+j+0/+j+j+j+j+j+j+j
+    [6] +0+j+j+0+0+0+j/+j+0+0+j+j+j+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 10 [fibra de tamaño 6]
-  Clave: +0+0+0+j+j+0/+j+j+j+0+j+j/+j+j+j+j+0+j
-  Hijos:
-    [1] +0+0+0+0+j+j+0/+j+j+j+j+0+j+j/+j+j+j+j+j+0+j ←
-    [2] +0+0+0+j+j+0+0/+j+j+j+0+j+j+j/+j+j+j+j+0+j+j ←
-    [3] +0+0+0+j+j+0+j/+j+j+j+0+j+j+0/+j+j+j+j+0+j+j ←
-    [4] +0+0+0+j+j+0+j/+j+j+j+0+j+j+j/+j+j+j+j+0+j+0 ←
-    [5] +0+j+j+0+0+0+j/+j+0+j+j+j+j+0/+j+j+0+j+j+j+j ←
-    [6] +0+j+j+0+0+0+j/+j+0+j+j+j+j+j/+j+j+0+j+j+j+0 ←
+PARENT 10 [fiber size 6]
+  Key: +0+0+0+j+j+0/+j+j+j+0+j+j/+j+j+j+j+0+j
+  Children:
+    [1] +0+0+0+0+j+j+0/+j+j+j+j+0+j+j/+j+j+j+j+j+0+j
+    [2] +0+0+0+j+j+0+0/+j+j+j+0+j+j+j/+j+j+j+j+0+j+j
+    [3] +0+0+0+j+j+0+j/+j+j+j+0+j+j+0/+j+j+j+j+0+j+j
+    [4] +0+0+0+j+j+0+j/+j+j+j+0+j+j+j/+j+j+j+j+0+j+0
+    [5] +0+j+j+0+0+0+j/+j+0+j+j+j+j+0/+j+j+0+j+j+j+j
+    [6] +0+j+j+0+0+0+j/+j+0+j+j+j+j+j/+j+j+0+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 11 [fibra de tamaño 3]
-  Clave: +0+0+0+j+j+j/+j+j+j+0+0+0/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+0+j+j+j/+j+j+j+j+0+0+0/+j+j+j+j+j+j+j ←
-    [2] +0+0+0+j+j+j+0/+j+j+j+0+0+0+j/+j+j+j+j+j+j+j ←
-    [3] +0+0+0+j+j+j+j/+j+j+j+0+0+0+j/+j+j+j+j+j+j+0 ←
+PARENT 11 [fiber size 3]
+  Key: +0+0+0+j+j+j/+j+j+j+0+0+0/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+0+j+j+j/+j+j+j+j+0+0+0/+j+j+j+j+j+j+j
+    [2] +0+0+0+j+j+j+0/+j+j+j+0+0+0+j/+j+j+j+j+j+j+j
+    [3] +0+0+0+j+j+j+j/+j+j+j+0+0+0+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 12 [fibra de tamaño 6]
-  Clave: +0+0+0+j+j+j/+j+j+j+0+0+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+0+0+j+j+j/+j+j+j+j+0+0+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+0+j+j+j+0/+j+j+j+0+0+j+j/+j+j+j+j+j+0+j ←
-    [3] +0+0+0+j+j+j+j/+j+j+j+0+0+j+0/+j+j+j+j+j+0+j ←
-    [4] +0+0+0+j+j+j+j/+j+j+j+0+0+j+j/+j+j+j+j+j+0+0 ←
-    [5] +0+j+j+j+0+0+j/+j+0+0+0+j+j+j/+j+j+j+j+j+j+0 ←
-    [6] +0+j+j+j+j+j+0/+j+0+0+0+j+j+j/+j+j+j+j+0+0+j ←
+PARENT 12 [fiber size 6]
+  Key: +0+0+0+j+j+j/+j+j+j+0+0+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+0+0+j+j+j/+j+j+j+j+0+0+j/+j+j+j+j+j+j+0
+    [2] +0+0+0+j+j+j+0/+j+j+j+0+0+j+j/+j+j+j+j+j+0+j
+    [3] +0+0+0+j+j+j+j/+j+j+j+0+0+j+0/+j+j+j+j+j+0+j
+    [4] +0+0+0+j+j+j+j/+j+j+j+0+0+j+j/+j+j+j+j+j+0+0
+    [5] +0+j+j+j+0+0+j/+j+0+0+0+j+j+j/+j+j+j+j+j+j+0
+    [6] +0+j+j+j+j+j+0/+j+0+0+0+j+j+j/+j+j+j+j+0+0+j
 
 --------------------------------------------------------------------------------
-PADRE 13 [fibra de tamaño 6]
-  Clave: +0+0+0+j+j+j/+j+j+j+0+j+0/+j+j+j+j+0+j
-  Hijos:
-    [1] +0+0+0+0+j+j+j/+j+j+j+j+0+j+0/+j+j+j+j+j+0+j ←
-    [2] +0+0+0+j+j+j+0/+j+j+j+0+j+0+j/+j+j+j+j+0+j+j ←
-    [3] +0+0+0+j+j+j+j/+j+j+j+0+j+0+0/+j+j+j+j+0+j+j ←
-    [4] +0+0+0+j+j+j+j/+j+j+j+0+j+0+j/+j+j+j+j+0+j+0 ←
-    [5] +0+j+0+j+j+j+0/+j+0+j+j+j+j+j/+j+j+j+0+0+0+j ←
-    [6] +0+j+0+j+j+j+j/+j+0+j+j+j+j+0/+j+j+j+0+0+0+j ←
+PARENT 13 [fiber size 6]
+  Key: +0+0+0+j+j+j/+j+j+j+0+j+0/+j+j+j+j+0+j
+  Children:
+    [1] +0+0+0+0+j+j+j/+j+j+j+j+0+j+0/+j+j+j+j+j+0+j
+    [2] +0+0+0+j+j+j+0/+j+j+j+0+j+0+j/+j+j+j+j+0+j+j
+    [3] +0+0+0+j+j+j+j/+j+j+j+0+j+0+0/+j+j+j+j+0+j+j
+    [4] +0+0+0+j+j+j+j/+j+j+j+0+j+0+j/+j+j+j+j+0+j+0
+    [5] +0+j+0+j+j+j+0/+j+0+j+j+j+j+j/+j+j+j+0+0+0+j
+    [6] +0+j+0+j+j+j+j/+j+0+j+j+j+j+0/+j+j+j+0+0+0+j
 
 --------------------------------------------------------------------------------
-PADRE 14 [fibra de tamaño 6]
-  Clave: +0+0+0+j+j+j/+j+j+j+0+j+j/+j+j+j+j+0+0
-  Hijos:
-    [1] +0+0+0+0+j+j+j/+j+j+j+j+0+j+j/+j+j+j+j+j+0+0 ←
-    [2] +0+0+0+j+j+j+0/+j+j+j+0+j+j+j/+j+j+j+j+0+0+j ←
-    [3] +0+0+0+j+j+j+j/+j+j+j+0+j+j+0/+j+j+j+j+0+0+j ←
+PARENT 14 [fiber size 6]
+  Key: +0+0+0+j+j+j/+j+j+j+0+j+j/+j+j+j+j+0+0
+  Children:
+    [1] +0+0+0+0+j+j+j/+j+j+j+j+0+j+j/+j+j+j+j+j+0+0
+    [2] +0+0+0+j+j+j+0/+j+j+j+0+j+j+j/+j+j+j+j+0+0+j
+    [3] +0+0+0+j+j+j+j/+j+j+j+0+j+j+0/+j+j+j+j+0+0+j
     [4] +0+0+0+j+j+j+j/+j+j+j+0+j+j+j/+j+j+j+j+0+0+0
-    [5] +0+0+j+j+j+j+0/+j+j+0+j+j+j+j/+j+j+j+0+0+0+j ←
-    [6] +0+0+j+j+j+j+j/+j+j+0+j+j+j+0/+j+j+j+0+0+0+j ←
+    [5] +0+0+j+j+j+j+0/+j+j+0+j+j+j+j/+j+j+j+0+0+0+j
+    [6] +0+0+j+j+j+j+j/+j+j+0+j+j+j+0/+j+j+j+0+0+0+j
 
 --------------------------------------------------------------------------------
-PADRE 15 [fibra de tamaño 6]
-  Clave: +0+0+j+0+0+j/+j+j+0+j+j+0/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+j+0+0+j/+j+j+j+0+j+j+0/+j+j+j+j+j+j+j ←
-    [2] +0+0+j+0+0+j+0/+j+j+0+j+j+0+j/+j+j+j+j+j+j+j ←
-    [3] +0+0+j+0+0+j+j/+j+j+0+j+j+0+0/+j+j+j+j+j+j+j ←
-    [4] +0+0+j+0+0+j+j/+j+j+0+j+j+0+j/+j+j+j+j+j+j+0 ←
+PARENT 15 [fiber size 6]
+  Key: +0+0+j+0+0+j/+j+j+0+j+j+0/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+j+0+0+j/+j+j+j+0+j+j+0/+j+j+j+j+j+j+j
+    [2] +0+0+j+0+0+j+0/+j+j+0+j+j+0+j/+j+j+j+j+j+j+j
+    [3] +0+0+j+0+0+j+j/+j+j+0+j+j+0+0/+j+j+j+j+j+j+j
+    [4] +0+0+j+0+0+j+j/+j+j+0+j+j+0+j/+j+j+j+j+j+j+0
     [5] +0+j+j+0+j+j+0/+j+0+0+j+0+0+j/+j+j+j+j+j+j+j
-    [6] +0+j+j+0+j+j+j/+j+0+0+j+0+0+j/+j+j+j+j+j+j+0 ←
+    [6] +0+j+j+0+j+j+j/+j+0+0+j+0+0+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 16 [fibra de tamaño 6]
-  Clave: +0+0+j+0+0+j/+j+j+0+j+j+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+0+j+0+0+j/+j+j+j+0+j+j+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+j+0+0+j+0/+j+j+0+j+j+j+j/+j+j+j+j+j+0+j ←
-    [3] +0+0+j+0+0+j+j/+j+j+0+j+j+j+0/+j+j+j+j+j+0+j ←
-    [4] +0+0+j+0+0+j+j/+j+j+0+j+j+j+j/+j+j+j+j+j+0+0 ←
-    [5] +0+j+j+0+j+j+j/+j+0+0+j+0+0+j/+j+j+j+j+j+j+0 ←
+PARENT 16 [fiber size 6]
+  Key: +0+0+j+0+0+j/+j+j+0+j+j+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+0+j+0+0+j/+j+j+j+0+j+j+j/+j+j+j+j+j+j+0
+    [2] +0+0+j+0+0+j+0/+j+j+0+j+j+j+j/+j+j+j+j+j+0+j
+    [3] +0+0+j+0+0+j+j/+j+j+0+j+j+j+0/+j+j+j+j+j+0+j
+    [4] +0+0+j+0+0+j+j/+j+j+0+j+j+j+j/+j+j+j+j+j+0+0
+    [5] +0+j+j+0+j+j+j/+j+0+0+j+0+0+j/+j+j+j+j+j+j+0
     [6] +0+j+j+j+j+j+0/+j+0+0+j+0+0+j/+j+j+j+0+j+j+j
 
 --------------------------------------------------------------------------------
-PADRE 17 [fibra de tamaño 6]
-  Clave: +0+0+j+0+j+0/+j+j+0+j+0+j/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+j+0+j+0/+j+j+j+0+j+0+j/+j+j+j+j+j+j+j ←
+PARENT 17 [fiber size 6]
+  Key: +0+0+j+0+j+0/+j+j+0+j+0+j/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+j+0+j+0/+j+j+j+0+j+0+j/+j+j+j+j+j+j+j
     [2] +0+0+j+0+j+0+0/+j+j+0+j+0+j+j/+j+j+j+j+j+j+j
-    [3] +0+0+j+0+j+0+j/+j+j+0+j+0+j+0/+j+j+j+j+j+j+j ←
-    [4] +0+0+j+0+j+0+j/+j+j+0+j+0+j+j/+j+j+j+j+j+j+0 ←
-    [5] +0+j+0+j+0+0+j/+j+0+j+0+j+j+0/+j+j+j+j+j+j+j ←
-    [6] +0+j+0+j+0+0+j/+j+0+j+0+j+j+j/+j+j+j+j+j+j+0 ←
+    [3] +0+0+j+0+j+0+j/+j+j+0+j+0+j+0/+j+j+j+j+j+j+j
+    [4] +0+0+j+0+j+0+j/+j+j+0+j+0+j+j/+j+j+j+j+j+j+0
+    [5] +0+j+0+j+0+0+j/+j+0+j+0+j+j+0/+j+j+j+j+j+j+j
+    [6] +0+j+0+j+0+0+j/+j+0+j+0+j+j+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 18 [fibra de tamaño 6]
-  Clave: +0+0+j+0+j+0/+j+j+0+j+j+j/+j+j+j+j+0+j
-  Hijos:
-    [1] +0+0+0+j+0+j+0/+j+j+j+0+j+j+j/+j+j+j+j+j+0+j ←
+PARENT 18 [fiber size 6]
+  Key: +0+0+j+0+j+0/+j+j+0+j+j+j/+j+j+j+j+0+j
+  Children:
+    [1] +0+0+0+j+0+j+0/+j+j+j+0+j+j+j/+j+j+j+j+j+0+j
     [2] +0+0+j+0+j+0+0/+j+j+0+j+j+j+j/+j+j+j+j+0+j+j
-    [3] +0+0+j+0+j+0+j/+j+j+0+j+j+j+0/+j+j+j+j+0+j+j ←
-    [4] +0+0+j+0+j+0+j/+j+j+0+j+j+j+j/+j+j+j+j+0+j+0 ←
-    [5] +0+j+0+j+0+0+j/+j+0+j+j+j+j+0/+j+j+j+0+j+j+j ←
-    [6] +0+j+0+j+0+0+j/+j+0+j+j+j+j+j/+j+j+j+0+j+j+0 ←
+    [3] +0+0+j+0+j+0+j/+j+j+0+j+j+j+0/+j+j+j+j+0+j+j
+    [4] +0+0+j+0+j+0+j/+j+j+0+j+j+j+j/+j+j+j+j+0+j+0
+    [5] +0+j+0+j+0+0+j/+j+0+j+j+j+j+0/+j+j+j+0+j+j+j
+    [6] +0+j+0+j+0+0+j/+j+0+j+j+j+j+j/+j+j+j+0+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 19 [fibra de tamaño 3]
-  Clave: +0+0+j+0+j+j/+j+j+0+j+0+0/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+j+0+j+j/+j+j+j+0+j+0+0/+j+j+j+j+j+j+j ←
-    [2] +0+0+j+0+j+j+0/+j+j+0+j+0+0+j/+j+j+j+j+j+j+j ←
-    [3] +0+0+j+0+j+j+j/+j+j+0+j+0+0+j/+j+j+j+j+j+j+0 ←
+PARENT 19 [fiber size 3]
+  Key: +0+0+j+0+j+j/+j+j+0+j+0+0/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+j+0+j+j/+j+j+j+0+j+0+0/+j+j+j+j+j+j+j
+    [2] +0+0+j+0+j+j+0/+j+j+0+j+0+0+j/+j+j+j+j+j+j+j
+    [3] +0+0+j+0+j+j+j/+j+j+0+j+0+0+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 20 [fibra de tamaño 6]
-  Clave: +0+0+j+0+j+j/+j+j+0+j+0+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+0+j+0+j+j/+j+j+j+0+j+0+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+j+0+j+j+0/+j+j+0+j+0+j+j/+j+j+j+j+j+0+j ←
-    [3] +0+0+j+0+j+j+j/+j+j+0+j+0+j+0/+j+j+j+j+j+0+j ←
-    [4] +0+0+j+0+j+j+j/+j+j+0+j+0+j+j/+j+j+j+j+j+0+0 ←
-    [5] +0+j+j+0+j+0+j/+j+0+0+j+0+j+j/+j+j+j+j+j+j+0 ←
-    [6] +0+j+j+j+j+j+0/+j+0+0+j+0+j+j/+j+j+j+0+j+0+j ←
+PARENT 20 [fiber size 6]
+  Key: +0+0+j+0+j+j/+j+j+0+j+0+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+0+j+0+j+j/+j+j+j+0+j+0+j/+j+j+j+j+j+j+0
+    [2] +0+0+j+0+j+j+0/+j+j+0+j+0+j+j/+j+j+j+j+j+0+j
+    [3] +0+0+j+0+j+j+j/+j+j+0+j+0+j+0/+j+j+j+j+j+0+j
+    [4] +0+0+j+0+j+j+j/+j+j+0+j+0+j+j/+j+j+j+j+j+0+0
+    [5] +0+j+j+0+j+0+j/+j+0+0+j+0+j+j/+j+j+j+j+j+j+0
+    [6] +0+j+j+j+j+j+0/+j+0+0+j+0+j+j/+j+j+j+0+j+0+j
 
 --------------------------------------------------------------------------------
-PADRE 21 [fibra de tamaño 6]
-  Clave: +0+0+j+0+j+j/+j+j+0+j+j+0/+j+j+j+j+0+j
-  Hijos:
-    [1] +0+0+0+j+0+j+j/+j+j+j+0+j+j+0/+j+j+j+j+j+0+j ←
-    [2] +0+0+j+0+j+j+0/+j+j+0+j+j+0+j/+j+j+j+j+0+j+j ←
-    [3] +0+0+j+0+j+j+j/+j+j+0+j+j+0+0/+j+j+j+j+0+j+j ←
-    [4] +0+0+j+0+j+j+j/+j+j+0+j+j+0+j/+j+j+j+j+0+j+0 ←
-    [5] +0+j+j+0+j+j+0/+j+0+0+j+0+j+j/+j+j+j+j+j+0+j ←
-    [6] +0+j+j+0+j+j+j/+j+0+j+j+j+j+0/+j+j+0+j+0+0+j ←
+PARENT 21 [fiber size 6]
+  Key: +0+0+j+0+j+j/+j+j+0+j+j+0/+j+j+j+j+0+j
+  Children:
+    [1] +0+0+0+j+0+j+j/+j+j+j+0+j+j+0/+j+j+j+j+j+0+j
+    [2] +0+0+j+0+j+j+0/+j+j+0+j+j+0+j/+j+j+j+j+0+j+j
+    [3] +0+0+j+0+j+j+j/+j+j+0+j+j+0+0/+j+j+j+j+0+j+j
+    [4] +0+0+j+0+j+j+j/+j+j+0+j+j+0+j/+j+j+j+j+0+j+0
+    [5] +0+j+j+0+j+j+0/+j+0+0+j+0+j+j/+j+j+j+j+j+0+j
+    [6] +0+j+j+0+j+j+j/+j+0+j+j+j+j+0/+j+j+0+j+0+0+j
 
 --------------------------------------------------------------------------------
-PADRE 22 [fibra de tamaño 6]
-  Clave: +0+0+j+0+j+j/+j+j+0+j+j+j/+j+j+j+j+0+0
-  Hijos:
-    [1] +0+0+0+j+0+j+j/+j+j+j+0+j+j+j/+j+j+j+j+j+0+0 ←
-    [2] +0+0+0+j+j+j+j/+j+j+j+0+j+0+0/+j+j+j+j+0+j+j ←
-    [3] +0+0+j+0+j+j+0/+j+j+0+j+j+j+j/+j+j+j+j+0+0+j ←
-    [4] +0+0+j+0+j+j+j/+j+j+0+j+j+j+0/+j+j+j+j+0+0+j ←
-    [5] +0+0+j+j+j+j+0/+j+j+0+j+0+0+j/+j+j+j+0+j+j+j ←
-    [6] +0+0+j+j+j+j+j/+j+j+0+j+0+0+j/+j+j+j+0+j+j+0 ←
+PARENT 22 [fiber size 6]
+  Key: +0+0+j+0+j+j/+j+j+0+j+j+j/+j+j+j+j+0+0
+  Children:
+    [1] +0+0+0+j+0+j+j/+j+j+j+0+j+j+j/+j+j+j+j+j+0+0
+    [2] +0+0+0+j+j+j+j/+j+j+j+0+j+0+0/+j+j+j+j+0+j+j
+    [3] +0+0+j+0+j+j+0/+j+j+0+j+j+j+j/+j+j+j+j+0+0+j
+    [4] +0+0+j+0+j+j+j/+j+j+0+j+j+j+0/+j+j+j+j+0+0+j
+    [5] +0+0+j+j+j+j+0/+j+j+0+j+0+0+j/+j+j+j+0+j+j+j
+    [6] +0+0+j+j+j+j+j/+j+j+0+j+0+0+j/+j+j+j+0+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 23 [fibra de tamaño 3]
-  Clave: +0+0+j+j+0+0/+j+j+0+0+j+j/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+j+j+0+0/+j+j+j+0+0+j+j/+j+j+j+j+j+j+j ←
-    [2] +0+0+j+j+0+0+j/+j+j+0+0+j+j+0/+j+j+j+j+j+j+j ←
-    [3] +0+0+j+j+0+0+j/+j+j+0+0+j+j+j/+j+j+j+j+j+j+0 ←
+PARENT 23 [fiber size 3]
+  Key: +0+0+j+j+0+0/+j+j+0+0+j+j/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+j+j+0+0/+j+j+j+0+0+j+j/+j+j+j+j+j+j+j
+    [2] +0+0+j+j+0+0+j/+j+j+0+0+j+j+0/+j+j+j+j+j+j+j
+    [3] +0+0+j+j+0+0+j/+j+j+0+0+j+j+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 24 [fibra de tamaño 3]
-  Clave: +0+0+j+j+0+0/+j+j+0+j+j+j/+j+j+j+0+j+j
-  Hijos:
-    [1] +0+0+0+j+j+0+0/+j+j+j+0+j+j+j/+j+j+j+j+0+j+j ←
-    [2] +0+0+j+j+0+0+j/+j+j+0+j+j+j+0/+j+j+j+0+j+j+j ←
-    [3] +0+0+j+j+0+0+j/+j+j+0+j+j+j+j/+j+j+j+0+j+j+0 ←
+PARENT 24 [fiber size 3]
+  Key: +0+0+j+j+0+0/+j+j+0+j+j+j/+j+j+j+0+j+j
+  Children:
+    [1] +0+0+0+j+j+0+0/+j+j+j+0+j+j+j/+j+j+j+j+0+j+j
+    [2] +0+0+j+j+0+0+j/+j+j+0+j+j+j+0/+j+j+j+0+j+j+j
+    [3] +0+0+j+j+0+0+j/+j+j+0+j+j+j+j/+j+j+j+0+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 25 [fibra de tamaño 6]
-  Clave: +0+0+j+j+0+j/+j+j+0+0+j+0/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+j+j+0+j/+j+j+j+0+0+j+0/+j+j+j+j+j+j+j ←
-    [2] +0+0+j+0+0+j+j/+j+j+0+j+j+0+0/+j+j+j+j+j+j+j ←
-    [3] +0+0+j+j+0+j+0/+j+j+0+0+j+0+j/+j+j+j+j+j+j+j ←
-    [4] +0+0+j+j+0+j+j/+j+j+0+0+j+0+j/+j+j+j+j+j+j+0 ←
-    [5] +0+j+0+0+j+j+0/+j+0+j+j+0+0+j/+j+j+j+j+j+j+j ←
-    [6] +0+j+0+0+j+j+j/+j+0+j+j+0+0+j/+j+j+j+j+j+j+0 ←
+PARENT 25 [fiber size 6]
+  Key: +0+0+j+j+0+j/+j+j+0+0+j+0/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+j+j+0+j/+j+j+j+0+0+j+0/+j+j+j+j+j+j+j
+    [2] +0+0+j+0+0+j+j/+j+j+0+j+j+0+0/+j+j+j+j+j+j+j
+    [3] +0+0+j+j+0+j+0/+j+j+0+0+j+0+j/+j+j+j+j+j+j+j
+    [4] +0+0+j+j+0+j+j/+j+j+0+0+j+0+j/+j+j+j+j+j+j+0
+    [5] +0+j+0+0+j+j+0/+j+0+j+j+0+0+j/+j+j+j+j+j+j+j
+    [6] +0+j+0+0+j+j+j/+j+0+j+j+0+0+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 26 [fibra de tamaño 6]
-  Clave: +0+0+j+j+0+j/+j+j+0+0+j+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+0+j+j+0+j/+j+j+j+0+0+j+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+j+j+0+j+0/+j+j+0+0+j+j+j/+j+j+j+j+j+0+j ←
-    [3] +0+0+j+j+0+j+j/+j+j+0+0+j+j+0/+j+j+j+j+j+0+j ←
-    [4] +0+0+j+j+0+j+j/+j+j+0+0+j+j+j/+j+j+j+j+j+0+0 ←
-    [5] +0+j+j+0+0+j+j/+j+0+0+j+j+0+j/+j+j+j+j+j+j+0 ←
-    [6] +0+j+j+j+j+j+0/+j+0+0+j+j+0+j/+j+j+j+0+0+j+j ←
+PARENT 26 [fiber size 6]
+  Key: +0+0+j+j+0+j/+j+j+0+0+j+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+0+j+j+0+j/+j+j+j+0+0+j+j/+j+j+j+j+j+j+0
+    [2] +0+0+j+j+0+j+0/+j+j+0+0+j+j+j/+j+j+j+j+j+0+j
+    [3] +0+0+j+j+0+j+j/+j+j+0+0+j+j+0/+j+j+j+j+j+0+j
+    [4] +0+0+j+j+0+j+j/+j+j+0+0+j+j+j/+j+j+j+j+j+0+0
+    [5] +0+j+j+0+0+j+j/+j+0+0+j+j+0+j/+j+j+j+j+j+j+0
+    [6] +0+j+j+j+j+j+0/+j+0+0+j+j+0+j/+j+j+j+0+0+j+j
 
 --------------------------------------------------------------------------------
-PADRE 27 [fibra de tamaño 6]
-  Clave: +0+0+j+j+0+j/+j+j+0+j+j+0/+j+j+j+0+j+j
-  Hijos:
-    [1] +0+0+0+j+j+0+j/+j+j+j+0+j+j+0/+j+j+j+j+0+j+j ←
-    [2] +0+0+j+j+0+j+0/+j+j+0+j+j+0+j/+j+j+j+0+j+j+j ←
+PARENT 27 [fiber size 6]
+  Key: +0+0+j+j+0+j/+j+j+0+j+j+0/+j+j+j+0+j+j
+  Children:
+    [1] +0+0+0+j+j+0+j/+j+j+j+0+j+j+0/+j+j+j+j+0+j+j
+    [2] +0+0+j+j+0+j+0/+j+j+0+j+j+0+j/+j+j+j+0+j+j+j
     [3] +0+0+j+j+0+j+j/+j+j+0+j+j+0+0/+j+j+j+0+j+j+j
-    [4] +0+0+j+j+0+j+j/+j+j+0+j+j+0+j/+j+j+j+0+j+j+0 ←
-    [5] +0+j+j+0+j+j+0/+j+0+0+j+j+0+j/+j+j+j+j+0+j+j ←
-    [6] +0+j+j+0+j+j+j/+j+0+j+j+0+0+j/+j+j+0+j+j+j+0 ←
+    [4] +0+0+j+j+0+j+j/+j+j+0+j+j+0+j/+j+j+j+0+j+j+0
+    [5] +0+j+j+0+j+j+0/+j+0+0+j+j+0+j/+j+j+j+j+0+j+j
+    [6] +0+j+j+0+j+j+j/+j+0+j+j+0+0+j/+j+j+0+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 28 [fibra de tamaño 6]
-  Clave: +0+0+j+j+0+j/+j+j+0+j+j+j/+j+j+j+0+j+0
-  Hijos:
-    [1] +0+0+0+j+j+0+j/+j+j+j+0+j+j+j/+j+j+j+j+0+j+0 ←
-    [2] +0+0+j+0+j+j+j/+j+j+0+j+j+0+0/+j+j+j+j+0+j+j ←
-    [3] +0+0+j+j+0+j+0/+j+j+0+j+j+j+j/+j+j+j+0+j+0+j ←
-    [4] +0+0+j+j+0+j+j/+j+j+0+j+j+j+0/+j+j+j+0+j+0+j ←
-    [5] +0+j+0+j+j+j+0/+j+0+j+j+0+0+j/+j+j+j+0+j+j+j ←
-    [6] +0+j+0+j+j+j+j/+j+0+j+j+0+0+j/+j+j+j+0+j+j+0 ←
+PARENT 28 [fiber size 6]
+  Key: +0+0+j+j+0+j/+j+j+0+j+j+j/+j+j+j+0+j+0
+  Children:
+    [1] +0+0+0+j+j+0+j/+j+j+j+0+j+j+j/+j+j+j+j+0+j+0
+    [2] +0+0+j+0+j+j+j/+j+j+0+j+j+0+0/+j+j+j+j+0+j+j
+    [3] +0+0+j+j+0+j+0/+j+j+0+j+j+j+j/+j+j+j+0+j+0+j
+    [4] +0+0+j+j+0+j+j/+j+j+0+j+j+j+0/+j+j+j+0+j+0+j
+    [5] +0+j+0+j+j+j+0/+j+0+j+j+0+0+j/+j+j+j+0+j+j+j
+    [6] +0+j+0+j+j+j+j/+j+0+j+j+0+0+j/+j+j+j+0+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 29 [fibra de tamaño 6]
-  Clave: +0+0+j+j+j+0/+j+j+0+0+0+j/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+0+j+j+j+0/+j+j+j+0+0+0+j/+j+j+j+j+j+j+j ←
+PARENT 29 [fiber size 6]
+  Key: +0+0+j+j+j+0/+j+j+0+0+0+j/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+0+j+j+j+0/+j+j+j+0+0+0+j/+j+j+j+j+j+j+j
     [2] +0+0+j+j+j+0+0/+j+j+0+0+0+j+j/+j+j+j+j+j+j+j
-    [3] +0+0+j+j+j+0+j/+j+j+0+0+0+j+0/+j+j+j+j+j+j+j ←
-    [4] +0+0+j+j+j+0+j/+j+j+0+0+0+j+j/+j+j+j+j+j+j+0 ←
-    [5] +0+j+j+0+0+0+j/+j+0+0+j+j+j+0/+j+j+j+j+j+j+j ←
-    [6] +0+j+j+j+0+0+j/+j+0+0+0+j+j+j/+j+j+j+j+j+j+0 ←
+    [3] +0+0+j+j+j+0+j/+j+j+0+0+0+j+0/+j+j+j+j+j+j+j
+    [4] +0+0+j+j+j+0+j/+j+j+0+0+0+j+j/+j+j+j+j+j+j+0
+    [5] +0+j+j+0+0+0+j/+j+0+0+j+j+j+0/+j+j+j+j+j+j+j
+    [6] +0+j+j+j+0+0+j/+j+0+0+0+j+j+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 30 [fibra de tamaño 6]
-  Clave: +0+0+j+j+j+0/+j+j+0+0+j+j/+j+j+j+j+0+j
-  Hijos:
-    [1] +0+0+0+j+j+j+0/+j+j+j+0+0+j+j/+j+j+j+j+j+0+j ←
-    [2] +0+0+j+j+j+0+0/+j+j+0+0+j+j+j/+j+j+j+j+0+j+j ←
-    [3] +0+0+j+j+j+0+j/+j+j+0+0+j+j+0/+j+j+j+j+0+j+j ←
-    [4] +0+0+j+j+j+0+j/+j+j+0+0+j+j+j/+j+j+j+j+0+j+0 ←
-    [5] +0+j+j+0+0+j+j/+j+0+0+j+j+j+0/+j+j+j+j+j+0+j ←
-    [6] +0+j+j+j+0+0+j/+j+0+j+j+j+j+0/+j+j+0+0+j+j+j ←
+PARENT 30 [fiber size 6]
+  Key: +0+0+j+j+j+0/+j+j+0+0+j+j/+j+j+j+j+0+j
+  Children:
+    [1] +0+0+0+j+j+j+0/+j+j+j+0+0+j+j/+j+j+j+j+j+0+j
+    [2] +0+0+j+j+j+0+0/+j+j+0+0+j+j+j/+j+j+j+j+0+j+j
+    [3] +0+0+j+j+j+0+j/+j+j+0+0+j+j+0/+j+j+j+j+0+j+j
+    [4] +0+0+j+j+j+0+j/+j+j+0+0+j+j+j/+j+j+j+j+0+j+0
+    [5] +0+j+j+0+0+j+j/+j+0+0+j+j+j+0/+j+j+j+j+j+0+j
+    [6] +0+j+j+j+0+0+j/+j+0+j+j+j+j+0/+j+j+0+0+j+j+j
 
 --------------------------------------------------------------------------------
-PADRE 31 [fibra de tamaño 6]
-  Clave: +0+0+j+j+j+0/+j+j+0+j+0+j/+j+j+j+0+j+j
-  Hijos:
-    [1] +0+0+0+j+j+j+0/+j+j+j+0+j+0+j/+j+j+j+j+0+j+j ←
+PARENT 31 [fiber size 6]
+  Key: +0+0+j+j+j+0/+j+j+0+j+0+j/+j+j+j+0+j+j
+  Children:
+    [1] +0+0+0+j+j+j+0/+j+j+j+0+j+0+j/+j+j+j+j+0+j+j
     [2] +0+0+j+j+j+0+0/+j+j+0+j+0+j+j/+j+j+j+0+j+j+j
-    [3] +0+0+j+j+j+0+j/+j+j+0+j+0+j+0/+j+j+j+0+j+j+j ←
-    [4] +0+0+j+j+j+0+j/+j+j+0+j+0+j+j/+j+j+j+0+j+j+0 ←
-    [5] +0+j+j+0+j+0+j/+j+0+0+j+j+j+0/+j+j+j+j+0+j+j ←
-    [6] +0+j+j+j+0+0+j/+j+0+j+0+j+j+j/+j+j+0+j+j+j+0 ←
+    [3] +0+0+j+j+j+0+j/+j+j+0+j+0+j+0/+j+j+j+0+j+j+j
+    [4] +0+0+j+j+j+0+j/+j+j+0+j+0+j+j/+j+j+j+0+j+j+0
+    [5] +0+j+j+0+j+0+j/+j+0+0+j+j+j+0/+j+j+j+j+0+j+j
+    [6] +0+j+j+j+0+0+j/+j+0+j+0+j+j+j/+j+j+0+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 32 [fibra de tamaño 6]
-  Clave: +0+0+j+j+j+0/+j+j+0+j+j+j/+j+j+j+0+0+j
-  Hijos:
-    [1] +0+0+0+j+j+j+0/+j+j+j+0+j+j+j/+j+j+j+j+0+0+j ←
-    [2] +0+0+j+j+j+0+0/+j+j+0+0+j+j+j/+j+j+j+j+0+j+j ←
-    [3] +0+0+j+j+j+0+j/+j+j+0+j+j+j+0/+j+j+j+0+0+j+j ←
-    [4] +0+0+j+j+j+0+j/+j+j+0+j+j+j+j/+j+j+j+0+0+j+0 ←
-    [5] +0+j+j+0+j+j+j/+j+0+0+j+j+j+0/+j+j+j+j+0+0+j ←
+PARENT 32 [fiber size 6]
+  Key: +0+0+j+j+j+0/+j+j+0+j+j+j/+j+j+j+0+0+j
+  Children:
+    [1] +0+0+0+j+j+j+0/+j+j+j+0+j+j+j/+j+j+j+j+0+0+j
+    [2] +0+0+j+j+j+0+0/+j+j+0+0+j+j+j/+j+j+j+j+0+j+j
+    [3] +0+0+j+j+j+0+j/+j+j+0+j+j+j+0/+j+j+j+0+0+j+j
+    [4] +0+0+j+j+j+0+j/+j+j+0+j+j+j+j/+j+j+j+0+0+j+0
+    [5] +0+j+j+0+j+j+j/+j+0+0+j+j+j+0/+j+j+j+j+0+0+j
     [6] +0+j+j+j+0+0+j/+j+0+0+j+j+j+0/+j+j+j+0+j+j+j
 
 --------------------------------------------------------------------------------
-PADRE 33 [fibra de tamaño 6]
-  Clave: +0+0+j+j+j+j/+j+j+0+0+0+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+0+j+j+j+j/+j+j+j+0+0+0+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+j+j+j+j+0/+j+j+0+0+0+j+j/+j+j+j+j+j+0+j ←
-    [3] +0+0+j+j+j+j+j/+j+j+0+0+0+j+0/+j+j+j+j+j+0+j ←
+PARENT 33 [fiber size 6]
+  Key: +0+0+j+j+j+j/+j+j+0+0+0+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+0+j+j+j+j/+j+j+j+0+0+0+j/+j+j+j+j+j+j+0
+    [2] +0+0+j+j+j+j+0/+j+j+0+0+0+j+j/+j+j+j+j+j+0+j
+    [3] +0+0+j+j+j+j+j/+j+j+0+0+0+j+0/+j+j+j+j+j+0+j
     [4] +0+0+j+j+j+j+j/+j+j+0+0+0+j+j/+j+j+j+j+j+0+0
-    [5] +0+j+j+0+0+0+j/+j+0+0+j+j+j+j/+j+j+j+j+j+j+0 ←
-    [6] +0+j+j+j+j+j+0/+j+0+0+0+j+j+j/+j+j+j+j+0+0+j ←
+    [5] +0+j+j+0+0+0+j/+j+0+0+j+j+j+j/+j+j+j+j+j+j+0
+    [6] +0+j+j+j+j+j+0/+j+0+0+0+j+j+j/+j+j+j+j+0+0+j
 
 --------------------------------------------------------------------------------
-PADRE 34 [fibra de tamaño 6]
-  Clave: +0+0+j+j+j+j/+j+j+0+0+j+0/+j+j+j+j+0+j
-  Hijos:
-    [1] +0+0+0+j+j+j+j/+j+j+j+0+0+j+0/+j+j+j+j+j+0+j ←
-    [2] +0+0+j+0+0+j+j/+j+j+0+j+j+j+j/+j+j+j+j+j+0+0 ←
-    [3] +0+0+j+j+j+j+0/+j+j+0+0+j+0+j/+j+j+j+j+0+j+j ←
-    [4] +0+0+j+j+j+j+j/+j+j+0+0+j+0+j/+j+j+j+j+0+j+0 ←
-    [5] +0+j+0+0+j+j+0/+j+0+j+j+j+j+j/+j+j+j+j+0+0+j ←
-    [6] +0+j+0+0+j+j+j/+j+0+j+j+j+j+0/+j+j+j+j+0+0+j ←
+PARENT 34 [fiber size 6]
+  Key: +0+0+j+j+j+j/+j+j+0+0+j+0/+j+j+j+j+0+j
+  Children:
+    [1] +0+0+0+j+j+j+j/+j+j+j+0+0+j+0/+j+j+j+j+j+0+j
+    [2] +0+0+j+0+0+j+j/+j+j+0+j+j+j+j/+j+j+j+j+j+0+0
+    [3] +0+0+j+j+j+j+0/+j+j+0+0+j+0+j/+j+j+j+j+0+j+j
+    [4] +0+0+j+j+j+j+j/+j+j+0+0+j+0+j/+j+j+j+j+0+j+0
+    [5] +0+j+0+0+j+j+0/+j+0+j+j+j+j+j/+j+j+j+j+0+0+j
+    [6] +0+j+0+0+j+j+j/+j+0+j+j+j+j+0/+j+j+j+j+0+0+j
 
 --------------------------------------------------------------------------------
-PADRE 35 [fibra de tamaño 3]
-  Clave: +0+0+j+j+j+j/+j+j+0+0+j+j/+j+j+j+j+0+0
-  Hijos:
-    [1] +0+0+0+j+j+j+j/+j+j+j+0+0+j+j/+j+j+j+j+j+0+0 ←
-    [2] +0+0+j+j+j+j+0/+j+j+0+0+j+j+j/+j+j+j+j+0+0+j ←
-    [3] +0+0+j+j+j+j+j/+j+j+0+0+j+j+0/+j+j+j+j+0+0+j ←
+PARENT 35 [fiber size 3]
+  Key: +0+0+j+j+j+j/+j+j+0+0+j+j/+j+j+j+j+0+0
+  Children:
+    [1] +0+0+0+j+j+j+j/+j+j+j+0+0+j+j/+j+j+j+j+j+0+0
+    [2] +0+0+j+j+j+j+0/+j+j+0+0+j+j+j/+j+j+j+j+0+0+j
+    [3] +0+0+j+j+j+j+j/+j+j+0+0+j+j+0/+j+j+j+j+0+0+j
 
 --------------------------------------------------------------------------------
-PADRE 36 [fibra de tamaño 6]
-  Clave: +0+0+j+j+j+j/+j+j+0+j+0+j/+j+j+j+0+j+0
-  Hijos:
-    [1] +0+0+0+j+j+j+j/+j+j+j+0+j+0+j/+j+j+j+j+0+j+0 ←
-    [2] +0+0+j+0+j+j+j/+j+j+0+j+0+j+j/+j+j+j+j+j+0+0 ←
-    [3] +0+0+j+j+j+j+0/+j+j+0+j+0+j+j/+j+j+j+0+j+0+j ←
-    [4] +0+0+j+j+j+j+j/+j+j+0+j+0+j+0/+j+j+j+0+j+0+j ←
-    [5] +0+j+0+j+j+j+0/+j+0+j+0+j+j+j/+j+j+j+j+0+0+j ←
-    [6] +0+j+0+j+j+j+j/+j+0+j+0+j+j+0/+j+j+j+j+0+0+j ←
+PARENT 36 [fiber size 6]
+  Key: +0+0+j+j+j+j/+j+j+0+j+0+j/+j+j+j+0+j+0
+  Children:
+    [1] +0+0+0+j+j+j+j/+j+j+j+0+j+0+j/+j+j+j+j+0+j+0
+    [2] +0+0+j+0+j+j+j/+j+j+0+j+0+j+j/+j+j+j+j+j+0+0
+    [3] +0+0+j+j+j+j+0/+j+j+0+j+0+j+j/+j+j+j+0+j+0+j
+    [4] +0+0+j+j+j+j+j/+j+j+0+j+0+j+0/+j+j+j+0+j+0+j
+    [5] +0+j+0+j+j+j+0/+j+0+j+0+j+j+j/+j+j+j+j+0+0+j
+    [6] +0+j+0+j+j+j+j/+j+0+j+0+j+j+0/+j+j+j+j+0+0+j
 
 --------------------------------------------------------------------------------
-PADRE 37 [fibra de tamaño 6]
-  Clave: +0+0+j+j+j+j/+j+j+0+j+j+0/+j+j+j+0+0+j
-  Hijos:
-    [1] +0+0+0+j+j+j+j/+j+j+j+0+j+j+0/+j+j+j+j+0+0+j ←
-    [2] +0+0+j+j+0+j+j/+j+j+0+0+j+j+j/+j+j+j+j+j+0+0 ←
-    [3] +0+0+j+j+j+j+0/+j+j+0+j+j+0+j/+j+j+j+0+0+j+j ←
-    [4] +0+0+j+j+j+j+j/+j+j+0+j+j+0+j/+j+j+j+0+0+j+0 ←
+PARENT 37 [fiber size 6]
+  Key: +0+0+j+j+j+j/+j+j+0+j+j+0/+j+j+j+0+0+j
+  Children:
+    [1] +0+0+0+j+j+j+j/+j+j+j+0+j+j+0/+j+j+j+j+0+0+j
+    [2] +0+0+j+j+0+j+j/+j+j+0+0+j+j+j/+j+j+j+j+j+0+0
+    [3] +0+0+j+j+j+j+0/+j+j+0+j+j+0+j/+j+j+j+0+0+j+j
+    [4] +0+0+j+j+j+j+j/+j+j+0+j+j+0+j/+j+j+j+0+0+j+0
     [5] +0+j+j+0+j+j+0/+j+0+0+j+j+j+j/+j+j+j+j+0+0+j
-    [6] +0+j+j+0+j+j+j/+j+0+0+j+j+j+0/+j+j+j+j+0+0+j ←
+    [6] +0+j+j+0+j+j+j/+j+0+0+j+j+j+0/+j+j+j+j+0+0+j
 
 --------------------------------------------------------------------------------
-PADRE 38 [fibra de tamaño 6]
-  Clave: +0+j+0+0+0+j/+j+0+j+j+j+0/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+j+0+0+0+j/+j+j+0+j+j+j+0/+j+j+j+j+j+j+j ←
-    [2] +0+0+j+j+j+0+j/+j+j+0+0+0+j+0/+j+j+j+j+j+j+j ←
+PARENT 38 [fiber size 6]
+  Key: +0+j+0+0+0+j/+j+0+j+j+j+0/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+j+0+0+0+j/+j+j+0+j+j+j+0/+j+j+j+j+j+j+j
+    [2] +0+0+j+j+j+0+j/+j+j+0+0+0+j+0/+j+j+j+j+j+j+j
     [3] +0+j+0+0+0+j+0/+j+0+j+j+j+0+j/+j+j+j+j+j+j+j
-    [4] +0+j+0+0+0+j+j/+j+0+j+j+j+0+j/+j+j+j+j+j+j+0 ←
-    [5] +0+j+0+j+j+j+0/+j+0+j+0+0+0+j/+j+j+j+j+j+j+j ←
-    [6] +0+j+j+j+0+j+j/+j+0+0+0+j+0+j/+j+j+j+j+j+j+0 ←
+    [4] +0+j+0+0+0+j+j/+j+0+j+j+j+0+j/+j+j+j+j+j+j+0
+    [5] +0+j+0+j+j+j+0/+j+0+j+0+0+0+j/+j+j+j+j+j+j+j
+    [6] +0+j+j+j+0+j+j/+j+0+0+0+j+0+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 39 [fibra de tamaño 6]
-  Clave: +0+j+0+0+0+j/+j+0+j+j+j+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+j+0+0+0+j/+j+j+0+j+j+j+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+j+j+j+j+j/+j+j+0+0+0+j+0/+j+j+j+j+j+0+j ←
+PARENT 39 [fiber size 6]
+  Key: +0+j+0+0+0+j/+j+0+j+j+j+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+j+0+0+0+j/+j+j+0+j+j+j+j/+j+j+j+j+j+j+0
+    [2] +0+0+j+j+j+j+j/+j+j+0+0+0+j+0/+j+j+j+j+j+0+j
     [3] +0+j+0+0+0+j+0/+j+0+j+j+j+j+j/+j+j+j+j+j+0+j
-    [4] +0+j+0+0+0+j+j/+j+0+j+j+j+j+0/+j+j+j+j+j+0+j ←
-    [5] +0+j+0+j+j+j+j/+j+0+j+0+0+0+j/+j+j+j+j+j+j+0 ←
-    [6] +0+j+j+j+j+j+0/+j+0+0+0+j+0+j/+j+j+j+j+0+j+j ←
+    [4] +0+j+0+0+0+j+j/+j+0+j+j+j+j+0/+j+j+j+j+j+0+j
+    [5] +0+j+0+j+j+j+j/+j+0+j+0+0+0+j/+j+j+j+j+j+j+0
+    [6] +0+j+j+j+j+j+0/+j+0+0+0+j+0+j/+j+j+j+j+0+j+j
 
 --------------------------------------------------------------------------------
-PADRE 40 [fibra de tamaño 3]
-  Clave: +0+j+0+0+j+0/+j+0+j+j+0+j/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+j+0+0+j+0/+j+j+0+j+j+0+j/+j+j+j+j+j+j+j ←
-    [2] +0+j+0+0+j+0+j/+j+0+j+j+0+j+0/+j+j+j+j+j+j+j ←
-    [3] +0+j+0+0+j+0+j/+j+0+j+j+0+j+j/+j+j+j+j+j+j+0 ←
+PARENT 40 [fiber size 3]
+  Key: +0+j+0+0+j+0/+j+0+j+j+0+j/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+j+0+0+j+0/+j+j+0+j+j+0+j/+j+j+j+j+j+j+j
+    [2] +0+j+0+0+j+0+j/+j+0+j+j+0+j+0/+j+j+j+j+j+j+j
+    [3] +0+j+0+0+j+0+j/+j+0+j+j+0+j+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 41 [fibra de tamaño 3]
-  Clave: +0+j+0+0+j+0/+j+0+j+j+j+j/+j+j+j+j+0+j
-  Hijos:
-    [1] +0+0+j+0+0+j+0/+j+j+0+j+j+j+j/+j+j+j+j+j+0+j ←
-    [2] +0+j+0+0+j+0+j/+j+0+j+j+j+j+0/+j+j+j+j+0+j+j ←
-    [3] +0+j+0+0+j+0+j/+j+0+j+j+j+j+j/+j+j+j+j+0+j+0 ←
+PARENT 41 [fiber size 3]
+  Key: +0+j+0+0+j+0/+j+0+j+j+j+j/+j+j+j+j+0+j
+  Children:
+    [1] +0+0+j+0+0+j+0/+j+j+0+j+j+j+j/+j+j+j+j+j+0+j
+    [2] +0+j+0+0+j+0+j/+j+0+j+j+j+j+0/+j+j+j+j+0+j+j
+    [3] +0+j+0+0+j+0+j/+j+0+j+j+j+j+j/+j+j+j+j+0+j+0
 
 --------------------------------------------------------------------------------
-PADRE 42 [fibra de tamaño 6]
-  Clave: +0+j+0+0+j+j/+j+0+j+j+0+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+j+0+0+j+j/+j+j+0+j+j+0+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+j+j+j+j+j/+j+j+0+j+j+0+j/+j+j+j+0+0+j+0 ←
-    [3] +0+j+0+0+j+j+0/+j+0+j+j+0+j+j/+j+j+j+j+j+0+j ←
-    [4] +0+j+0+0+j+j+j/+j+0+j+j+0+j+0/+j+j+j+j+j+0+j ←
-    [5] +0+j+0+j+j+0+j/+j+0+j+0+0+j+j/+j+j+j+j+j+j+0 ←
-    [6] +0+j+j+j+j+j+0/+j+0+j+0+0+j+j/+j+j+0+j+j+0+j ←
+PARENT 42 [fiber size 6]
+  Key: +0+j+0+0+j+j/+j+0+j+j+0+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+j+0+0+j+j/+j+j+0+j+j+0+j/+j+j+j+j+j+j+0
+    [2] +0+0+j+j+j+j+j/+j+j+0+j+j+0+j/+j+j+j+0+0+j+0
+    [3] +0+j+0+0+j+j+0/+j+0+j+j+0+j+j/+j+j+j+j+j+0+j
+    [4] +0+j+0+0+j+j+j/+j+0+j+j+0+j+0/+j+j+j+j+j+0+j
+    [5] +0+j+0+j+j+0+j/+j+0+j+0+0+j+j/+j+j+j+j+j+j+0
+    [6] +0+j+j+j+j+j+0/+j+0+j+0+0+j+j/+j+j+0+j+j+0+j
 
 --------------------------------------------------------------------------------
-PADRE 43 [fibra de tamaño 6]
-  Clave: +0+j+0+0+j+j/+j+0+j+j+j+0/+j+j+j+j+0+j
-  Hijos:
-    [1] +0+0+j+0+0+j+j/+j+j+0+j+j+j+0/+j+j+j+j+j+0+j ←
-    [2] +0+0+j+j+j+0+j/+j+j+0+j+j+j+j/+j+j+j+0+0+j+0 ←
-    [3] +0+j+0+0+j+j+0/+j+0+j+j+j+0+j/+j+j+j+j+0+j+j ←
-    [4] +0+j+0+0+j+j+j/+j+0+j+j+j+0+j/+j+j+j+j+0+j+0 ←
-    [5] +0+j+0+j+j+j+0/+j+0+j+0+0+j+j/+j+j+j+j+j+0+j ←
-    [6] +0+j+j+j+0+j+j/+j+0+j+j+j+j+0/+j+j+0+0+j+0+j ←
+PARENT 43 [fiber size 6]
+  Key: +0+j+0+0+j+j/+j+0+j+j+j+0/+j+j+j+j+0+j
+  Children:
+    [1] +0+0+j+0+0+j+j/+j+j+0+j+j+j+0/+j+j+j+j+j+0+j
+    [2] +0+0+j+j+j+0+j/+j+j+0+j+j+j+j/+j+j+j+0+0+j+0
+    [3] +0+j+0+0+j+j+0/+j+0+j+j+j+0+j/+j+j+j+j+0+j+j
+    [4] +0+j+0+0+j+j+j/+j+0+j+j+j+0+j/+j+j+j+j+0+j+0
+    [5] +0+j+0+j+j+j+0/+j+0+j+0+0+j+j/+j+j+j+j+j+0+j
+    [6] +0+j+j+j+0+j+j/+j+0+j+j+j+j+0/+j+j+0+0+j+0+j
 
 --------------------------------------------------------------------------------
-PADRE 44 [fibra de tamaño 3]
-  Clave: +0+j+0+j+0+j/+j+0+j+0+j+0/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+j+0+j+0+j/+j+j+0+j+0+j+0/+j+j+j+j+j+j+j ←
+PARENT 44 [fiber size 3]
+  Key: +0+j+0+j+0+j/+j+0+j+0+j+0/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+j+0+j+0+j/+j+j+0+j+0+j+0/+j+j+j+j+j+j+j
     [2] +0+j+0+j+0+j+0/+j+0+j+0+j+0+j/+j+j+j+j+j+j+j
-    [3] +0+j+0+j+0+j+j/+j+0+j+0+j+0+j/+j+j+j+j+j+j+0 ←
+    [3] +0+j+0+j+0+j+j/+j+0+j+0+j+0+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 45 [fibra de tamaño 6]
-  Clave: +0+j+0+j+0+j/+j+0+j+0+j+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+j+0+j+0+j/+j+j+0+j+0+j+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+j+j+j+j+j/+j+j+0+j+0+j+0/+j+j+j+0+j+0+j ←
-    [3] +0+j+0+j+0+j+0/+j+0+j+0+j+j+j/+j+j+j+j+j+0+j ←
-    [4] +0+j+0+j+0+j+j/+j+0+j+0+j+0+j/+j+j+j+j+j+j+0 ←
-    [5] +0+j+0+j+0+j+j/+j+0+j+0+j+j+0/+j+j+j+j+j+0+j ←
+PARENT 45 [fiber size 6]
+  Key: +0+j+0+j+0+j/+j+0+j+0+j+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+j+0+j+0+j/+j+j+0+j+0+j+j/+j+j+j+j+j+j+0
+    [2] +0+0+j+j+j+j+j/+j+j+0+j+0+j+0/+j+j+j+0+j+0+j
+    [3] +0+j+0+j+0+j+0/+j+0+j+0+j+j+j/+j+j+j+j+j+0+j
+    [4] +0+j+0+j+0+j+j/+j+0+j+0+j+0+j/+j+j+j+j+j+j+0
+    [5] +0+j+0+j+0+j+j/+j+0+j+0+j+j+0/+j+j+j+j+j+0+j
     [6] +0+j+j+j+j+j+0/+j+0+j+0+j+0+j/+j+j+0+j+0+j+j
 
 --------------------------------------------------------------------------------
-PADRE 46 [fibra de tamaño 6]
-  Clave: +0+j+0+j+0+j/+j+0+j+j+j+0/+j+j+j+0+j+j
-  Hijos:
-    [1] +0+0+j+0+j+0+j/+j+j+0+j+j+j+0/+j+j+j+j+0+j+j ←
-    [2] +0+0+j+j+j+0+j/+j+j+0+j+0+j+0/+j+j+j+0+j+j+j ←
+PARENT 46 [fiber size 6]
+  Key: +0+j+0+j+0+j/+j+0+j+j+j+0/+j+j+j+0+j+j
+  Children:
+    [1] +0+0+j+0+j+0+j/+j+j+0+j+j+j+0/+j+j+j+j+0+j+j
+    [2] +0+0+j+j+j+0+j/+j+j+0+j+0+j+0/+j+j+j+0+j+j+j
     [3] +0+j+0+j+0+j+0/+j+0+j+j+j+0+j/+j+j+j+0+j+j+j
-    [4] +0+j+0+j+0+j+j/+j+0+j+j+j+0+j/+j+j+j+0+j+j+0 ←
-    [5] +0+j+0+j+j+j+0/+j+0+j+0+j+0+j/+j+j+j+j+0+j+j ←
+    [4] +0+j+0+j+0+j+j/+j+0+j+j+j+0+j/+j+j+j+0+j+j+0
+    [5] +0+j+0+j+j+j+0/+j+0+j+0+j+0+j/+j+j+j+j+0+j+j
     [6] +0+j+j+j+0+j+j/+j+0+j+0+j+0+j/+j+j+0+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 47 [fibra de tamaño 6]
-  Clave: +0+j+0+j+0+j/+j+0+j+j+j+j/+j+j+j+0+j+0
-  Hijos:
-    [1] +0+0+j+0+j+0+j/+j+j+0+j+j+j+j/+j+j+j+j+0+j+0 ←
-    [2] +0+0+j+0+j+j+j/+j+j+0+j+0+j+0/+j+j+j+j+j+0+j ←
-    [3] +0+j+0+j+0+j+0/+j+0+j+0+j+j+j/+j+j+j+j+j+0+j ←
-    [4] +0+j+0+j+0+j+j/+j+0+j+j+j+j+0/+j+j+j+0+j+0+j ←
-    [5] +0+j+0+j+j+j+0/+j+0+j+0+j+0+j/+j+j+j+j+0+j+j ←
+PARENT 47 [fiber size 6]
+  Key: +0+j+0+j+0+j/+j+0+j+j+j+j/+j+j+j+0+j+0
+  Children:
+    [1] +0+0+j+0+j+0+j/+j+j+0+j+j+j+j/+j+j+j+j+0+j+0
+    [2] +0+0+j+0+j+j+j/+j+j+0+j+0+j+0/+j+j+j+j+j+0+j
+    [3] +0+j+0+j+0+j+0/+j+0+j+0+j+j+j/+j+j+j+j+j+0+j
+    [4] +0+j+0+j+0+j+j/+j+0+j+j+j+j+0/+j+j+j+0+j+0+j
+    [5] +0+j+0+j+j+j+0/+j+0+j+0+j+0+j/+j+j+j+j+0+j+j
     [6] +0+j+0+j+j+j+j/+j+0+j+0+j+0+j/+j+j+j+j+0+j+0
 
 --------------------------------------------------------------------------------
-PADRE 48 [fibra de tamaño 6]
-  Clave: +0+j+0+j+j+0/+j+0+j+0+0+j/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+j+0+j+j+0/+j+j+0+j+0+0+j/+j+j+j+j+j+j+j ←
-    [2] +0+0+j+j+0+j+0/+j+j+0+0+j+0+j/+j+j+j+j+j+j+j ←
-    [3] +0+j+0+0+j+0+j/+j+0+j+j+0+j+0/+j+j+j+j+j+j+j ←
-    [4] +0+j+0+j+0+0+j/+j+0+j+0+j+j+0/+j+j+j+j+j+j+j ←
-    [5] +0+j+0+j+j+0+j/+j+0+j+0+0+j+j/+j+j+j+j+j+j+0 ←
-    [6] +0+j+j+0+j+0+j/+j+0+0+j+0+j+j/+j+j+j+j+j+j+0 ←
+PARENT 48 [fiber size 6]
+  Key: +0+j+0+j+j+0/+j+0+j+0+0+j/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+j+0+j+j+0/+j+j+0+j+0+0+j/+j+j+j+j+j+j+j
+    [2] +0+0+j+j+0+j+0/+j+j+0+0+j+0+j/+j+j+j+j+j+j+j
+    [3] +0+j+0+0+j+0+j/+j+0+j+j+0+j+0/+j+j+j+j+j+j+j
+    [4] +0+j+0+j+0+0+j/+j+0+j+0+j+j+0/+j+j+j+j+j+j+j
+    [5] +0+j+0+j+j+0+j/+j+0+j+0+0+j+j/+j+j+j+j+j+j+0
+    [6] +0+j+j+0+j+0+j/+j+0+0+j+0+j+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 49 [fibra de tamaño 6]
-  Clave: +0+j+0+j+j+0/+j+0+j+0+j+j/+j+j+j+j+0+j
-  Hijos:
-    [1] +0+0+j+0+j+j+0/+j+j+0+j+0+j+j/+j+j+j+j+j+0+j ←
-    [2] +0+0+j+j+0+j+0/+j+j+0+j+j+j+j/+j+j+j+0+j+0+j ←
-    [3] +0+j+0+j+0+j+j/+j+0+j+0+j+j+0/+j+j+j+j+j+0+j ←
-    [4] +0+j+0+j+j+0+j/+j+0+j+0+j+j+0/+j+j+j+j+0+j+j ←
-    [5] +0+j+0+j+j+0+j/+j+0+j+0+j+j+j/+j+j+j+j+0+j+0 ←
-    [6] +0+j+j+0+j+0+j/+j+0+j+j+j+j+0/+j+j+0+j+0+j+j ←
+PARENT 49 [fiber size 6]
+  Key: +0+j+0+j+j+0/+j+0+j+0+j+j/+j+j+j+j+0+j
+  Children:
+    [1] +0+0+j+0+j+j+0/+j+j+0+j+0+j+j/+j+j+j+j+j+0+j
+    [2] +0+0+j+j+0+j+0/+j+j+0+j+j+j+j/+j+j+j+0+j+0+j
+    [3] +0+j+0+j+0+j+j/+j+0+j+0+j+j+0/+j+j+j+j+j+0+j
+    [4] +0+j+0+j+j+0+j/+j+0+j+0+j+j+0/+j+j+j+j+0+j+j
+    [5] +0+j+0+j+j+0+j/+j+0+j+0+j+j+j/+j+j+j+j+0+j+0
+    [6] +0+j+j+0+j+0+j/+j+0+j+j+j+j+0/+j+j+0+j+0+j+j
 
 --------------------------------------------------------------------------------
-PADRE 50 [fibra de tamaño 6]
-  Clave: +0+j+0+j+j+0/+j+0+j+j+0+j/+j+j+j+0+j+j
-  Hijos:
-    [1] +0+0+j+0+j+j+0/+j+j+0+j+j+0+j/+j+j+j+j+0+j+j ←
-    [2] +0+0+j+j+0+j+0/+j+j+0+j+j+0+j/+j+j+j+0+j+j+j ←
-    [3] +0+j+0+j+j+0+j/+j+0+j+0+j+j+0/+j+j+j+j+0+j+j ←
+PARENT 50 [fiber size 6]
+  Key: +0+j+0+j+j+0/+j+0+j+j+0+j/+j+j+j+0+j+j
+  Children:
+    [1] +0+0+j+0+j+j+0/+j+j+0+j+j+0+j/+j+j+j+j+0+j+j
+    [2] +0+0+j+j+0+j+0/+j+j+0+j+j+0+j/+j+j+j+0+j+j+j
+    [3] +0+j+0+j+j+0+j/+j+0+j+0+j+j+0/+j+j+j+j+0+j+j
     [4] +0+j+0+j+j+0+j/+j+0+j+j+0+j+0/+j+j+j+0+j+j+j
-    [5] +0+j+0+j+j+0+j/+j+0+j+j+0+j+j/+j+j+j+0+j+j+0 ←
-    [6] +0+j+j+0+j+0+j/+j+0+j+j+0+j+j/+j+j+0+j+j+j+0 ←
+    [5] +0+j+0+j+j+0+j/+j+0+j+j+0+j+j/+j+j+j+0+j+j+0
+    [6] +0+j+j+0+j+0+j/+j+0+j+j+0+j+j/+j+j+0+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 51 [fibra de tamaño 6]
-  Clave: +0+j+0+j+j+0/+j+0+j+j+j+j/+j+j+j+0+0+j
-  Hijos:
-    [1] +0+0+j+0+j+j+0/+j+j+0+j+j+j+j/+j+j+j+j+0+0+j ←
-    [2] +0+0+j+j+0+j+0/+j+j+0+0+j+j+j/+j+j+j+j+j+0+j ←
-    [3] +0+j+0+0+j+j+j/+j+0+j+j+0+j+0/+j+j+j+j+j+0+j ←
-    [4] +0+j+0+j+j+0+j/+j+0+j+j+j+j+0/+j+j+j+0+0+j+j ←
-    [5] +0+j+0+j+j+j+j/+j+0+j+0+j+j+0/+j+j+j+j+0+0+j ←
-    [6] +0+j+j+0+j+0+j/+j+0+0+j+j+j+0/+j+j+j+j+0+j+j ←
+PARENT 51 [fiber size 6]
+  Key: +0+j+0+j+j+0/+j+0+j+j+j+j/+j+j+j+0+0+j
+  Children:
+    [1] +0+0+j+0+j+j+0/+j+j+0+j+j+j+j/+j+j+j+j+0+0+j
+    [2] +0+0+j+j+0+j+0/+j+j+0+0+j+j+j/+j+j+j+j+j+0+j
+    [3] +0+j+0+0+j+j+j/+j+0+j+j+0+j+0/+j+j+j+j+j+0+j
+    [4] +0+j+0+j+j+0+j/+j+0+j+j+j+j+0/+j+j+j+0+0+j+j
+    [5] +0+j+0+j+j+j+j/+j+0+j+0+j+j+0/+j+j+j+j+0+0+j
+    [6] +0+j+j+0+j+0+j/+j+0+0+j+j+j+0/+j+j+j+j+0+j+j
 
 --------------------------------------------------------------------------------
-PADRE 52 [fibra de tamaño 6]
-  Clave: +0+j+0+j+j+j/+j+0+j+0+0+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+j+0+j+j+j/+j+j+0+j+0+0+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+j+j+j+j+j/+j+j+0+0+j+0+j/+j+j+j+j+0+j+0 ←
-    [3] +0+j+0+0+j+0+j/+j+0+j+j+j+j+j/+j+j+j+j+0+j+0 ←
-    [4] +0+j+0+j+0+0+j/+j+0+j+0+j+j+j/+j+j+j+j+j+j+0 ←
-    [5] +0+j+0+j+j+j+0/+j+0+j+0+0+j+j/+j+j+j+j+j+0+j ←
-    [6] +0+j+j+j+j+j+0/+j+0+0+j+0+j+j/+j+j+j+0+j+0+j ←
+PARENT 52 [fiber size 6]
+  Key: +0+j+0+j+j+j/+j+0+j+0+0+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+j+0+j+j+j/+j+j+0+j+0+0+j/+j+j+j+j+j+j+0
+    [2] +0+0+j+j+j+j+j/+j+j+0+0+j+0+j/+j+j+j+j+0+j+0
+    [3] +0+j+0+0+j+0+j/+j+0+j+j+j+j+j/+j+j+j+j+0+j+0
+    [4] +0+j+0+j+0+0+j/+j+0+j+0+j+j+j/+j+j+j+j+j+j+0
+    [5] +0+j+0+j+j+j+0/+j+0+j+0+0+j+j/+j+j+j+j+j+0+j
+    [6] +0+j+j+j+j+j+0/+j+0+0+j+0+j+j/+j+j+j+0+j+0+j
 
 --------------------------------------------------------------------------------
-PADRE 53 [fibra de tamaño 3]
-  Clave: +0+j+0+j+j+j/+j+0+j+j+0+j/+j+j+j+0+j+0
-  Hijos:
-    [1] +0+0+j+0+j+j+j/+j+j+0+j+j+0+j/+j+j+j+j+0+j+0 ←
-    [2] +0+j+0+j+j+0+j/+j+0+j+0+j+j+j/+j+j+j+j+0+j+0 ←
-    [3] +0+j+0+j+j+j+0/+j+0+j+j+0+j+j/+j+j+j+0+j+0+j ←
+PARENT 53 [fiber size 3]
+  Key: +0+j+0+j+j+j/+j+0+j+j+0+j/+j+j+j+0+j+0
+  Children:
+    [1] +0+0+j+0+j+j+j/+j+j+0+j+j+0+j/+j+j+j+j+0+j+0
+    [2] +0+j+0+j+j+0+j/+j+0+j+0+j+j+j/+j+j+j+j+0+j+0
+    [3] +0+j+0+j+j+j+0/+j+0+j+j+0+j+j/+j+j+j+0+j+0+j
 
 --------------------------------------------------------------------------------
-PADRE 54 [fibra de tamaño 6]
-  Clave: +0+j+0+j+j+j/+j+0+j+j+j+0/+j+j+j+0+0+j
-  Hijos:
-    [1] +0+0+j+0+j+j+j/+j+j+0+j+j+j+0/+j+j+j+j+0+0+j ←
-    [2] +0+0+j+j+j+0+j/+j+j+0+0+j+j+j/+j+j+j+j+0+j+0 ←
-    [3] +0+j+0+0+j+j+j/+j+0+j+j+j+0+j/+j+j+j+j+0+j+0 ←
-    [4] +0+j+0+j+j+j+0/+j+0+j+0+j+j+j/+j+j+j+j+0+0+j ←
-    [5] +0+j+0+j+j+j+0/+j+0+j+j+j+0+j/+j+j+j+0+0+j+j ←
-    [6] +0+j+j+j+0+0+j/+j+0+j+0+j+j+j/+j+j+0+j+j+j+0 ←
+PARENT 54 [fiber size 6]
+  Key: +0+j+0+j+j+j/+j+0+j+j+j+0/+j+j+j+0+0+j
+  Children:
+    [1] +0+0+j+0+j+j+j/+j+j+0+j+j+j+0/+j+j+j+j+0+0+j
+    [2] +0+0+j+j+j+0+j/+j+j+0+0+j+j+j/+j+j+j+j+0+j+0
+    [3] +0+j+0+0+j+j+j/+j+0+j+j+j+0+j/+j+j+j+j+0+j+0
+    [4] +0+j+0+j+j+j+0/+j+0+j+0+j+j+j/+j+j+j+j+0+0+j
+    [5] +0+j+0+j+j+j+0/+j+0+j+j+j+0+j/+j+j+j+0+0+j+j
+    [6] +0+j+j+j+0+0+j/+j+0+j+0+j+j+j/+j+j+0+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 55 [fibra de tamaño 3]
-  Clave: +0+j+j+0+0+j/+j+0+0+j+j+0/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+j+j+0+0+j/+j+j+0+0+j+j+0/+j+j+j+j+j+j+j ←
-    [2] +0+j+0+0+j+j+0/+j+0+j+j+0+0+j/+j+j+j+j+j+j+j ←
-    [3] +0+j+j+0+0+j+j/+j+0+0+j+j+0+j/+j+j+j+j+j+j+0 ←
+PARENT 55 [fiber size 3]
+  Key: +0+j+j+0+0+j/+j+0+0+j+j+0/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+j+j+0+0+j/+j+j+0+0+j+j+0/+j+j+j+j+j+j+j
+    [2] +0+j+0+0+j+j+0/+j+0+j+j+0+0+j/+j+j+j+j+j+j+j
+    [3] +0+j+j+0+0+j+j/+j+0+0+j+j+0+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 56 [fibra de tamaño 6]
-  Clave: +0+j+j+0+0+j/+j+0+0+j+j+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+j+j+0+0+j/+j+j+0+0+j+j+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+j+j+j+j+j/+j+j+0+0+j+j+0/+j+j+j+j+0+0+j ←
-    [3] +0+j+0+0+j+j+0/+j+0+j+j+j+j+j/+j+j+j+j+0+0+j ←
-    [4] +0+j+0+0+j+j+j/+j+0+j+j+0+0+j/+j+j+j+j+j+j+0 ←
-    [5] +0+j+j+0+0+j+j/+j+0+0+j+j+j+0/+j+j+j+j+j+0+j ←
-    [6] +0+j+j+j+j+j+0/+j+0+0+j+j+0+j/+j+j+j+0+0+j+j ←
+PARENT 56 [fiber size 6]
+  Key: +0+j+j+0+0+j/+j+0+0+j+j+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+j+j+0+0+j/+j+j+0+0+j+j+j/+j+j+j+j+j+j+0
+    [2] +0+0+j+j+j+j+j/+j+j+0+0+j+j+0/+j+j+j+j+0+0+j
+    [3] +0+j+0+0+j+j+0/+j+0+j+j+j+j+j/+j+j+j+j+0+0+j
+    [4] +0+j+0+0+j+j+j/+j+0+j+j+0+0+j/+j+j+j+j+j+j+0
+    [5] +0+j+j+0+0+j+j/+j+0+0+j+j+j+0/+j+j+j+j+j+0+j
+    [6] +0+j+j+j+j+j+0/+j+0+0+j+j+0+j/+j+j+j+0+0+j+j
 
 --------------------------------------------------------------------------------
-PADRE 57 [fibra de tamaño 6]
-  Clave: +0+j+j+0+0+j/+j+0+j+j+j+0/+j+j+0+j+j+j
-  Hijos:
-    [1] +0+0+j+j+0+0+j/+j+j+0+j+j+j+0/+j+j+j+0+j+j+j ←
-    [2] +0+0+j+j+j+0+j/+j+j+0+0+j+j+0/+j+j+j+j+0+j+j ←
-    [3] +0+j+0+0+j+j+0/+j+0+j+j+j+0+j/+j+j+j+j+0+j+j ←
-    [4] +0+j+0+j+j+j+0/+j+0+j+j+0+0+j/+j+j+j+0+j+j+j ←
-    [5] +0+j+j+0+0+j+j/+j+0+j+j+j+0+j/+j+j+0+j+j+j+0 ←
-    [6] +0+j+j+0+j+j+j/+j+0+j+j+0+0+j/+j+j+0+j+j+j+0 ←
+PARENT 57 [fiber size 6]
+  Key: +0+j+j+0+0+j/+j+0+j+j+j+0/+j+j+0+j+j+j
+  Children:
+    [1] +0+0+j+j+0+0+j/+j+j+0+j+j+j+0/+j+j+j+0+j+j+j
+    [2] +0+0+j+j+j+0+j/+j+j+0+0+j+j+0/+j+j+j+j+0+j+j
+    [3] +0+j+0+0+j+j+0/+j+0+j+j+j+0+j/+j+j+j+j+0+j+j
+    [4] +0+j+0+j+j+j+0/+j+0+j+j+0+0+j/+j+j+j+0+j+j+j
+    [5] +0+j+j+0+0+j+j/+j+0+j+j+j+0+j/+j+j+0+j+j+j+0
+    [6] +0+j+j+0+j+j+j/+j+0+j+j+0+0+j/+j+j+0+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 58 [fibra de tamaño 6]
-  Clave: +0+j+j+0+0+j/+j+0+j+j+j+j/+j+j+0+j+j+0
-  Hijos:
-    [1] +0+0+j+j+0+0+j/+j+j+0+j+j+j+j/+j+j+j+0+j+j+0 ←
-    [2] +0+0+j+j+0+j+j/+j+j+0+0+j+j+0/+j+j+j+j+j+0+j ←
-    [3] +0+j+0+0+j+j+0/+j+0+j+j+0+j+j/+j+j+j+j+j+0+j ←
-    [4] +0+j+0+j+j+j+j/+j+0+j+j+0+0+j/+j+j+j+0+j+j+0 ←
-    [5] +0+j+j+0+0+j+j/+j+0+j+j+j+j+0/+j+j+0+j+j+0+j ←
-    [6] +0+j+j+0+j+j+0/+j+0+0+j+j+0+j/+j+j+j+j+0+j+j ←
+PARENT 58 [fiber size 6]
+  Key: +0+j+j+0+0+j/+j+0+j+j+j+j/+j+j+0+j+j+0
+  Children:
+    [1] +0+0+j+j+0+0+j/+j+j+0+j+j+j+j/+j+j+j+0+j+j+0
+    [2] +0+0+j+j+0+j+j/+j+j+0+0+j+j+0/+j+j+j+j+j+0+j
+    [3] +0+j+0+0+j+j+0/+j+0+j+j+0+j+j/+j+j+j+j+j+0+j
+    [4] +0+j+0+j+j+j+j/+j+0+j+j+0+0+j/+j+j+j+0+j+j+0
+    [5] +0+j+j+0+0+j+j/+j+0+j+j+j+j+0/+j+j+0+j+j+0+j
+    [6] +0+j+j+0+j+j+0/+j+0+0+j+j+0+j/+j+j+j+j+0+j+j
 
 --------------------------------------------------------------------------------
-PADRE 59 [fibra de tamaño 6]
-  Clave: +0+j+j+0+j+j/+j+0+0+j+0+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+j+j+0+j+j/+j+j+0+0+j+0+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+j+j+j+j+j/+j+j+0+j+0+0+j/+j+j+j+0+j+j+0 ←
-    [3] +0+j+0+0+j+0+j/+j+0+j+j+0+j+j/+j+j+j+j+j+j+0 ←
-    [4] +0+j+0+j+0+0+j/+j+0+j+j+j+j+j/+j+j+j+0+j+j+0 ←
-    [5] +0+j+j+0+j+j+0/+j+0+0+j+0+j+j/+j+j+j+j+j+0+j ←
-    [6] +0+j+j+j+j+j+0/+j+0+j+0+0+j+j/+j+j+0+j+j+0+j ←
+PARENT 59 [fiber size 6]
+  Key: +0+j+j+0+j+j/+j+0+0+j+0+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+j+j+0+j+j/+j+j+0+0+j+0+j/+j+j+j+j+j+j+0
+    [2] +0+0+j+j+j+j+j/+j+j+0+j+0+0+j/+j+j+j+0+j+j+0
+    [3] +0+j+0+0+j+0+j/+j+0+j+j+0+j+j/+j+j+j+j+j+j+0
+    [4] +0+j+0+j+0+0+j/+j+0+j+j+j+j+j/+j+j+j+0+j+j+0
+    [5] +0+j+j+0+j+j+0/+j+0+0+j+0+j+j/+j+j+j+j+j+0+j
+    [6] +0+j+j+j+j+j+0/+j+0+j+0+0+j+j/+j+j+0+j+j+0+j
 
 --------------------------------------------------------------------------------
-PADRE 60 [fibra de tamaño 3]
-  Clave: +0+j+j+0+j+j/+j+0+j+j+0+j/+j+j+0+j+j+0
-  Hijos:
-    [1] +0+0+j+j+0+j+j/+j+j+0+j+j+0+j/+j+j+j+0+j+j+0 ←
-    [2] +0+j+0+j+j+0+j/+j+0+j+j+0+j+j/+j+j+j+0+j+j+0 ←
+PARENT 60 [fiber size 3]
+  Key: +0+j+j+0+j+j/+j+0+j+j+0+j/+j+j+0+j+j+0
+  Children:
+    [1] +0+0+j+j+0+j+j/+j+j+0+j+j+0+j/+j+j+j+0+j+j+0
+    [2] +0+j+0+j+j+0+j/+j+0+j+j+0+j+j/+j+j+j+0+j+j+0
     [3] +0+j+j+0+j+j+0/+j+0+j+j+0+j+j/+j+j+0+j+j+0+j
 
 --------------------------------------------------------------------------------
-PADRE 61 [fibra de tamaño 6]
-  Clave: +0+j+j+0+j+j/+j+0+j+j+j+0/+j+j+0+j+0+j
-  Hijos:
-    [1] +0+0+j+j+0+j+j/+j+j+0+j+j+j+0/+j+j+j+0+j+0+j ←
-    [2] +0+0+j+j+j+0+j/+j+j+0+j+0+j+j/+j+j+j+0+j+j+0 ←
-    [3] +0+j+0+j+0+j+j/+j+0+j+j+j+0+j/+j+j+j+0+j+j+0 ←
-    [4] +0+j+0+j+j+j+0/+j+0+j+j+0+j+j/+j+j+j+0+j+0+j ←
-    [5] +0+j+j+0+j+0+j/+j+0+j+j+0+j+j/+j+j+0+j+j+j+0 ←
+PARENT 61 [fiber size 6]
+  Key: +0+j+j+0+j+j/+j+0+j+j+j+0/+j+j+0+j+0+j
+  Children:
+    [1] +0+0+j+j+0+j+j/+j+j+0+j+j+j+0/+j+j+j+0+j+0+j
+    [2] +0+0+j+j+j+0+j/+j+j+0+j+0+j+j/+j+j+j+0+j+j+0
+    [3] +0+j+0+j+0+j+j/+j+0+j+j+j+0+j/+j+j+j+0+j+j+0
+    [4] +0+j+0+j+j+j+0/+j+0+j+j+0+j+j/+j+j+j+0+j+0+j
+    [5] +0+j+j+0+j+0+j/+j+0+j+j+0+j+j/+j+j+0+j+j+j+0
     [6] +0+j+j+0+j+j+0/+j+0+j+j+j+0+j/+j+j+0+j+0+j+j
 
 --------------------------------------------------------------------------------
-PADRE 62 [fibra de tamaño 6]
-  Clave: +0+j+j+j+0+j/+j+0+0+0+j+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+j+j+j+0+j/+j+j+0+0+0+j+j/+j+j+j+j+j+j+0 ←
-    [2] +0+0+j+j+j+j+j/+j+j+0+j+j+j+0/+j+j+j+0+0+0+j ←
-    [3] +0+j+0+0+0+j+j/+j+0+j+j+j+0+j/+j+j+j+j+j+j+0 ←
-    [4] +0+j+0+j+j+j+0/+j+0+j+j+j+j+j/+j+j+j+0+0+0+j ←
-    [5] +0+j+j+0+0+0+j/+j+0+j+j+j+j+j/+j+j+0+j+j+j+0 ←
+PARENT 62 [fiber size 6]
+  Key: +0+j+j+j+0+j/+j+0+0+0+j+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+j+j+j+0+j/+j+j+0+0+0+j+j/+j+j+j+j+j+j+0
+    [2] +0+0+j+j+j+j+j/+j+j+0+j+j+j+0/+j+j+j+0+0+0+j
+    [3] +0+j+0+0+0+j+j/+j+0+j+j+j+0+j/+j+j+j+j+j+j+0
+    [4] +0+j+0+j+j+j+0/+j+0+j+j+j+j+j/+j+j+j+0+0+0+j
+    [5] +0+j+j+0+0+0+j/+j+0+j+j+j+j+j/+j+j+0+j+j+j+0
     [6] +0+j+j+j+j+j+0/+j+0+j+j+j+0+j/+j+j+0+0+0+j+j
 
 --------------------------------------------------------------------------------
-PADRE 63 [fibra de tamaño 3]
-  Clave: +0+j+j+j+0+j/+j+0+j+j+j+0/+j+j+0+0+j+j
-  Hijos:
-    [1] +0+0+j+j+j+0+j/+j+j+0+j+j+j+0/+j+j+j+0+0+j+j ←
-    [2] +0+j+0+j+j+j+0/+j+0+j+j+j+0+j/+j+j+j+0+0+j+j ←
-    [3] +0+j+j+0+0+j+j/+j+0+j+j+j+0+j/+j+j+0+j+j+j+0 ←
+PARENT 63 [fiber size 3]
+  Key: +0+j+j+j+0+j/+j+0+j+j+j+0/+j+j+0+0+j+j
+  Children:
+    [1] +0+0+j+j+j+0+j/+j+j+0+j+j+j+0/+j+j+j+0+0+j+j
+    [2] +0+j+0+j+j+j+0/+j+0+j+j+j+0+j/+j+j+j+0+0+j+j
+    [3] +0+j+j+0+0+j+j/+j+0+j+j+j+0+j/+j+j+0+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 64 [fibra de tamaño 3]
-  Clave: +0+j+j+j+j+0/+j+0+0+0+0+j/+j+j+j+j+j+j
-  Hijos:
-    [1] +0+0+j+j+j+j+0/+j+j+0+0+0+0+j/+j+j+j+j+j+j+j ←
-    [2] +0+j+0+0+0+0+j/+j+0+j+j+j+j+0/+j+j+j+j+j+j+j ←
-    [3] +0+j+j+j+j+0+j/+j+0+0+0+0+j+j/+j+j+j+j+j+j+0 ←
+PARENT 64 [fiber size 3]
+  Key: +0+j+j+j+j+0/+j+0+0+0+0+j/+j+j+j+j+j+j
+  Children:
+    [1] +0+0+j+j+j+j+0/+j+j+0+0+0+0+j/+j+j+j+j+j+j+j
+    [2] +0+j+0+0+0+0+j/+j+0+j+j+j+j+0/+j+j+j+j+j+j+j
+    [3] +0+j+j+j+j+0+j/+j+0+0+0+0+j+j/+j+j+j+j+j+j+0
 
 --------------------------------------------------------------------------------
-PADRE 65 [fibra de tamaño 6]
-  Clave: +0+j+j+j+j+0/+j+0+0+0+j+j/+j+j+j+j+0+j
-  Hijos:
-    [1] +0+0+j+j+j+j+0/+j+j+0+0+0+j+j/+j+j+j+j+j+0+j ←
-    [2] +0+0+j+j+j+j+0/+j+j+0+j+j+j+j/+j+j+j+0+0+0+j ←
-    [3] +0+j+0+0+0+j+j/+j+0+j+j+j+j+0/+j+j+j+j+j+0+j ←
-    [4] +0+j+0+j+j+j+j/+j+0+j+j+j+j+0/+j+j+j+0+0+0+j ←
-    [5] +0+j+j+0+0+0+j/+j+0+j+j+j+j+0/+j+j+0+j+j+j+j ←
+PARENT 65 [fiber size 6]
+  Key: +0+j+j+j+j+0/+j+0+0+0+j+j/+j+j+j+j+0+j
+  Children:
+    [1] +0+0+j+j+j+j+0/+j+j+0+0+0+j+j/+j+j+j+j+j+0+j
+    [2] +0+0+j+j+j+j+0/+j+j+0+j+j+j+j/+j+j+j+0+0+0+j
+    [3] +0+j+0+0+0+j+j/+j+0+j+j+j+j+0/+j+j+j+j+j+0+j
+    [4] +0+j+0+j+j+j+j/+j+0+j+j+j+j+0/+j+j+j+0+0+0+j
+    [5] +0+j+j+0+0+0+j/+j+0+j+j+j+j+0/+j+j+0+j+j+j+j
     [6] +0+j+j+j+j+0+j/+j+0+j+j+j+j+0/+j+j+0+0+0+j+j
 
 --------------------------------------------------------------------------------
-PADRE 66 [fibra de tamaño 6]
-  Clave: +0+j+j+j+j+0/+j+0+0+j+0+j/+j+j+j+0+j+j
-  Hijos:
-    [1] +0+0+j+j+j+j+0/+j+j+0+0+j+0+j/+j+j+j+j+0+j+j ←
-    [2] +0+0+j+j+j+j+0/+j+j+0+j+0+0+j/+j+j+j+0+j+j+j ←
-    [3] +0+j+0+0+j+0+j/+j+0+j+j+j+j+0/+j+j+j+j+0+j+j ←
-    [4] +0+j+0+j+0+0+j/+j+0+j+j+j+j+0/+j+j+j+0+j+j+j ←
-    [5] +0+j+j+0+j+j+j/+j+0+j+j+j+j+0/+j+j+0+j+0+0+j ←
-    [6] +0+j+j+j+0+j+j/+j+0+j+j+j+j+0/+j+j+0+0+j+0+j ←
+PARENT 66 [fiber size 6]
+  Key: +0+j+j+j+j+0/+j+0+0+j+0+j/+j+j+j+0+j+j
+  Children:
+    [1] +0+0+j+j+j+j+0/+j+j+0+0+j+0+j/+j+j+j+j+0+j+j
+    [2] +0+0+j+j+j+j+0/+j+j+0+j+0+0+j/+j+j+j+0+j+j+j
+    [3] +0+j+0+0+j+0+j/+j+0+j+j+j+j+0/+j+j+j+j+0+j+j
+    [4] +0+j+0+j+0+0+j/+j+0+j+j+j+j+0/+j+j+j+0+j+j+j
+    [5] +0+j+j+0+j+j+j/+j+0+j+j+j+j+0/+j+j+0+j+0+0+j
+    [6] +0+j+j+j+0+j+j/+j+0+j+j+j+j+0/+j+j+0+0+j+0+j
 
 --------------------------------------------------------------------------------
-PADRE 67 [fibra de tamaño 3]
-  Clave: +0+j+j+j+j+0/+j+0+0+j+j+j/+j+j+j+0+0+j
-  Hijos:
-    [1] +0+0+j+j+j+j+0/+j+j+0+0+j+j+j/+j+j+j+j+0+0+j ←
-    [2] +0+j+0+0+j+j+j/+j+0+j+j+j+j+0/+j+j+j+j+0+0+j ←
-    [3] +0+j+j+j+0+0+j/+j+0+j+j+j+j+0/+j+j+0+0+j+j+j ←
+PARENT 67 [fiber size 3]
+  Key: +0+j+j+j+j+0/+j+0+0+j+j+j/+j+j+j+0+0+j
+  Children:
+    [1] +0+0+j+j+j+j+0/+j+j+0+0+j+j+j/+j+j+j+j+0+0+j
+    [2] +0+j+0+0+j+j+j/+j+0+j+j+j+j+0/+j+j+j+j+0+0+j
+    [3] +0+j+j+j+0+0+j/+j+0+j+j+j+j+0/+j+j+0+0+j+j+j
 
 --------------------------------------------------------------------------------
-PADRE 68 [fibra de tamaño 3]
-  Clave: +0+j+j+j+j+0/+j+0+j+0+j+j/+j+j+0+j+0+j
-  Hijos:
-    [1] +0+0+j+j+j+j+0/+j+j+0+j+0+j+j/+j+j+j+0+j+0+j ←
-    [2] +0+j+0+j+0+j+j/+j+0+j+j+j+j+0/+j+j+j+0+j+0+j ←
-    [3] +0+j+j+0+j+0+j/+j+0+j+j+j+j+0/+j+j+0+j+0+j+j ←
+PARENT 68 [fiber size 3]
+  Key: +0+j+j+j+j+0/+j+0+j+0+j+j/+j+j+0+j+0+j
+  Children:
+    [1] +0+0+j+j+j+j+0/+j+j+0+j+0+j+j/+j+j+j+0+j+0+j
+    [2] +0+j+0+j+0+j+j/+j+0+j+j+j+j+0/+j+j+j+0+j+0+j
+    [3] +0+j+j+0+j+0+j/+j+0+j+j+j+j+0/+j+j+0+j+0+j+j
 
 --------------------------------------------------------------------------------
-PADRE 69 [fibra de tamaño 3]
-  Clave: +0+j+j+j+j+0/+j+0+j+j+0+j/+j+j+0+0+j+j
-  Hijos:
-    [1] +0+0+j+j+j+j+0/+j+j+0+j+j+0+j/+j+j+j+0+0+j+j ←
-    [2] +0+j+0+j+j+0+j/+j+0+j+j+j+j+0/+j+j+j+0+0+j+j ←
-    [3] +0+j+j+0+0+j+j/+j+0+j+j+j+j+0/+j+j+0+j+j+0+j ←
+PARENT 69 [fiber size 3]
+  Key: +0+j+j+j+j+0/+j+0+j+j+0+j/+j+j+0+0+j+j
+  Children:
+    [1] +0+0+j+j+j+j+0/+j+j+0+j+j+0+j/+j+j+j+0+0+j+j
+    [2] +0+j+0+j+j+0+j/+j+0+j+j+j+j+0/+j+j+j+0+0+j+j
+    [3] +0+j+j+0+0+j+j/+j+0+j+j+j+j+0/+j+j+0+j+j+0+j
 
 --------------------------------------------------------------------------------
-PADRE 70 [fibra de tamaño 3]
-  Clave: +0+j+j+j+j+j/+j+0+0+0+0+j/+j+j+j+j+j+0
-  Hijos:
-    [1] +0+0+j+j+j+j+j/+j+j+0+0+0+0+j/+j+j+j+j+j+j+0 ←
-    [2] +0+j+0+0+0+0+j/+j+0+j+j+j+j+j/+j+j+j+j+j+j+0 ←
-    [3] +0+j+j+j+j+j+0/+j+0+0+0+0+j+j/+j+j+j+j+j+0+j ←
+PARENT 70 [fiber size 3]
+  Key: +0+j+j+j+j+j/+j+0+0+0+0+j/+j+j+j+j+j+0
+  Children:
+    [1] +0+0+j+j+j+j+j/+j+j+0+0+0+0+j/+j+j+j+j+j+j+0
+    [2] +0+j+0+0+0+0+j/+j+0+j+j+j+j+j/+j+j+j+j+j+j+0
+    [3] +0+j+j+j+j+j+0/+j+0+0+0+0+j+j/+j+j+j+j+j+0+j
 
---------------------------------------------------------------------------------
-CONVERGENCIAS
---------------------------------------------------------------------------------
-
-  Hijos que aparecen en más de un padre (169):
-
-  Hijo: +0+0+0+0+0+0+j/+j+j+j+j+j+j+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+0+0+0/+j+j+j+j+j+j/+j+j+j+j+j+j
-      - +0+0+0+0+0+j/+j+j+j+j+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+0+0+j+0/+j+j+j+j+j+0+j/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+0+0+j/+j+j+j+j+j+0/+j+j+j+j+j+j
-      - +0+0+0+0+j+0/+j+j+j+j+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+0+0+j+j/+j+j+j+j+j+0+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+0+0+j/+j+j+j+j+j+0/+j+j+j+j+j+j
-      - +0+0+0+0+j+j/+j+j+j+j+0+0/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+0+0+j+j/+j+j+j+j+j+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+0+0+j/+j+j+j+j+j+0/+j+j+j+j+j+j
-      - +0+0+0+0+j+j/+j+j+j+j+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+0+0+j+0+0/+j+j+j+j+0+j+j/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+0+j+0/+j+j+j+j+0+j/+j+j+j+j+j+j
-      - +0+0+0+j+0+0/+j+j+j+0+j+j/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+0+j+0+j/+j+j+j+j+0+j+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+0+j+0/+j+j+j+j+0+j/+j+j+j+j+j+j
-      - +0+0+0+j+0+j/+j+j+j+0+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+0+j+0+j/+j+j+j+j+0+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+0+j+0/+j+j+j+j+0+j/+j+j+j+j+j+j
-      - +0+0+0+j+0+j/+j+j+j+0+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+0+0+0+j/+j+0+j+j+j+j+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+0+j+0/+j+j+j+j+0+j/+j+j+j+j+j+j
-      - +0+j+j+j+j+0/+j+0+0+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+j+0+0+0+0+j/+j+0+j+j+j+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+0+j+0/+j+j+j+j+0+j/+j+j+j+j+j+j
-      - +0+j+j+j+j+j/+j+0+0+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+0+0+j+j+0/+j+j+j+j+0+0+j/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+0+j+j/+j+j+j+j+0+0/+j+j+j+j+j+j
-      - +0+0+0+j+j+0/+j+j+j+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+0+j+j+j/+j+j+j+j+0+0+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+0+j+j/+j+j+j+j+0+0/+j+j+j+j+j+j
-      - +0+0+0+j+j+j/+j+j+j+0+0+0/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+0+j+j+j/+j+j+j+j+0+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+0+j+j/+j+j+j+j+0+0/+j+j+j+j+j+j
-      - +0+0+0+j+j+j/+j+j+j+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+j+j+j+0/+j+j+0+0+0+0+j/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+0+j+j/+j+j+j+j+0+0/+j+j+j+j+j+j
-      - +0+j+j+j+j+0/+j+0+0+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+0+j+j+j+j+j/+j+j+0+0+0+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+0+j+j/+j+j+j+j+0+0/+j+j+j+j+j+j
-      - +0+j+j+j+j+j/+j+0+0+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+0+0+j+j+0/+j+j+j+j+0+j+j/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+0+0+j+j/+j+j+j+j+0+j/+j+j+j+j+j+0
-      - +0+0+0+j+j+0/+j+j+j+0+j+j/+j+j+j+j+0+j
-
-  Hijo: +0+0+0+0+j+j+j/+j+j+j+j+0+j+0/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+0+0+j+j/+j+j+j+j+0+j/+j+j+j+j+j+0
-      - +0+0+0+j+j+j/+j+j+j+0+j+0/+j+j+j+j+0+j
-
-  Hijo: +0+0+0+0+j+j+j/+j+j+j+j+0+j+j/+j+j+j+j+j+0+0
-    Aparece en 2 padres:
-      - +0+0+0+0+j+j/+j+j+j+j+0+j/+j+j+j+j+j+0
-      - +0+0+0+j+j+j/+j+j+j+0+j+j/+j+j+j+j+0+0
-
-  Hijo: +0+j+j+j+j+0+j/+j+0+0+0+0+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+0+j+j/+j+j+j+j+0+j/+j+j+j+j+j+0
-      - +0+j+j+j+j+0/+j+0+0+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+j+j+j+j+j+0/+j+0+0+0+0+j+j/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+0+0+j+j/+j+j+j+j+0+j/+j+j+j+j+j+0
-      - +0+j+j+j+j+j/+j+0+0+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+0+j+0+0+j/+j+j+j+0+j+j+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+0+0/+j+j+j+0+j+j/+j+j+j+j+j+j
-      - +0+0+j+0+0+j/+j+j+0+j+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+j+0+0+j/+j+j+j+0+j+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+j+0+0/+j+j+j+0+j+j/+j+j+j+j+j+j
-      - +0+0+j+0+0+j/+j+j+0+j+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+0+0+0+j/+j+j+0+j+j+j+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+0+0/+j+j+j+0+j+j/+j+j+j+j+j+j
-      - +0+j+0+0+0+j/+j+0+j+j+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+0+j+0+0+0+j/+j+j+0+j+j+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+j+0+0/+j+j+j+0+j+j/+j+j+j+j+j+j
-      - +0+j+0+0+0+j/+j+0+j+j+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+0+j+0+j+0/+j+j+j+0+j+0+j/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+0+j/+j+j+j+0+j+0/+j+j+j+j+j+j
-      - +0+0+j+0+j+0/+j+j+0+j+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+j+0+j+j/+j+j+j+0+j+0+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+0+j/+j+j+j+0+j+0/+j+j+j+j+j+j
-      - +0+0+j+0+j+j/+j+j+0+j+0+0/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+j+0+j+j/+j+j+j+0+j+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+j+0+j/+j+j+j+0+j+0/+j+j+j+j+j+j
-      - +0+0+j+0+j+j/+j+j+0+j+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+j+j+j+0/+j+0+j+0+0+0+j/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+0+j/+j+j+j+0+j+0/+j+j+j+j+j+j
-      - +0+j+0+0+0+j/+j+0+j+j+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+j+0+j+j+j+j/+j+0+j+0+0+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+j+0+j/+j+j+j+0+j+0/+j+j+j+j+j+j
-      - +0+j+0+0+0+j/+j+0+j+j+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+0+j+0+j+0/+j+j+j+0+j+j+j/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+0+j+0+j/+j+j+j+0+j+j/+j+j+j+j+j+0
-      - +0+0+j+0+j+0/+j+j+0+j+j+j/+j+j+j+j+0+j
-
-  Hijo: +0+0+0+j+0+j+j/+j+j+j+0+j+j+0/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+0+j+0+j/+j+j+j+0+j+j/+j+j+j+j+j+0
-      - +0+0+j+0+j+j/+j+j+0+j+j+0/+j+j+j+j+0+j
-
-  Hijo: +0+0+0+j+0+j+j/+j+j+j+0+j+j+j/+j+j+j+j+j+0+0
-    Aparece en 2 padres:
-      - +0+0+0+j+0+j/+j+j+j+0+j+j/+j+j+j+j+j+0
-      - +0+0+j+0+j+j/+j+j+0+j+j+j/+j+j+j+j+0+0
-
-  Hijo: +0+j+j+j+0+j+j/+j+0+0+0+j+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+j+0+j/+j+j+j+0+j+j/+j+j+j+j+j+0
-      - +0+j+0+0+0+j/+j+0+j+j+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+j+j+j+j+j+0/+j+0+0+0+j+0+j/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+0+j/+j+j+j+0+j+j/+j+j+j+j+j+0
-      - +0+j+0+0+0+j/+j+0+j+j+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+0+j+j+0+0/+j+j+j+0+0+j+j/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+0/+j+j+j+0+0+j/+j+j+j+j+j+j
-      - +0+0+j+j+0+0/+j+j+0+0+j+j/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+j+j+0+j/+j+j+j+0+0+j+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+0/+j+j+j+0+0+j/+j+j+j+j+j+j
-      - +0+0+j+j+0+j/+j+j+0+0+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+j+j+0+j/+j+j+j+0+0+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+j+j+0/+j+j+j+0+0+j/+j+j+j+j+j+j
-      - +0+0+j+j+0+j/+j+j+0+0+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+j+0+0+0+j/+j+0+0+j+j+j+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+0/+j+j+j+0+0+j/+j+j+j+j+j+j
-      - +0+0+j+j+j+0/+j+j+0+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+j+j+0+0+0+j/+j+0+0+j+j+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+j+j+0/+j+j+j+0+0+j/+j+j+j+j+j+j
-      - +0+0+j+j+j+j/+j+j+0+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+0+j+j+0+0/+j+j+j+0+j+j+j/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+0/+j+j+j+0+j+j/+j+j+j+j+0+j
-      - +0+0+j+j+0+0/+j+j+0+j+j+j/+j+j+j+0+j+j
-
-  Hijo: +0+0+0+j+j+0+j/+j+j+j+0+j+j+0/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+0/+j+j+j+0+j+j/+j+j+j+j+0+j
-      - +0+0+j+j+0+j/+j+j+0+j+j+0/+j+j+j+0+j+j
-
-  Hijo: +0+0+0+j+j+0+j/+j+j+j+0+j+j+j/+j+j+j+j+0+j+0
-    Aparece en 2 padres:
-      - +0+0+0+j+j+0/+j+j+j+0+j+j/+j+j+j+j+0+j
-      - +0+0+j+j+0+j/+j+j+0+j+j+j/+j+j+j+0+j+0
-
-  Hijo: +0+j+j+0+0+0+j/+j+0+j+j+j+j+0/+j+j+0+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+0/+j+j+j+0+j+j/+j+j+j+j+0+j
-      - +0+j+j+j+j+0/+j+0+0+0+j+j/+j+j+j+j+0+j
-
-  Hijo: +0+j+j+0+0+0+j/+j+0+j+j+j+j+j/+j+j+0+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+j+j+0/+j+j+j+0+j+j/+j+j+j+j+0+j
-      - +0+j+j+j+0+j/+j+0+0+0+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+0+j+j+j+0/+j+j+j+0+0+0+j/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+0+0/+j+j+j+j+j+j
-      - +0+0+j+j+j+0/+j+j+0+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+0+0+j+j+j+j/+j+j+j+0+0+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+0+0/+j+j+j+j+j+j
-      - +0+0+j+j+j+j/+j+j+0+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+0+j+j+j+0/+j+j+j+0+0+j+j/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+0+j/+j+j+j+j+j+0
-      - +0+0+j+j+j+0/+j+j+0+0+j+j/+j+j+j+j+0+j
-
-  Hijo: +0+0+0+j+j+j+j/+j+j+j+0+0+j+0/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+0+j/+j+j+j+j+j+0
-      - +0+0+j+j+j+j/+j+j+0+0+j+0/+j+j+j+j+0+j
-
-  Hijo: +0+0+0+j+j+j+j/+j+j+j+0+0+j+j/+j+j+j+j+j+0+0
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+0+j/+j+j+j+j+j+0
-      - +0+0+j+j+j+j/+j+j+0+0+j+j/+j+j+j+j+0+0
-
-  Hijo: +0+j+j+j+0+0+j/+j+0+0+0+j+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+0+j/+j+j+j+j+j+0
-      - +0+0+j+j+j+0/+j+j+0+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+j+j+j+j+j+0/+j+0+0+0+j+j+j/+j+j+j+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+0+j/+j+j+j+j+j+0
-      - +0+0+j+j+j+j/+j+j+0+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+0+j+j+j+0/+j+j+j+0+j+0+j/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+j+0/+j+j+j+j+0+j
-      - +0+0+j+j+j+0/+j+j+0+j+0+j/+j+j+j+0+j+j
-
-  Hijo: +0+0+0+j+j+j+j/+j+j+j+0+j+0+0/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+j+0/+j+j+j+j+0+j
-      - +0+0+j+0+j+j/+j+j+0+j+j+j/+j+j+j+j+0+0
-
-  Hijo: +0+0+0+j+j+j+j/+j+j+j+0+j+0+j/+j+j+j+j+0+j+0
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+j+0/+j+j+j+j+0+j
-      - +0+0+j+j+j+j/+j+j+0+j+0+j/+j+j+j+0+j+0
-
-  Hijo: +0+j+0+j+j+j+0/+j+0+j+j+j+j+j/+j+j+j+0+0+0+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+j+0/+j+j+j+j+0+j
-      - +0+j+j+j+0+j/+j+0+0+0+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+j+j+j+j/+j+0+j+j+j+j+0/+j+j+j+0+0+0+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+j+0/+j+j+j+j+0+j
-      - +0+j+j+j+j+0/+j+0+0+0+j+j/+j+j+j+j+0+j
-
-  Hijo: +0+0+0+j+j+j+0/+j+j+j+0+j+j+j/+j+j+j+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+j+j/+j+j+j+j+0+0
-      - +0+0+j+j+j+0/+j+j+0+j+j+j/+j+j+j+0+0+j
-
-  Hijo: +0+0+0+j+j+j+j/+j+j+j+0+j+j+0/+j+j+j+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+j+j/+j+j+j+j+0+0
-      - +0+0+j+j+j+j/+j+j+0+j+j+0/+j+j+j+0+0+j
-
-  Hijo: +0+0+j+j+j+j+0/+j+j+0+j+j+j+j/+j+j+j+0+0+0+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+j+j/+j+j+j+j+0+0
-      - +0+j+j+j+j+0/+j+0+0+0+j+j/+j+j+j+j+0+j
-
-  Hijo: +0+0+j+j+j+j+j/+j+j+0+j+j+j+0/+j+j+j+0+0+0+j
-    Aparece en 2 padres:
-      - +0+0+0+j+j+j/+j+j+j+0+j+j/+j+j+j+j+0+0
-      - +0+j+j+j+0+j/+j+0+0+0+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+0+0+j+0/+j+j+0+j+j+0+j/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+0+0+j/+j+j+0+j+j+0/+j+j+j+j+j+j
-      - +0+j+0+0+j+0/+j+0+j+j+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+0+j+0+0+j+j/+j+j+0+j+j+0+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+0+0+j/+j+j+0+j+j+0/+j+j+j+j+j+j
-      - +0+0+j+j+0+j/+j+j+0+0+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+0+j+0+0+j+j/+j+j+0+j+j+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+0+0+j/+j+j+0+j+j+0/+j+j+j+j+j+j
-      - +0+j+0+0+j+j/+j+0+j+j+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+j+0+j+j+j/+j+0+0+j+0+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+0+0+j/+j+j+0+j+j+0/+j+j+j+j+j+j
-      - +0+0+j+0+0+j/+j+j+0+j+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+0+0+j+0/+j+j+0+j+j+j+j/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+0+0+j/+j+j+0+j+j+j/+j+j+j+j+j+0
-      - +0+j+0+0+j+0/+j+0+j+j+j+j/+j+j+j+j+0+j
-
-  Hijo: +0+0+j+0+0+j+j/+j+j+0+j+j+j+0/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+0+0+j/+j+j+0+j+j+j/+j+j+j+j+j+0
-      - +0+j+0+0+j+j/+j+0+j+j+j+0/+j+j+j+j+0+j
-
-  Hijo: +0+0+j+0+0+j+j/+j+j+0+j+j+j+j/+j+j+j+j+j+0+0
-    Aparece en 2 padres:
-      - +0+0+j+0+0+j/+j+j+0+j+j+j/+j+j+j+j+j+0
-      - +0+0+j+j+j+j/+j+j+0+0+j+0/+j+j+j+j+0+j
-
-  Hijo: +0+0+j+0+j+0+j/+j+j+0+j+0+j+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+0/+j+j+0+j+0+j/+j+j+j+j+j+j
-      - +0+j+0+j+0+j/+j+0+j+0+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+0+j+0+j+0+j/+j+j+0+j+0+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+0+j+0/+j+j+0+j+0+j/+j+j+j+j+j+j
-      - +0+j+0+j+0+j/+j+0+j+0+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+j+0+0+j/+j+0+j+0+j+j+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+0/+j+j+0+j+0+j/+j+j+j+j+j+j
-      - +0+j+0+j+j+0/+j+0+j+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+j+0+j+0+0+j/+j+0+j+0+j+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+0+j+0/+j+j+0+j+0+j/+j+j+j+j+j+j
-      - +0+j+0+j+j+j/+j+0+j+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+0+j+0+j/+j+j+0+j+j+j+0/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+0/+j+j+0+j+j+j/+j+j+j+j+0+j
-      - +0+j+0+j+0+j/+j+0+j+j+j+0/+j+j+j+0+j+j
-
-  Hijo: +0+0+j+0+j+0+j/+j+j+0+j+j+j+j/+j+j+j+j+0+j+0
-    Aparece en 2 padres:
-      - +0+0+j+0+j+0/+j+j+0+j+j+j/+j+j+j+j+0+j
-      - +0+j+0+j+0+j/+j+0+j+j+j+j/+j+j+j+0+j+0
-
-  Hijo: +0+j+0+j+0+0+j/+j+0+j+j+j+j+0/+j+j+j+0+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+0/+j+j+0+j+j+j/+j+j+j+j+0+j
-      - +0+j+j+j+j+0/+j+0+0+j+0+j/+j+j+j+0+j+j
-
-  Hijo: +0+j+0+j+0+0+j/+j+0+j+j+j+j+j/+j+j+j+0+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+0+j+0/+j+j+0+j+j+j/+j+j+j+j+0+j
-      - +0+j+j+0+j+j/+j+0+0+j+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+0+j+j+0/+j+j+0+j+0+0+j/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+0+0/+j+j+j+j+j+j
-      - +0+j+0+j+j+0/+j+0+j+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+0+j+0+j+j+j/+j+j+0+j+0+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+0+0/+j+j+j+j+j+j
-      - +0+j+0+j+j+j/+j+0+j+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+0+j+j+0/+j+j+0+j+0+j+j/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+0+j/+j+j+j+j+j+0
-      - +0+j+0+j+j+0/+j+0+j+0+j+j/+j+j+j+j+0+j
-
-  Hijo: +0+0+j+0+j+j+j/+j+j+0+j+0+j+0/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+0+j/+j+j+j+j+j+0
-      - +0+j+0+j+0+j/+j+0+j+j+j+j/+j+j+j+0+j+0
-
-  Hijo: +0+0+j+0+j+j+j/+j+j+0+j+0+j+j/+j+j+j+j+j+0+0
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+0+j/+j+j+j+j+j+0
-      - +0+0+j+j+j+j/+j+j+0+j+0+j/+j+j+j+0+j+0
-
-  Hijo: +0+j+j+0+j+0+j/+j+0+0+j+0+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+0+j/+j+j+j+j+j+0
-      - +0+j+0+j+j+0/+j+0+j+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+j+j+j+j+j+0/+j+0+0+j+0+j+j/+j+j+j+0+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+0+j/+j+j+j+j+j+0
-      - +0+j+0+j+j+j/+j+0+j+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+0+j+j+0/+j+j+0+j+j+0+j/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+j+0/+j+j+j+j+0+j
-      - +0+j+0+j+j+0/+j+0+j+j+0+j/+j+j+j+0+j+j
-
-  Hijo: +0+0+j+0+j+j+j/+j+j+0+j+j+0+0/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+j+0/+j+j+j+j+0+j
-      - +0+0+j+j+0+j/+j+j+0+j+j+j/+j+j+j+0+j+0
-
-  Hijo: +0+0+j+0+j+j+j/+j+j+0+j+j+0+j/+j+j+j+j+0+j+0
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+j+0/+j+j+j+j+0+j
-      - +0+j+0+j+j+j/+j+0+j+j+0+j/+j+j+j+0+j+0
-
-  Hijo: +0+j+j+0+j+j+0/+j+0+0+j+0+j+j/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+j+0/+j+j+j+j+0+j
-      - +0+j+j+0+j+j/+j+0+0+j+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+j+0+j+j+j/+j+0+j+j+j+j+0/+j+j+0+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+j+0/+j+j+j+j+0+j
-      - +0+j+j+j+j+0/+j+0+0+j+0+j/+j+j+j+0+j+j
-
-  Hijo: +0+0+j+0+j+j+0/+j+j+0+j+j+j+j/+j+j+j+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+j+j/+j+j+j+j+0+0
-      - +0+j+0+j+j+0/+j+0+j+j+j+j/+j+j+j+0+0+j
-
-  Hijo: +0+0+j+0+j+j+j/+j+j+0+j+j+j+0/+j+j+j+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+j+j/+j+j+j+j+0+0
-      - +0+j+0+j+j+j/+j+0+j+j+j+0/+j+j+j+0+0+j
-
-  Hijo: +0+0+j+j+j+j+0/+j+j+0+j+0+0+j/+j+j+j+0+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+j+j/+j+j+j+j+0+0
-      - +0+j+j+j+j+0/+j+0+0+j+0+j/+j+j+j+0+j+j
-
-  Hijo: +0+0+j+j+j+j+j/+j+j+0+j+0+0+j/+j+j+j+0+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+0+j+j/+j+j+0+j+j+j/+j+j+j+j+0+0
-      - +0+j+j+0+j+j/+j+0+0+j+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+j+0+0+j/+j+j+0+0+j+j+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+0+0/+j+j+0+0+j+j/+j+j+j+j+j+j
-      - +0+j+j+0+0+j/+j+0+0+j+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+0+j+j+0+0+j/+j+j+0+0+j+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+0+0/+j+j+0+0+j+j/+j+j+j+j+j+j
-      - +0+j+j+0+0+j/+j+0+0+j+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+j+0+0+j/+j+j+0+j+j+j+0/+j+j+j+0+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+0+0/+j+j+0+j+j+j/+j+j+j+0+j+j
-      - +0+j+j+0+0+j/+j+0+j+j+j+0/+j+j+0+j+j+j
-
-  Hijo: +0+0+j+j+0+0+j/+j+j+0+j+j+j+j/+j+j+j+0+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+0+0/+j+j+0+j+j+j/+j+j+j+0+j+j
-      - +0+j+j+0+0+j/+j+0+j+j+j+j/+j+j+0+j+j+0
-
-  Hijo: +0+0+j+j+0+j+0/+j+j+0+0+j+0+j/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+0+j+0/+j+j+j+j+j+j
-      - +0+j+0+j+j+0/+j+0+j+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+0+j+j+0+j+j/+j+j+0+0+j+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+0+j+0/+j+j+j+j+j+j
-      - +0+j+j+0+j+j/+j+0+0+j+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+0+j+j+0/+j+0+j+j+0+0+j/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+0+j+0/+j+j+j+j+j+j
-      - +0+j+j+0+0+j/+j+0+0+j+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+j+0+0+j+j+j/+j+0+j+j+0+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+0+j+0/+j+j+j+j+j+j
-      - +0+j+j+0+0+j/+j+0+0+j+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+j+0+j+0/+j+j+0+0+j+j+j/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+0+j+j/+j+j+j+j+j+0
-      - +0+j+0+j+j+0/+j+0+j+j+j+j/+j+j+j+0+0+j
-
-  Hijo: +0+0+j+j+0+j+j/+j+j+0+0+j+j+0/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+0+j+j/+j+j+j+j+j+0
-      - +0+j+j+0+0+j/+j+0+j+j+j+j/+j+j+0+j+j+0
-
-  Hijo: +0+0+j+j+0+j+j/+j+j+0+0+j+j+j/+j+j+j+j+j+0+0
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+0+j+j/+j+j+j+j+j+0
-      - +0+0+j+j+j+j/+j+j+0+j+j+0/+j+j+j+0+0+j
-
-  Hijo: +0+j+j+0+0+j+j/+j+0+0+j+j+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+0+j+j/+j+j+j+j+j+0
-      - +0+j+j+0+0+j/+j+0+0+j+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+j+j+j+j+j+0/+j+0+0+j+j+0+j/+j+j+j+0+0+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+0+j+j/+j+j+j+j+j+0
-      - +0+j+j+0+0+j/+j+0+0+j+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+j+0+j+0/+j+j+0+j+j+0+j/+j+j+j+0+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+j+j+0/+j+j+j+0+j+j
-      - +0+j+0+j+j+0/+j+0+j+j+0+j/+j+j+j+0+j+j
-
-  Hijo: +0+0+j+j+0+j+j/+j+j+0+j+j+0+j/+j+j+j+0+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+j+j+0/+j+j+j+0+j+j
-      - +0+j+j+0+j+j/+j+0+j+j+0+j/+j+j+0+j+j+0
-
-  Hijo: +0+j+j+0+j+j+0/+j+0+0+j+j+0+j/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+j+j+0/+j+j+j+0+j+j
-      - +0+j+j+0+0+j/+j+0+j+j+j+j/+j+j+0+j+j+0
-
-  Hijo: +0+j+j+0+j+j+j/+j+0+j+j+0+0+j/+j+j+0+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+j+j+0/+j+j+j+0+j+j
-      - +0+j+j+0+0+j/+j+0+j+j+j+0/+j+j+0+j+j+j
-
-  Hijo: +0+0+j+j+0+j+0/+j+j+0+j+j+j+j/+j+j+j+0+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+j+j+j/+j+j+j+0+j+0
-      - +0+j+0+j+j+0/+j+0+j+0+j+j/+j+j+j+j+0+j
-
-  Hijo: +0+0+j+j+0+j+j/+j+j+0+j+j+j+0/+j+j+j+0+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+j+j+j/+j+j+j+0+j+0
-      - +0+j+j+0+j+j/+j+0+j+j+j+0/+j+j+0+j+0+j
-
-  Hijo: +0+j+0+j+j+j+0/+j+0+j+j+0+0+j/+j+j+j+0+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+j+j+j/+j+j+j+0+j+0
-      - +0+j+j+0+0+j/+j+0+j+j+j+0/+j+j+0+j+j+j
-
-  Hijo: +0+j+0+j+j+j+j/+j+0+j+j+0+0+j/+j+j+j+0+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+0+j/+j+j+0+j+j+j/+j+j+j+0+j+0
-      - +0+j+j+0+0+j/+j+0+j+j+j+j/+j+j+0+j+j+0
-
-  Hijo: +0+0+j+j+j+0+j/+j+j+0+0+0+j+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+0+0+j/+j+j+j+j+j+j
-      - +0+j+0+0+0+j/+j+0+j+j+j+0/+j+j+j+j+j+j
-
-  Hijo: +0+0+j+j+j+0+j/+j+j+0+0+0+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+0+0+j/+j+j+j+j+j+j
-      - +0+j+j+j+0+j/+j+0+0+0+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+j+j+0+0/+j+j+0+0+j+j+j/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+0+j+j/+j+j+j+j+0+j
-      - +0+0+j+j+j+0/+j+j+0+j+j+j/+j+j+j+0+0+j
-
-  Hijo: +0+0+j+j+j+0+j/+j+j+0+0+j+j+0/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+0+j+j/+j+j+j+j+0+j
-      - +0+j+j+0+0+j/+j+0+j+j+j+0/+j+j+0+j+j+j
-
-  Hijo: +0+0+j+j+j+0+j/+j+j+0+0+j+j+j/+j+j+j+j+0+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+0+j+j/+j+j+j+j+0+j
-      - +0+j+0+j+j+j/+j+0+j+j+j+0/+j+j+j+0+0+j
-
-  Hijo: +0+j+j+0+0+j+j/+j+0+0+j+j+j+0/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+0+j+j/+j+j+j+j+0+j
-      - +0+j+j+0+0+j/+j+0+0+j+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+j+j+0+0+j/+j+0+j+j+j+j+0/+j+j+0+0+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+0+j+j/+j+j+j+j+0+j
-      - +0+j+j+j+j+0/+j+0+0+j+j+j/+j+j+j+0+0+j
-
-  Hijo: +0+0+j+j+j+0+j/+j+j+0+j+0+j+0/+j+j+j+0+j+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+j+0+j/+j+j+j+0+j+j
-      - +0+j+0+j+0+j/+j+0+j+j+j+0/+j+j+j+0+j+j
-
-  Hijo: +0+0+j+j+j+0+j/+j+j+0+j+0+j+j/+j+j+j+0+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+j+0+j/+j+j+j+0+j+j
-      - +0+j+j+0+j+j/+j+0+j+j+j+0/+j+j+0+j+0+j
-
-  Hijo: +0+j+j+0+j+0+j/+j+0+0+j+j+j+0/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+j+0+j/+j+j+j+0+j+j
-      - +0+j+0+j+j+0/+j+0+j+j+j+j/+j+j+j+0+0+j
-
-  Hijo: +0+j+j+j+0+0+j/+j+0+j+0+j+j+j/+j+j+0+j+j+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+j+0+j/+j+j+j+0+j+j
-      - +0+j+0+j+j+j/+j+0+j+j+j+0/+j+j+j+0+0+j
-
-  Hijo: +0+0+j+j+j+0+j/+j+j+0+j+j+j+0/+j+j+j+0+0+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+j+j+j/+j+j+j+0+0+j
-      - +0+j+j+j+0+j/+j+0+j+j+j+0/+j+j+0+0+j+j
-
-  Hijo: +0+0+j+j+j+0+j/+j+j+0+j+j+j+j/+j+j+j+0+0+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+j+j+j/+j+j+j+0+0+j
-      - +0+j+0+0+j+j/+j+0+j+j+j+0/+j+j+j+j+0+j
-
-  Hijo: +0+j+j+0+j+j+j/+j+0+0+j+j+j+0/+j+j+j+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+0/+j+j+0+j+j+j/+j+j+j+0+0+j
-      - +0+0+j+j+j+j/+j+j+0+j+j+0/+j+j+j+0+0+j
-
-  Hijo: +0+0+j+j+j+j+0/+j+j+0+0+0+j+j/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+0+0+j/+j+j+j+j+j+0
-      - +0+j+j+j+j+0/+j+0+0+0+j+j/+j+j+j+j+0+j
-
-  Hijo: +0+0+j+j+j+j+j/+j+j+0+0+0+j+0/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+0+0+j/+j+j+j+j+j+0
-      - +0+j+0+0+0+j/+j+0+j+j+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+j+j+j+0/+j+j+0+0+j+0+j/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+0+j+0/+j+j+j+j+0+j
-      - +0+j+j+j+j+0/+j+0+0+j+0+j/+j+j+j+0+j+j
-
-  Hijo: +0+0+j+j+j+j+j/+j+j+0+0+j+0+j/+j+j+j+j+0+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+0+j+0/+j+j+j+j+0+j
-      - +0+j+0+j+j+j/+j+0+j+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+0+j+j+0/+j+0+j+j+j+j+j/+j+j+j+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+0+j+0/+j+j+j+j+0+j
-      - +0+j+j+0+0+j/+j+0+0+j+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+0+j+j+j/+j+0+j+j+j+j+0/+j+j+j+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+0+j+0/+j+j+j+j+0+j
-      - +0+j+j+j+j+0/+j+0+0+j+j+j/+j+j+j+0+0+j
-
-  Hijo: +0+0+j+j+j+j+0/+j+j+0+0+j+j+j/+j+j+j+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+0+j+j/+j+j+j+j+0+0
-      - +0+j+j+j+j+0/+j+0+0+j+j+j/+j+j+j+0+0+j
-
-  Hijo: +0+0+j+j+j+j+j/+j+j+0+0+j+j+0/+j+j+j+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+0+j+j/+j+j+j+j+0+0
-      - +0+j+j+0+0+j/+j+0+0+j+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+0+j+j+j+j+0/+j+j+0+j+0+j+j/+j+j+j+0+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+j+0+j/+j+j+j+0+j+0
-      - +0+j+j+j+j+0/+j+0+j+0+j+j/+j+j+0+j+0+j
-
-  Hijo: +0+0+j+j+j+j+j/+j+j+0+j+0+j+0/+j+j+j+0+j+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+j+0+j/+j+j+j+0+j+0
-      - +0+j+0+j+0+j/+j+0+j+0+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+j+j+j+0/+j+0+j+0+j+j+j/+j+j+j+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+j+0+j/+j+j+j+0+j+0
-      - +0+j+0+j+j+j/+j+0+j+j+j+0/+j+j+j+0+0+j
-
-  Hijo: +0+j+0+j+j+j+j/+j+0+j+0+j+j+0/+j+j+j+j+0+0+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+j+0+j/+j+j+j+0+j+0
-      - +0+j+0+j+j+0/+j+0+j+j+j+j/+j+j+j+0+0+j
-
-  Hijo: +0+0+j+j+j+j+0/+j+j+0+j+j+0+j/+j+j+j+0+0+j+j
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+j+j+0/+j+j+j+0+0+j
-      - +0+j+j+j+j+0/+j+0+j+j+0+j/+j+j+0+0+j+j
-
-  Hijo: +0+0+j+j+j+j+j/+j+j+0+j+j+0+j/+j+j+j+0+0+j+0
-    Aparece en 2 padres:
-      - +0+0+j+j+j+j/+j+j+0+j+j+0/+j+j+j+0+0+j
-      - +0+j+0+0+j+j/+j+0+j+j+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+0+0+j+j/+j+0+j+j+j+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+j+0+0+0+j/+j+0+j+j+j+0/+j+j+j+j+j+j
-      - +0+j+j+j+0+j/+j+0+0+0+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+0+0+j+j/+j+0+j+j+j+j+0/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+j+0+0+0+j/+j+0+j+j+j+j/+j+j+j+j+j+0
-      - +0+j+j+j+j+0/+j+0+0+0+j+j/+j+j+j+j+0+j
-
-  Hijo: +0+j+0+0+j+0+j/+j+0+j+j+0+j+0/+j+j+j+j+j+j+j
-    Aparece en 2 padres:
-      - +0+j+0+0+j+0/+j+0+j+j+0+j/+j+j+j+j+j+j
-      - +0+j+0+j+j+0/+j+0+j+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+j+0+0+j+0+j/+j+0+j+j+0+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+j+0+0+j+0/+j+0+j+j+0+j/+j+j+j+j+j+j
-      - +0+j+j+0+j+j/+j+0+0+j+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+0+j+0+j/+j+0+j+j+j+j+0/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+j+0+0+j+0/+j+0+j+j+j+j/+j+j+j+j+0+j
-      - +0+j+j+j+j+0/+j+0+0+j+0+j/+j+j+j+0+j+j
-
-  Hijo: +0+j+0+0+j+0+j/+j+0+j+j+j+j+j/+j+j+j+j+0+j+0
-    Aparece en 2 padres:
-      - +0+j+0+0+j+0/+j+0+j+j+j+j/+j+j+j+j+0+j
-      - +0+j+0+j+j+j/+j+0+j+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+0+j+j+0/+j+0+j+j+0+j+j/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+j+0+0+j+j/+j+0+j+j+0+j/+j+j+j+j+j+0
-      - +0+j+j+0+0+j/+j+0+j+j+j+j/+j+j+0+j+j+0
-
-  Hijo: +0+j+0+0+j+j+j/+j+0+j+j+0+j+0/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+j+0+0+j+j/+j+0+j+j+0+j/+j+j+j+j+j+0
-      - +0+j+0+j+j+0/+j+0+j+j+j+j/+j+j+j+0+0+j
-
-  Hijo: +0+j+0+j+j+0+j/+j+0+j+0+0+j+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+j+0+0+j+j/+j+0+j+j+0+j/+j+j+j+j+j+0
-      - +0+j+0+j+j+0/+j+0+j+0+0+j/+j+j+j+j+j+j
-
-  Hijo: +0+j+j+j+j+j+0/+j+0+j+0+0+j+j/+j+j+0+j+j+0+j
-    Aparece en 2 padres:
-      - +0+j+0+0+j+j/+j+0+j+j+0+j/+j+j+j+j+j+0
-      - +0+j+j+0+j+j/+j+0+0+j+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+0+j+j+0/+j+0+j+j+j+0+j/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+j+0+0+j+j/+j+0+j+j+j+0/+j+j+j+j+0+j
-      - +0+j+j+0+0+j/+j+0+j+j+j+0/+j+j+0+j+j+j
-
-  Hijo: +0+j+0+0+j+j+j/+j+0+j+j+j+0+j/+j+j+j+j+0+j+0
-    Aparece en 2 padres:
-      - +0+j+0+0+j+j/+j+0+j+j+j+0/+j+j+j+j+0+j
-      - +0+j+0+j+j+j/+j+0+j+j+j+0/+j+j+j+0+0+j
-
-  Hijo: +0+j+0+j+j+j+0/+j+0+j+0+0+j+j/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+j+0+0+j+j/+j+0+j+j+j+0/+j+j+j+j+0+j
-      - +0+j+0+j+j+j/+j+0+j+0+0+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+j+j+0+j+j/+j+0+j+j+j+j+0/+j+j+0+0+j+0+j
-    Aparece en 2 padres:
-      - +0+j+0+0+j+j/+j+0+j+j+j+0/+j+j+j+j+0+j
-      - +0+j+j+j+j+0/+j+0+0+j+0+j/+j+j+j+0+j+j
-
-  Hijo: +0+j+0+j+0+j+j/+j+0+j+0+j+0+j/+j+j+j+j+j+j+0
-    Aparece en 2 padres:
-      - +0+j+0+j+0+j/+j+0+j+0+j+0/+j+j+j+j+j+j
-      - +0+j+0+j+0+j/+j+0+j+0+j+j/+j+j+j+j+j+0
-
-  Hijo: +0+j+0+j+0+j+0/+j+0+j+0+j+j+j/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+j+0+j+0+j/+j+0+j+0+j+j/+j+j+j+j+j+0
-      - +0+j+0+j+0+j/+j+0+j+j+j+j/+j+j+j+0+j+0
-
-  Hijo: +0+j+0+j+0+j+j/+j+0+j+0+j+j+0/+j+j+j+j+j+0+j
-    Aparece en 2 padres:
-      - +0+j+0+j+0+j/+j+0+j+0+j+j/+j+j+j+j+j+0
-      - +0+j+0+j+j+0/+j+0+j+0+j+j/+j+j+j+j+0+j
-
-  Hijo: +0+j+0+j+0+j+j/+j+0+j+j+j+0+j/+j+j+j+0+j+j+0
-    Aparece en 2 padres:
-      - +0+j+0+j+0+j/+j+0+j+j+j+0/+j+j+j+0+j+j
-      - +0+j+j+0+j+j/+j+0+j+j+j+0/+j+j+0+j+0+j
-
-  Hijo: +0+j+0+j+j+j+0/+j+0+j+0+j+0+j/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+j+0+j+0+j/+j+0+j+j+j+0/+j+j+j+0+j+j
-      - +0+j+0+j+0+j/+j+0+j+j+j+j/+j+j+j+0+j+0
-
-  Hijo: +0+j+0+j+0+j+j/+j+0+j+j+j+j+0/+j+j+j+0+j+0+j
-    Aparece en 2 padres:
-      - +0+j+0+j+0+j/+j+0+j+j+j+j/+j+j+j+0+j+0
-      - +0+j+j+j+j+0/+j+0+j+0+j+j/+j+j+0+j+0+j
-
-  Hijo: +0+j+0+j+j+0+j/+j+0+j+0+j+j+0/+j+j+j+j+0+j+j
-    Aparece en 2 padres:
-      - +0+j+0+j+j+0/+j+0+j+0+j+j/+j+j+j+j+0+j
-      - +0+j+0+j+j+0/+j+0+j+j+0+j/+j+j+j+0+j+j
-
-  Hijo: +0+j+0+j+j+0+j/+j+0+j+0+j+j+j/+j+j+j+j+0+j+0
-    Aparece en 2 padres:
-      - +0+j+0+j+j+0/+j+0+j+0+j+j/+j+j+j+j+0+j
-      - +0+j+0+j+j+j/+j+0+j+j+0+j/+j+j+j+0+j+0
-
-  Hijo: +0+j+j+0+j+0+j/+j+0+j+j+j+j+0/+j+j+0+j+0+j+j
-    Aparece en 2 padres:
-      - +0+j+0+j+j+0/+j+0+j+0+j+j/+j+j+j+j+0+j
-      - +0+j+j+j+j+0/+j+0+j+0+j+j/+j+j+0+j+0+j
-
-  Hijo: +0+j+0+j+j+0+j/+j+0+j+j+0+j+j/+j+j+j+0+j+j+0
-    Aparece en 2 padres:
-      - +0+j+0+j+j+0/+j+0+j+j+0+j/+j+j+j+0+j+j
-      - +0+j+j+0+j+j/+j+0+j+j+0+j/+j+j+0+j+j+0
-
-  Hijo: +0+j+j+0+j+0+j/+j+0+j+j+0+j+j/+j+j+0+j+j+j+0
-    Aparece en 2 padres:
-      - +0+j+0+j+j+0/+j+0+j+j+0+j/+j+j+j+0+j+j
-      - +0+j+j+0+j+j/+j+0+j+j+j+0/+j+j+0+j+0+j
-
-  Hijo: +0+j+0+j+j+0+j/+j+0+j+j+j+j+0/+j+j+j+0+0+j+j
-    Aparece en 2 padres:
-      - +0+j+0+j+j+0/+j+0+j+j+j+j/+j+j+j+0+0+j
-      - +0+j+j+j+j+0/+j+0+j+j+0+j/+j+j+0+0+j+j
-
-  Hijo: +0+j+0+j+j+j+0/+j+0+j+j+0+j+j/+j+j+j+0+j+0+j
-    Aparece en 2 padres:
-      - +0+j+0+j+j+j/+j+0+j+j+0+j/+j+j+j+0+j+0
-      - +0+j+j+0+j+j/+j+0+j+j+j+0/+j+j+0+j+0+j
-
-  Hijo: +0+j+0+j+j+j+0/+j+0+j+j+j+0+j/+j+j+j+0+0+j+j
-    Aparece en 2 padres:
-      - +0+j+0+j+j+j/+j+0+j+j+j+0/+j+j+j+0+0+j
-      - +0+j+j+j+0+j/+j+0+j+j+j+0/+j+j+0+0+j+j
-
-  Hijo: +0+j+j+0+0+j+j/+j+0+j+j+j+0+j/+j+j+0+j+j+j+0
-    Aparece en 2 padres:
-      - +0+j+j+0+0+j/+j+0+j+j+j+0/+j+j+0+j+j+j
-      - +0+j+j+j+0+j/+j+0+j+j+j+0/+j+j+0+0+j+j
-
-  Hijo: +0+j+j+0+0+j+j/+j+0+j+j+j+j+0/+j+j+0+j+j+0+j
-    Aparece en 2 padres:
-      - +0+j+j+0+0+j/+j+0+j+j+j+j/+j+j+0+j+j+0
-      - +0+j+j+j+j+0/+j+0+j+j+0+j/+j+j+0+0+j+j
-
-================================================================================

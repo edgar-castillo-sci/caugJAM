@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "canonjam"
+version = "0.1.0"
+description = "Canonical augmentation (pruning) for JAM string generation"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Edgar R. H. Castillo", email = "edgar.castillo.sci@gmail.com"},
+]
+dependencies = [
+    "numpy",
+    "jam-canonical @ git+https://github.com/edgar-castillo-sci/jam-canonical.git",
+]
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+include = ["canonjam*"]

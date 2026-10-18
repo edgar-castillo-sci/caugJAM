@@ -1,5 +1,9 @@
 __pycache__/
 *.pyc
-datos/n9/
-datos/n10/
-...
+*.egg-info/
+build/
+dist/
+.venv/
+
+tests/*_salida.txt
+tests/*_salida.tsv
