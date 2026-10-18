@@ -1,0 +1,17 @@
+VERIFICACIÓN DE LA PODA
+============================================================
+
+Opción: 1
+Resultado: ÉXITO
+
+Clases por nivel:
+
+n=1: 1 clases
+n=2: 2 clases
+n=3: 4 clases
+n=4: 10 clases
+n=5: 25 clases
+n=6: 70 clases
+n=7: 196 clases
+n=8: 574 clases
+n=9: 1681 clases

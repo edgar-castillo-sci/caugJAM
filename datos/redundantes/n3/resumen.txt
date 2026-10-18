@@ -1,0 +1,39 @@
+================================================================================
+RESUMEN: RELACIÓN REDUNDANTES → CANÓNICOS (n=3)
+================================================================================
+
+Clases de 3 capas: 4
+
+--------------------------------------------------------------------------------
+CLASE 1: +0+0+0/+j+j+j/+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 3
+  Hijos únicos de la clase: 2
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 2: +0+0+j/+j+j+0/+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 3: +0+j+0/+j+0+j/+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 6
+  Hijos únicos de la clase: 3
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 4: +0+j+j/+j+0+j/+j+j+0
+--------------------------------------------------------------------------------
+  Redundantes: 6
+  Hijos únicos de la clase: 3
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+================================================================================

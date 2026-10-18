@@ -1,0 +1,27 @@
+Etiquetas de nodos
+============================================================
+
+Formato: L{layer}_{idx:02d}  →  clave completa
+
+Capa 0 (2 nodos):
+  L0_01  →  +0+0/+j+j/+j+j
+  L0_02  →  +0+j/+j+0/+j+j
+
+Capa 1 (4 nodos):
+  L1_01  →  +0+0+0/+j+j+j/+j+j+j
+  L1_02  →  +0+0+j/+j+j+0/+j+j+j
+  L1_03  →  +0+j+0/+j+0+j/+j+j+j
+  L1_04  →  +0+j+j/+j+0+j/+j+j+0
+
+Capa 2 (10 nodos):
+  L2_01  →  +0+0+0+0/+j+j+j+j/+j+j+j+j
+  L2_02  →  +0+0+0+j/+j+j+j+0/+j+j+j+j
+  L2_03  →  +0+0+j+0/+j+j+0+j/+j+j+j+j
+  L2_04  →  +0+0+j+j/+j+j+0+0/+j+j+j+j
+  L2_05  →  +0+0+j+j/+j+j+0+j/+j+j+j+0
+  L2_06  →  +0+j+0+j/+j+0+j+0/+j+j+j+j
+  L2_07  →  +0+j+0+j/+j+0+j+j/+j+j+j+0
+  L2_08  →  +0+j+j+0/+j+0+0+j/+j+j+j+j
+  L2_09  →  +0+j+j+0/+j+0+j+j/+j+j+0+j
+  L2_10  →  +0+j+j+j/+j+0+0+j/+j+j+j+0
+

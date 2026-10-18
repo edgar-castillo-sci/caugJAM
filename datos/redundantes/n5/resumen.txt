@@ -1,0 +1,207 @@
+================================================================================
+RESUMEN: RELACIÓN REDUNDANTES → CANÓNICOS (n=5)
+================================================================================
+
+Clases de 5 capas: 25
+
+--------------------------------------------------------------------------------
+CLASE 1: +0+0+0+0+0/+j+j+j+j+j/+j+j+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 3
+  Hijos únicos de la clase: 2
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 2: +0+0+0+0+j/+j+j+j+j+0/+j+j+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 3: +0+0+0+j+0/+j+j+j+0+j/+j+j+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 4: +0+0+0+j+j/+j+j+j+0+0/+j+j+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 5: +0+0+0+j+j/+j+j+j+0+j/+j+j+j+j+0
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 6: +0+0+j+0+0/+j+j+0+j+j/+j+j+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 6
+  Hijos únicos de la clase: 3
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 7: +0+0+j+0+j/+j+j+0+j+0/+j+j+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 8: +0+0+j+0+j/+j+j+0+j+j/+j+j+j+j+0
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 9: +0+0+j+j+0/+j+j+0+0+j/+j+j+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 10: +0+0+j+j+0/+j+j+0+j+j/+j+j+j+0+j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 11: +0+0+j+j+j/+j+j+0+0+j/+j+j+j+j+0
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 12: +0+0+j+j+j/+j+j+0+j+0/+j+j+j+0+j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 13: +0+0+j+j+j/+j+j+0+j+j/+j+j+j+0+0
+--------------------------------------------------------------------------------
+  Redundantes: 6
+  Hijos únicos de la clase: 3
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 14: +0+j+0+0+j/+j+0+j+j+0/+j+j+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 15: +0+j+0+0+j/+j+0+j+j+j/+j+j+j+j+0
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 16: +0+j+0+j+0/+j+0+j+0+j/+j+j+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 6
+  Hijos únicos de la clase: 3
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 17: +0+j+0+j+0/+j+0+j+j+j/+j+j+j+0+j
+--------------------------------------------------------------------------------
+  Redundantes: 6
+  Hijos únicos de la clase: 3
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 18: +0+j+0+j+j/+j+0+j+0+j/+j+j+j+j+0
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 19: +0+j+0+j+j/+j+0+j+j+0/+j+j+j+0+j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 20: +0+j+j+0+j/+j+0+0+j+j/+j+j+j+j+0
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 21: +0+j+j+0+j/+j+0+j+j+0/+j+j+0+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 6
+  Hijos únicos de la clase: 3
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 22: +0+j+j+j+0/+j+0+0+0+j/+j+j+j+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 6
+  Hijos únicos de la clase: 3
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 23: +0+j+j+j+0/+j+0+0+j+j/+j+j+j+0+j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 6
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 24: +0+j+j+j+0/+j+0+j+0+j/+j+j+0+j+j
+--------------------------------------------------------------------------------
+  Redundantes: 6
+  Hijos únicos de la clase: 3
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+--------------------------------------------------------------------------------
+CLASE 25: +0+j+j+j+j/+j+0+0+0+j/+j+j+j+j+0
+--------------------------------------------------------------------------------
+  Redundantes: 6
+  Hijos únicos de la clase: 3
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+  → La clase determina los hijos. La preclave puede ser la clase.
+
+================================================================================

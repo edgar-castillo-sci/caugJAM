@@ -1,0 +1,42 @@
+Leyenda del grafo
+============================================================
+
+NODOS
+  Cada nodo es una clase canónica de k capas.
+  La etiqueta es L{columna}_{indice:02d}.
+  El mapeo completo está en labels.txt.
+
+COLUMNAS
+  Columna 0: n=3
+  Columna 1: n=4
+  Columna 2: n=5
+
+COLORES (monocapa añadida)
+  #e41a1c  M1 (vacío en 0)
+  #377eb8  M2 (vacío en 1)
+  #4daf4a  M3 (vacío en 2)
+
+ESTILOS DE LÍNEA (dirección)
+  sólida     prepend: añadir monocapa al principio (abajo)
+  punteada   append:  añadir monocapa al final (arriba)
+
+CLASIFICACIÓN DE CONEXIONES
+  Cuando varias extensiones producen el mismo hijo,
+  se dibuja la primera en el orden:
+    M1-prepend > M1-append > M2-prepend >
+    M2-append > M3-prepend > M3-append
+
+QUÉ BUSCAR
+  - Nodos con muchas aristas salientes: padres con
+    fibra grande.
+  - Nodos con muchas aristas entrantes: hijos con
+    múltiples padres (convergencias).
+  - Zonas del grafo con mucha densidad: posibles
+    patrones de redundancia.
+  - Nodos con aristas de un solo color: extensiones
+    que siempre vienen de la misma monocapa.
+
+FIBRACIÓN
+  Cada columna k → k+1 es una fibración parcial.
+  La fibra de un nodo es el conjunto de sus hijos.
+  El tamaño de fibra máximo observado es 6.
