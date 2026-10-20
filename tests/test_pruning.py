@@ -4,7 +4,7 @@
 
 import pytest
 
-from canonjam import generate_full, generate_poda, verify_option
+from caugjam import generate_full, generate_poda, verify_option
 
 
 def test_generate_full_option_1_n2():

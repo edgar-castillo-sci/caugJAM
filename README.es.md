@@ -1,4 +1,4 @@
-# CanonJAM
+# caugJAM
 
 *[Read in English](README.md)*
 
@@ -30,10 +30,10 @@ speedup que crece con n.
 
 ## Instalación
 
-Requiere `jam-canonical`, instalado desde GitHub:
+Requiere `canonJAM`, instalado desde GitHub:
 
 ```bash
-pip install git+https://github.com/edgar-castillo-sci/jam-canonical.git
+pip install git+https://github.com/edgar-castillo-sci/canonJAM.git
 ```
 
 Luego instala este paquete:
@@ -45,7 +45,7 @@ pip install -e ".[tests]"
 ## Uso
 
 ```python
-from canonjam import verify_option
+from caugjam import verify_option
 
 result = verify_option(option=1, levels=[2, 3, 4, 5])
 print(result["match"])     # True
@@ -54,9 +54,9 @@ print(result["speedup"])   # ~3.2x
 
 ## Contenido
 
-- `canonjam/generation.py`: generación de monocapas para las 8 opciones.
-- `canonjam/pruning.py`: método de poda y verificación.
-- `canonjam/fibration.py`: relación entre clases de n y n+1.
+- `caugjam/generation.py`: generación de monocapas para las 8 opciones.
+- `caugjam/pruning.py`: método de poda y verificación.
+- `caugjam/fibration.py`: relación entre clases de n y n+1.
 - `scripts/`: scripts CLI originales.
 - `datos/`, `grafos/`: datos y grafos generados (evidencia).
 
@@ -75,9 +75,9 @@ python3 scripts/fibracion.py
 
 ## Paquetes relacionados
 
-- [`jam-canonical`](https://github.com/edgar-castillo-sci/jam-canonical):
+- [`canonJAM`](https://github.com/edgar-castillo-sci/canonJAM):
   filtrado canónico (este paquete depende de él).
-- [`CanonJAM`](https://github.com/edgar-castillo-sci/CanonJAM): este repo.
+- [`caugJAM`](https://github.com/edgar-castillo-sci/caugJAM): este repo.
 
 ## Licencia
 

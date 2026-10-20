@@ -3,14 +3,14 @@ poda.py
 
 CLI for the pruning verification.
 
-The implementation lives in canonjam.pruning.
+The implementation lives in caugjam.pruning.
 """
 
 import argparse
 import csv
 import sys
 
-from canonjam import verify_option
+from caugjam import verify_option
 
 
 DEFAULT_OPTIONS = [1, 5, 7]

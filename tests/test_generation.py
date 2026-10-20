@@ -5,7 +5,7 @@
 import numpy as np
 import pytest
 
-from canonjam import rows_for_option, chain_to_array
+from caugjam import rows_for_option, chain_to_array
 
 
 @pytest.mark.parametrize("option,expected", [

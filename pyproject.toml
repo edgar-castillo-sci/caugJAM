@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "canonjam"
+name = "caugjam"
 version = "0.1.0"
 description = "Canonical augmentation (pruning) for JAM string generation"
 readme = "README.md"
@@ -14,7 +14,7 @@ authors = [
 ]
 dependencies = [
     "numpy",
-    "jam-canonical @ git+https://github.com/edgar-castillo-sci/jam-canonical.git",
+    "canonJAM @ git+https://github.com/edgar-castillo-sci/canonJAM.git",
 ]
 
 [project.optional-dependencies]
@@ -23,4 +23,4 @@ tests = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["canonjam*"]
+include = ["caugjam*"]

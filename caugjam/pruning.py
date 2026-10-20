@@ -10,7 +10,7 @@ from time import perf_counter
 
 import numpy as np
 
-from jam_canonical import canonical_key, filter_duplicates
+from canonjam import canonical_key, filter_duplicates
 
 from .generation import chain_to_array, rows_for_option
 

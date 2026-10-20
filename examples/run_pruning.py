@@ -7,7 +7,7 @@ Usage:
     python3 run_pruning.py
 """
 
-from canonjam import verify_option
+from caugjam import verify_option
 
 
 if __name__ == "__main__":

@@ -3,7 +3,7 @@ fibracion.py
 
 CLI for generating raw data and the fibration between consecutive levels.
 
-The implementation lives in canonjam.fibration and canonjam.generation.
+The implementation lives in caugjam.fibration and caugjam.generation.
 """
 
 import argparse
@@ -12,19 +12,19 @@ import os
 import sys
 from time import perf_counter
 
-# Add the parent directory to the path so we can import canonjam
+# Add the parent directory to the path so we can import caugjam
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 _CANONJAM_DIR = os.path.dirname(_SCRIPT_DIR)
 sys.path.insert(0, _CANONJAM_DIR)
 
-from canonjam import (
+from caugjam import (
     generate_raw,
     generate_canonical,
     generate_extensions,
     build_fibration,
     rows_for_option,
 )
-from jam_canonical import canonical_key, array_to_chain
+from caugjam import canonical_key, array_to_chain
 
 
 DEFAULT_OPTION = 1
