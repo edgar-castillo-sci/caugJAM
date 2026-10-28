@@ -17,8 +17,8 @@ Builds on the JAM notation and canonicalization described in:
 > representation for honeycomb layered materials." Matter, 6(5),
 > 1503–1513. doi: 10.1016/j.matt.2023.02.014
 
-and in the companion canonicalization paper (in preparation),
-which formalizes the symmetry group `G = S₃ × ℤ/2`, the canonical
+and in the companion canonicalization paper (in preparation), which
+formalizes the symmetry group `G = S₃ × ℤ/2`, the canonical
 representative `κ`, and the Burnside closed forms.
 
 The correctness proof, the complexity theorem, and the empirical
@@ -228,13 +228,13 @@ Target: MATCH, J. Math. Chem., or a journal in algorithms.
 
 ## Installation
 
-Requires `canonJAM`, installed from GitHub:
+Requires `canonJAM` v1.2.1 or later. Install from GitHub:
 
 ```bash
-pip install git+https://github.com/edgar-castillo-sci/canonJAM.git
+pip install "canonjam @ git+https://github.com/edgar-castillo-sci/canonJAM.git@v1.2.1"
 ```
 
-Then install this package:
+Then install this package (with test dependencies):
 
 ```bash
 pip install -e ".[tests]"
@@ -261,24 +261,38 @@ print(result["speedup_vs_full"])  # {2: 1.80, 3: 2.59, 4: 3.76, 5: 4.42}
   - `scripts/fibration.py`: fibration data.
   - `scripts/redundant_check.py`: structural verification (all 8 options).
   - `scripts/stabilizer_dist.py`: distribution of `|Stab|` per level.
-  - `scripts/dag_figure.py`: augmentation DAG figure (B/N, `TikZ` or `matplotlib`).
+  - `scripts/dag_figure.py`: augmentation DAG figure (TikZ or matplotlib).
   - `scripts/export_dag.py`: augmentation DAG exported to JSON.
   - `scripts/visualization.py`: fibration graphs.
 - `figures/`: standalone `TikZ` figures for the paper.
 - `data/`, `graphs/`: generated data and graphs (evidence).
 
+### Note on data versioning
+
+Large text dumps under `data/` are **not versioned** (they exceed
+GitHub's 50 MB soft limit):
+- `data/n*/**/*.txt` (canonical chain lists, up to 106 MB at n=15)
+- `data/opt*/**/*.txt` (canonical chain lists, up to 74 MB at n=9)
+- `data/redundant_v2/**/clases.tsv` (per-class dumps, up to 114 MB)
+
+Structured evidence is versioned: `.tsv` tables under `data/pruning/`,
+`resumen.txt` summaries under `data/redundant/`, `figures/*.tex`, and
+`graphs/*.png`. The excluded files are regenerated with the scripts in
+`scripts/`.
+
 ## Running the tests
 
 ```bash
-pytest tests/ -v
+pytest -v
 ```
 
 ## Running the CLI
 
 ```bash
 # Verification + benchmark, option 1 up to n=10
-python3 scripts/pruning_benchmark.py --options 1 --levels 2 3 4 5 6 7 8 9 10 \
-    --verbose --output data/pruning/op1_corrected.tsv
+python3 scripts/pruning_benchmark.py --options 1 \
+    --levels 2 3 4 5 6 7 8 9 10 --verbose \
+    --output data/pruning/op1_corrected.tsv
 
 # Benchmark options 3, 5, 7
 python3 scripts/pruning_benchmark.py --options 3 --levels 2 3 4 5 6 \
@@ -289,8 +303,8 @@ python3 scripts/pruning_benchmark.py --options 7 --levels 2 3 4 5 \
     --output data/pruning/op7_corrected.tsv
 
 # Cross-check all 8 options at n=2,3,4
-python3 scripts/pruning_benchmark.py --options 1 2 3 4 5 6 7 8 --levels 2 3 4 \
-    --output data/pruning/all_opts_small.tsv
+python3 scripts/pruning_benchmark.py --options 1 2 3 4 5 6 7 8 \
+    --levels 2 3 4 --output data/pruning/all_opts_small.tsv
 
 # Stabilizer distribution
 python3 scripts/stabilizer_dist.py --option 1 --levels 3 4 5 6 7 8 9 10
@@ -303,8 +317,29 @@ python3 scripts/dag_figure.py --option 1 --levels 2 3 4 \
 ## Related packages
 
 - [`canonJAM`](https://github.com/edgar-castillo-sci/canonJAM):
-  canonical filtering (this package depends on it).
-- [`caugJAM`](https://github.com/edgar-castillo-sci/caugJAM): this repo.
+  canonical filtering (this package depends on it, pinned to `v1.2.1`).
+- [`Laminar`](https://github.com/edgar-castillo-sci/Laminar): Rust suite
+  (downstream, uses the fiber structure).
+- [`Stacking as words`](https://github.com/edgar-castillo-sci/stacking-as-words):
+  combinatorial exploration (companion, not a dependency).
+
+## Citation
+
+If you use caugJAM in your research, please cite it as:
+
+```bibtex
+@software{caugjam,
+  author       = {Castillo, Edgar},
+  title        = {{caugJAM: Canonical augmentation for JAM string generation}},
+  year         = {2026},
+  publisher    = {Zenodo},
+  howpublished = {\url{https://github.com/edgar-castillo-sci/caugJAM}},
+  note         = {DOI to be assigned}
+}
+```
+
+A `CITATION.cff` file is included in the repository; GitHub will render
+a "Cite this repository" button automatically.
 
 ## License
 
