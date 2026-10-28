@@ -61,10 +61,9 @@ completo; ver [Aceleración](#aceleración) abajo).
 | `scripts/stabilizer_dist.py` (distribución de estabilizadores) | implementado |
 | `scripts/dag_figure.py` (figura del DAG de aumentación) | implementado |
 | `scripts/export_dag.py` (DAG → JSON) | implementado |
-| Prueba formal de `G`-equivarianza | **cerrada** (§4 del paper) |
-| Prueba formal de correctitud | **cerrada** (§5 del paper) |
-| Prueba formal de complejidad | **cerrada** (§6 del paper) |
-| Paper (borrador) | en preparación |
+| Prueba formal de `G`-equivarianza | **cerrada** (paper compañero, en preparación) |
+| Prueba formal de correctitud | **cerrada** (paper compañero, en preparación) |
+| Prueba formal de complejidad | **cerrada** (paper compañero, en preparación) |
 
 ## Qué hemos demostrado (empíricamente)
 

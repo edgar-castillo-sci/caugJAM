@@ -61,10 +61,9 @@ extension baseline (and to `|G|/2 ≈ 6` against the full method; see
 | `scripts/stabilizer_dist.py` (stabilizer distribution) | implemented |
 | `scripts/dag_figure.py` (augmentation DAG figure) | implemented |
 | `scripts/export_dag.py` (DAG → JSON) | implemented |
-| Formal proof of `G`-equivariance | **closed** (§4 of paper) |
-| Formal proof of correctness | **closed** (§5 of paper) |
-| Formal proof of complexity | **closed** (§6 of paper) |
-| Paper (draft) | in preparation |
+| Formal proof of `G`-equivariance | **closed** (companion paper, in preparation) |
+| Formal proof of correctness | **closed** (companion paper, in preparation) |
+| Formal proof of complexity | **closed** (companion paper, in preparation) |
 
 ## What we have demonstrated (empirically)
 
