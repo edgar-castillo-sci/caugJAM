@@ -3,6 +3,7 @@ message: "If you use this software, please cite it as below."
 type: software
 title: "caugJAM: Canonical augmentation for JAM string generation"
 version: 0.1.0
+doi: 10.5281/zenodo.23721460
 url: "https://github.com/edgar-castillo-sci/caugJAM"
 repository-code: "https://github.com/edgar-castillo-sci/caugJAM"
 license: MIT
