@@ -14,7 +14,7 @@ authors = [
 ]
 dependencies = [
     "numpy",
-    "canonJAM @ git+https://github.com/edgar-castillo-sci/canonJAM.git@v1.2.1",
+    "canonjam @ git+https://github.com/edgar-castillo-sci/canonJAM.git@v1.2.1",
 ]
 keywords = ["JAM", "canonical augmentation", "isomorph-free generation", "2D materials", "honeycomb"]
 classifiers = [

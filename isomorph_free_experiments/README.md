@@ -224,19 +224,19 @@ python scripts/test_equivariance_exhaustive.py --options 1 3 5 --max-n 5
 # Q1: obstruction
 for opt in 1 2 3 4 5 6 7 8; do
     python scripts/run_obstruction.py --option $opt --levels 2 3 4 5 \
-        --output datos/obstruction_op$opt.tsv
+        --output data/obstruction_op$opt.tsv
 done
 
 # Q2: argmin-parent (option 1 up to n=8; others to n=5 or 6)
 python scripts/run_argmin.py --option 1 --n-max 8 \
-    --output datos/argmin_op1_n8.tsv
+    --output data/argmin_op1_n8.tsv
 for opt in 2 3 5 6; do
     python scripts/run_argmin.py --option $opt --n-max 6 \
-        --output datos/argmin_op$opt.tsv
+        --output data/argmin_op$opt.tsv
 done
 for opt in 4 7 8; do
     python scripts/run_argmin.py --option $opt --n-max 5 \
-        --output datos/argmin_op$opt.tsv
+        --output data/argmin_op$opt.tsv
 done
 
 # Hybrid vs first vs argmin
@@ -265,8 +265,8 @@ python scripts/test_hybrid.py --option 5 --n-max 6
 - `scripts/run_obstruction.py`: Q1 experiment.
 - `scripts/run_argmin.py`: Q2 experiment.
 - `scripts/run_all_options.sh`: Q1 + Q2 for options 2, 4, 6, 7, 8.
-- `datos/`: TSV outputs.
-- `figuras/`: TikZ figures (pending).
+- `data/`: TSV outputs.
+- `figures/`: TikZ figures (pending).
 - `tests/`: unit tests.
 
 ## Status
