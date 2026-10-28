@@ -6,7 +6,7 @@ Aumentación canónica (poda) para la generación de cadenas JAM.
 
 ## Autor
 
-Edgar R. H. Castillo (Universidad Juárez Autónoma de Tabasco)
+Edgar Castillo (Independent Researcher)
 
 ## Base científica
 
@@ -58,7 +58,7 @@ print(result["speedup"])   # ~3.2x
 - `caugjam/pruning.py`: método de poda y verificación.
 - `caugjam/fibration.py`: relación entre clases de n y n+1.
 - `scripts/`: scripts CLI originales.
-- `datos/`, `grafos/`: datos y grafos generados (evidencia).
+- `data/`, `graphs/`: datos y grafos generados (evidencia).
 
 ## Correr los tests
 
@@ -69,8 +69,8 @@ pytest tests/ -v
 ## Correr el CLI
 
 ```bash
-python3 scripts/poda.py --options 1 5 7 --levels 2 3 4
-python3 scripts/fibracion.py
+python3 scripts/pruning_benchmark.py --options 1 5 7 --levels 2 3 4
+python3 scripts/fibration.py
 ```
 
 ## Paquetes relacionados

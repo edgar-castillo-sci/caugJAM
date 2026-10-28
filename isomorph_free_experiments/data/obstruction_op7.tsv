@@ -1,0 +1,5 @@
+option	n	total_classes	v_composed	fraction	position_selector
+7	2	16	8	0.5	NO
+7	3	144	0	0.0	MAYBE
+7	4	1776	96	0.05405405405405406	NO
+7	5	20736	0	0.0	MAYBE

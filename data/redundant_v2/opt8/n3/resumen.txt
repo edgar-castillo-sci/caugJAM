@@ -1,0 +1,1017 @@
+================================================================================
+RESUMEN: REDUNDANTES → CANÓNICOS (option=8, n=3)
+================================================================================
+
+Clases de 3 capas: 144
+
+--------------------------------------------------------------------------------
+CLASE 1: *j*j*j/+k+k+k/-l-l-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 23
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 2: *j*j*j/+k+k+l/-l-l-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 3: *j*j*j/+k+k-k/-l-l+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 4: *j*j*j/+k+k-l/-l-l+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 5: *j*j*j/+k+l+k/-l-k-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 6: *j*j*j/+k+l-k/-l-k+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 7: *j*j*j/+k+l-l/-l-k+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 8: *j*j*j/+k-k+k/-l+l-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 9: *j*j*j/+k-k+l/-l+l-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 10: *j*j*j/+k-k-l/-l+l+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 11: *j*j*j/+k-l+k/-l+k-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 23
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 12: *j*j*j/+k-l-l/-l+k+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 13: *j*j*j/+l+k+k/-k-l-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 14: *j*j*j/+l+k-l/-k-l+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 15: *j*j*j/+l+l-l/-k-k+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 16: *j*j*j/+l-k+k/-k+l-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 17: *j*j+k/+k+k*j/-l-l-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 18: *j*j+k/+k+k-l/-l-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 19: *j*j+k/+k+l*j/-l-k-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 20: *j*j+k/+k+l-l/-l-k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 21: *j*j+k/+k-k*j/-l+l-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 22: *j*j+k/+k-k-l/-l+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 23: *j*j+k/+k-l*j/-l+k-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 24: *j*j+k/+k-l-l/-l+k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 25: *j*j+k/+l+k*j/-k-l-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 26: *j*j+k/+l+k-l/-k-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 27: *j*j+k/+l+l*j/-k-k-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 28: *j*j+k/+l+l-l/-k-k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 29: *j*j+k/+l-k*j/-k+l-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 30: *j*j+k/+l-k-l/-k+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 31: *j*j+k/+l-l*j/-k+k-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 32: *j*j+k/+l-l-l/-k+k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 33: *j*j+l/+k+k*j/-l-l-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 34: *j*j+l/+k+k-k/-l-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 35: *j*j+l/+k+l*j/-l-k-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 36: *j*j+l/+k+l-k/-l-k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 37: *j*j+l/+k-k*j/-l+l-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 38: *j*j+l/+k-k-k/-l+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 39: *j*j+l/+k-l*j/-l+k-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 40: *j*j+l/+k-l-k/-l+k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 41: *j*j+l/+l+k*j/-k-l-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 42: *j*j+l/+l+k-k/-k-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 43: *j*j+l/+l+l*j/-k-k-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 44: *j*j+l/+l+l-k/-k-k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 45: *j*j+l/+l-k*j/-k+l-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 46: *j*j+l/+l-k-k/-k+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 47: *j*j+l/+l-l*j/-k+k-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 48: *j*j+l/+l-l-k/-k+k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 49: *j*j-k/+k+k*j/-l-l+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 50: *j*j-k/+k+k+l/-l-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 51: *j*j-k/+k+l*j/-l-k+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 52: *j*j-k/+k+l+l/-l-k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 53: *j*j-k/+k-k*j/-l+l+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 54: *j*j-k/+k-k+l/-l+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 55: *j*j-k/+k-l*j/-l+k+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 56: *j*j-k/+k-l+l/-l+k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 57: *j*j-k/+l+k*j/-k-l+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 58: *j*j-k/+l+k+l/-k-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 59: *j*j-k/+l+l*j/-k-k+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 60: *j*j-k/+l+l+l/-k-k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 61: *j*j-k/+l-k*j/-k+l+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 62: *j*j-k/+l-k+l/-k+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 63: *j*j-k/+l-l*j/-k+k+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 64: *j*j-k/+l-l+l/-k+k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 65: *j*j-l/+k+k*j/-l-l+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 66: *j*j-l/+k+k+k/-l-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 67: *j*j-l/+k+l*j/-l-k+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 68: *j*j-l/+k+l+k/-l-k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 69: *j*j-l/+k-k*j/-l+l+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 70: *j*j-l/+k-k+k/-l+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 71: *j*j-l/+k-l*j/-l+k+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 72: *j*j-l/+k-l+k/-l+k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 73: *j*j-l/+l+k*j/-k-l+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 74: *j*j-l/+l+k+k/-k-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 75: *j*j-l/+l+l*j/-k-k+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 76: *j*j-l/+l+l+k/-k-k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 77: *j*j-l/+l-k*j/-k+l+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 78: *j*j-l/+l-k+k/-k+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 79: *j*j-l/+l-l*j/-k+k+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 80: *j*j-l/+l-l+k/-k+k*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 81: *j+k*j/+k*j+k/-l-l-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 23
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 82: *j+k*j/+k*j+l/-l-l-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 83: *j+k*j/+k*j-k/-l-l+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 84: *j+k*j/+k*j-l/-l-l+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 85: *j+k*j/+k-l+k/-l*j-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 86: *j+k*j/+k-l+l/-l*j-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 87: *j+k*j/+k-l-k/-l*j+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 88: *j+k*j/+k-l-l/-l*j+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 89: *j+k*j/+l*j+k/-k-l-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 90: *j+k*j/+l*j+l/-k-l-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 91: *j+k*j/+l*j-k/-k-l+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 92: *j+k*j/+l*j-l/-k-l+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 93: *j+k*j/+l-l+k/-k*j-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 94: *j+k*j/+l-l+l/-k*j-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 95: *j+k*j/+l-l-k/-k*j+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 96: *j+k*j/+l-l-l/-k*j+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 97: *j+k+k/+k*j-l/-l-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 98: *j+k+k/+k-l*j/-l*j-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 99: *j+k+k/+l*j-l/-k-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 100: *j+k+k/+l-l*j/-k*j-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 101: *j+k+l/+k*j-k/-l-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 102: *j+k+l/+k-l*j/-l*j-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 103: *j+k+l/+l*j-k/-k-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 104: *j+k+l/+l-l*j/-k*j-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 105: *j+k-k/+k*j+l/-l-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 106: *j+k-k/+k-l*j/-l*j+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 107: *j+k-k/+l*j+l/-k-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 108: *j+k-k/+l-l*j/-k*j+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 109: *j+k-l/+k*j+k/-l-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 110: *j+k-l/+k-l*j/-l*j+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 23
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 111: *j+k-l/+l*j+k/-k-l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 112: *j+k-l/+l-l*j/-k*j+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 113: *j+l*j/+k*j+k/-l-k-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 114: *j+l*j/+k*j+l/-l-k-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 115: *j+l*j/+k*j-k/-l-k+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 116: *j+l*j/+k*j-l/-l-k+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 117: *j+l*j/+k-k+k/-l*j-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 118: *j+l*j/+k-k+l/-l*j-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 119: *j+l*j/+k-k-k/-l*j+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 120: *j+l*j/+k-k-l/-l*j+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 121: *j+l*j/+l*j+k/-k-k-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 122: *j+l*j/+l*j+l/-k-k-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 23
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 123: *j+l*j/+l*j-k/-k-k+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 124: *j+l*j/+l*j-l/-k-k+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 125: *j+l*j/+l-k+k/-k*j-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 126: *j+l*j/+l-k+l/-k*j-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 127: *j+l*j/+l-k-k/-k*j+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 128: *j+l*j/+l-k-l/-k*j+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 129: *j-k+k/+k*j-l/-l+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 130: *j-k+k/+k+l*j/-l*j-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 131: *j-k+k/+l*j-l/-k+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 132: *j-k+k/+l+l*j/-k*j-l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 133: *j-k+l/+k*j-k/-l+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 134: *j-k+l/+k+l*j/-l*j-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 135: *j-k+l/+l*j-k/-k+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 23
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 136: *j-k+l/+l+l*j/-k*j-k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 137: *j-k-k/+k*j+l/-l+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 138: *j-k-k/+k+l*j/-l*j+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 139: *j-k-k/+l*j+l/-k+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 140: *j-k-k/+l+l*j/-k*j+l
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 141: *j-k-l/+k*j+k/-l+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 142: *j-k-l/+k+l*j/-l*j+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 143: *j-k-l/+l*j+k/-k+l*j
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+--------------------------------------------------------------------------------
+CLASE 144: *j-k-l/+l+l*j/-k*j+k
+--------------------------------------------------------------------------------
+  Redundantes: 12
+  Hijos únicos de la clase: 24
+  ¿Todos los redundantes producen los mismos hijos? SÍ
+
+================================================================================
+RESUMEN GLOBAL: TODAS SÍ
+================================================================================

@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "caugJAM: Canonical augmentation for JAM string generation"
+version: 0.1.0
+url: "https://github.com/edgar-castillo-sci/caugJAM"
+repository-code: "https://github.com/edgar-castillo-sci/caugJAM"
+license: MIT
+authors:
+  - family-names: Castillo
+    given-names: Edgar
+    orcid: "https://orcid.org/0009-0006-4268-3323"
+keywords:
+  - JAM
+  - canonical augmentation
+  - isomorph-free generation
+  - 2D materials
+  - honeycomb
+  - duplicate detection
+references:
+  - type: software
+    title: "canonJAM: Canonicalization of JAM strings for duplicate detection"
+    authors:
+      - family-names: Castillo
+        given-names: Edgar
+    doi: 10.5281/zenodo.23720442
+    repository-code: "https://github.com/edgar-castillo-sci/canonJAM"
+    version: 1.2.1
+  - type: article
+    title: "Joining and arrangement of multilayers: A string representation for honeycomb layered materials"
+    authors:
+      - family-names: Arcudia
+        given-names: Jessica
+      - family-names: Ortiz-Chi
+        given-names: F.
+      - family-names: Sanchez-Valenzuela
+        given-names: A.
+      - family-names: Aspuru-Guzik
+        given-names: A.
+      - family-names: Merino
+        given-names: G.
+    doi: 10.1016/j.matt.2023.02.014
+    journal: Matter
+    volume: 6
+    issue: 5
+    start: 1503
+    end: 1513
+    year: 2023

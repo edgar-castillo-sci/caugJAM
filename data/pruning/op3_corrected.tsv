@@ -1,0 +1,6 @@
+option	n	full_classes	poda_classes	match	t_full	t_naive_ext	t_poda_lvl	t_poda_cum	speedup_naive	speedup_full
+3	2	5	5	YES	0.0090	0.0152	0.0026	0.0038	5.83	3.43
+3	3	21	21	YES	0.0565	0.1009	0.0144	0.0182	7.01	3.92
+3	4	120	120	YES	0.3686	0.6615	0.0656	0.0837	10.09	5.62
+3	5	666	666	YES	2.3770	4.3475	0.4160	0.4997	10.45	5.71
+3	6	3960	3960	YES	15.3902	28.2315	2.4813	2.9810	11.38	6.20

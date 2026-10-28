@@ -1,0 +1,8 @@
+option	n	n_classes	match_caugjam	n_canon_argmin	n_canon_caugjam	ratio
+1	2	2	YES	18	6	3.00
+1	3	4	YES	34	12	2.83
+1	4	10	YES	65	24	2.71
+1	5	25	YES	154	60	2.57
+1	6	70	YES	383	150	2.55
+1	7	196	YES	1058	420	2.52
+1	8	574	YES	2956	1176	2.51

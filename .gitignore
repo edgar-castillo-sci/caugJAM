@@ -1,9 +1,30 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.egg-info/
+.pytest_cache/
 build/
 dist/
 .venv/
 
-tests/*_salida.txt
-tests/*_salida.tsv
+# JAM dependencies (installed from GitHub, never vendored)
+canonjam/
+xjam/
+xjam2/
+
+# Regenerable binary artifacts
+graphs/**/*.png
+graphs/**/*.pdf
+figures/**/*.pdf
+figures/**/*.aux
+figures/**/*.log
+figures/**/*.synctex.gz
+figures/.auctex-auto/
+
+# Large regenerable data dumps
+# Kept: .tsv (structured evidence), summaries, figures/*.tex, graphs/*.png
+# Excluded: per-class detail dumps and canonical chain lists, which
+# routinely exceed GitHub's 50 MB soft limit (some exceed 100 MB).
+data/n*/**/*.txt
+data/opt*/**/*.txt
+data/redundant_v2/**/clases.tsv

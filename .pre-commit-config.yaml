@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: check-requires-python
+        name: check requires-python range
+        entry: python3 scripts/check_requires_python.py
+        language: system
+        files: ^pyproject\.toml$
+        pass_filenames: false
