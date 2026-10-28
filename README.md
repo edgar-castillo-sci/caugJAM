@@ -1,4 +1,8 @@
 # caugJAM
+[![Tests](https://github.com/edgar-castillo-sci/caugJAM/actions/workflows/tests.yml/badge.svg)](https://github.com/edgar-castillo-sci/caugJAM/actions/workflows/tests.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23721460.svg)](https://doi.org/10.5281/zenodo.23721460)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://github.com/edgar-castillo-sci/caugJAM/blob/main/pyproject.toml)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/edgar-castillo-sci/caugJAM/blob/main/LICENSE)
 
 *[Leer en español](README.es.md)*
 
