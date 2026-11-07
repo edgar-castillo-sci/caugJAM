@@ -26,9 +26,7 @@ formaliza el grupo de simetría `G = S₃ × ℤ/2`, el representante canónico
 `κ`, y las formas cerradas de Burnside.
 
 La prueba de correctitud, el teorema de complejidad y la verificación
-empírica del método de poda son el contenido del paper compañero
-*Growing as Pruning: Isomorph-free generation of JAM chains via canonical
-augmentation* (en preparación, objetivo: MATCH).
+empírica del método de poda son el contenido del paper compañero.
 
 ## Qué hace
 
@@ -198,21 +196,6 @@ canonicalizaciones, cada una `O(k)`. Total: `O(|X_k/G| · q · k)`. La
 línea base de extensión ingenua es
 `O(|X_k| · q · k) = O(|G| · |X_k/G| · q · k)`, un factor `|G| = 12` más.
 Confirmado empíricamente (ver [Aceleración](#aceleración)).
-
-## Hacia dónde vamos
-
-### Paper: *Growing as Pruning: Isomorph-free generation of JAM chains via canonical augmentation*
-
-- **§1** Introducción (McKay 1998, generación isomorfa-libre, JAM)
-- **§2** Preliminares (`G`, `κ`, `X_k`, notación)
-- **§3** La fibra de una clase
-- **§4** `G`-equivarianza de la extensión (Teorema 1)
-- **§5** Correctitud del algoritmo (Teorema 2)
-- **§6** Análisis de complejidad (Teorema 3, dos líneas base)
-- **§7** Verificación empírica (8 opciones, 188,412 clases, benchmark)
-- **§8** Conclusiones y problemas abiertos
-
-Objetivo: MATCH, J. Math. Chem., o una revista de algoritmos.
 
 ### Trabajo downstream
 
