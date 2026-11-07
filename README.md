@@ -27,8 +27,7 @@ representative `κ`, and the Burnside closed forms.
 
 The correctness proof, the complexity theorem, and the empirical
 verification of the pruning method are the content of the companion
-paper *Growing as Pruning: Isomorph-free generation of JAM chains via
-canonical augmentation* (in preparation, target: MATCH).
+paper.
 
 ## What it does
 
@@ -193,27 +192,10 @@ canonicalizations, each `O(k)`. Total: `O(|X_k/G| · q · k)`. The naive
 extension baseline is `O(|X_k| · q · k) = O(|G| · |X_k/G| · q · k)`, a
 factor `|G| = 12` more. Confirmed empirically (see [Speedup](#speedup)).
 
-## Where we are going
-
-### Paper: *Growing as Pruning: Isomorph-free generation of JAM chains via canonical augmentation*
-
-- **§1** Introduction (McKay 1998, isomorph-free generation, JAM)
-- **§2** Preliminaries (`G`, `κ`, `X_k`, notation)
-- **§3** The fiber of a class
-- **§4** `G`-equivariance of extension (Theorem 1)
-- **§5** Correctness of the algorithm (Theorem 2)
-- **§6** Complexity analysis (Theorem 3, two baselines)
-- **§7** Empirical verification (8 options, 188,412 classes, benchmark)
-- **§8** Conclusions and open problems
-
-Target: MATCH, J. Math. Chem., or a journal in algorithms.
-
 ### Downstream work
 
 - **`Laminar`** (Rust software, three modes: exhaustive, sampling,
   specific-chain): uses the fiber structure from this paper.
-- **`Stacking as words`** (combinatorial paper): provides the cell
-  classification and the `κ` vs `κ^word` divergence, both cited here.
 
 ## Open problems
 
