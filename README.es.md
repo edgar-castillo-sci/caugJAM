@@ -201,8 +201,6 @@ Confirmado empíricamente (ver [Aceleración](#aceleración)).
 
 - **`Laminar`** (software Rust, tres modos: exhaustivo, muestreo,
   cadena específica): usa la estructura de fibra de este paper.
-- **`Stacking as words`** (paper combinatorio): provee la clasificación
-  en celdas y la divergencia `κ` vs `κ^word`, ambas citadas aquí.
 
 ## Problemas abiertos
 
